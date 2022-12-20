@@ -1,4 +1,4 @@
-:doctitle: image:images/puf-logo.png[float="center", width=100%] PUF XYZ specification template 1.0
+:doctitle: image:images/puf-logo.png[float="center", width=100%] PUF Code lists 1.0
 :author: Copyright &copy; 2022, Pagero Group
 :email: https://pagero.com
 :copyright: Pagero Group
@@ -26,37 +26,13 @@ include::specification/introduction.adoc[]
 
 include::specification/guidelines.adoc[]
 
-== Syntax
-
-:sectnums!:
-
-include::specification/syntax.adoc[]
-
-:sectnums:
-
-== Extensions
-
-include::specification/extensions.adoc[]
-
 == Country specifics
 
 include::specification/country-specifics.adoc[]
 
-== Code lists
+== Code lists for coded elements
 
-include::specification/codelists.adoc[]
-
-== XML schemas
-
-include::specification/xml-schemas.adoc[]
-
-== Validation
-
-include::specification/validation.adoc[]
-
-== Examples
-
-include::specification/examples.adoc[]
+include::specification/code-lists.adoc[]
 
 == Support
 
