@@ -1,3 +1,0 @@
-The PUF XYZ XML schemas including Pagero/PUF Extension can be downloaded here:
-
-- link:xsd/puf-XYZ-xsd-schemas.zip[PUF XYZ XML schemas]
