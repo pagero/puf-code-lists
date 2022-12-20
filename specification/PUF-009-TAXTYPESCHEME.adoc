@@ -1,0 +1,54 @@
+== PUF-009-TAXTYPESCHEME
+
+List of available tax type scheme codes.
+
+|===
+|Value |Description
+
+|`VAT`
+|Value Added Tax.
+
+|`GST`
+|Goods and Services Tax.
+
+|`LOC`
+|Sales tax.
+
+|`STT`
+|State/provincial sales tax.
+
+|`AAG`
+|Harmonised sales tax, Canadian +
+_A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable._
+
+|`AAH`
+|Quebec sales tax.
+
+|`AAI`
+|Canadian provincial sales tax.
+
+|`IGST`
+|Integrated Goods and Services Tax, India.
+
+|`CGST`
+|Central Goods and Services Tax, India.
+
+|`SGST`
+|State Goods and Services Tax, India.
+
+|`UTGST`
+|Union Territory Goods and Services Tax, India.
+
+|`CESS`
+|CESS, India.
+
+|`CESS Non advol`
+|CESS Non Ad Valorem, India.
+
+|`STATECESS`
+|State CESS, India.
+
+|`STATECESS Non Advol`
+|State CESS Non Ad Valorem, India.
+
+|===

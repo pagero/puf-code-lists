@@ -1,0 +1,44 @@
+== PUF-010-PAYMENTMEANSCODE
+
+|===
+|Value |Description
+
+|`1`
+|Instrument not defined.
+
+|`10`
+|In cash.
+
+|`20`
+|Cheque.
+
+|`30`
+|Credit transfer.
+
+|`31`
+|Debit transfer.
+
+|`42`
+|Payment to bank account.
+
+|`48`
+|Bank card.
+
+|`56`
+|Bankgiro.
+
+|`58`
+|SEPA credit transfer +
+_Credit transfer inside the Single Euro Payment Area (SEPA) system._
+
+|`59`
+|SEPA direct debit +
+_Direct debit inside the Single Euro Payment Area (SEPA) system._
+
+|`93`
+|Reference giro +
+_Ordering customer tells the bank to use the payment system 'Reference giro'. Used in the Finnish national banking system._
+
+|===
+
+For all available codes see https://peppo.org[OpenPeppol's] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code].

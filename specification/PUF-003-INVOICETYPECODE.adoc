@@ -1,0 +1,66 @@
+== PUF-003-INVOICETYPECODE
+
+List of available general invoice type codes.
+
+|===
+|Value |Description
+
+|`380`
+|Invoice, only applicable only with UBL message/document type Invoice.
+
+|`381`
+|Credit note, only applicable only with UBL message/document type CreditNote.
+
+|`383`
+|Debit note, only applicable only with UBL message/document type Invoice.
+
+|===
+
+=== Invoice Type Codes Saudi Arabia
+
+The below listed InvoiceTypeCodes are available for use in Saudi Arabia.
+
+|===
+|Value |Description
+
+
+|`388`
+|Tax Invoice, only applicable only with UBL message/document type Invoice.
+
+|`381`
+|Credit note, only applicable only with UBL message/document type CreditNote.
+
+|`383`
+|Debit note, only applicable only with UBL message/document type Invoice.
+|===
+
+=== Invoice Subtype Codes Saudi Arabia
+
+In addition to the InvoiceTypeCode it is required to provide invoice subtypes. This should be placed in `cbc:InvoiceTypeCode/@name` and must follow a certain syntax.
+
+Structure on the value must be *NNPNESB* (Example 0100000) where:
+
+|===
+|Value |Supported values
+
+
+|`NN (Position 1 and 2)`
+|01 for tax invoice +
+02 for simplified tax invoice.
+
+|`P (Position 3)`
+|3rd Party invoice transaction, 0 for false, 1 for true.
+
+|`N (Position 4)`
+|Nominal invoice transaction, 0 for false, 1 for true.
+
+|`E (Position 5)`
+|Exports invoice transaction, 0 for false, 1 for true.
+
+|`S (Position 6)`
+|Summary invoice transaction, 0 for false, 1 for true.
+
+|`B (Position 7)`
+|Self-billed invoice transaction, 0 for false, 1 for true. Note that only 0 is currently supported.
+
+|===

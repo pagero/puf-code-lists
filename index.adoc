@@ -16,24 +16,42 @@
 
 A specification based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language (UBL)] that enables the exchange of compliant business documents worldwide via our e-business platform link:https://www.pageroonline.com[Pagero Online].
 
-:sectnums:
-
-== Introduction
-
 include::specification/introduction.adoc[]
 
-== Guidelines
+include::specification/overview.adoc[]
 
-include::specification/guidelines.adoc[]
+:sectnums:
 
-== Country specifics
+include::specification/PUF-001-REGISTRATIONDATA.adoc[]
 
-include::specification/country-specifics.adoc[]
+include::specification/PUF-002-ADAID.adoc[]
 
-== Code lists for coded elements
+include::specification/PUF-003-INVOICETYPECODE.adoc[]
 
-include::specification/code-lists.adoc[]
+include::specification/PUF-004-CURRENCYCODE.adoc[]
 
-== Support
+include::specification/PUF-005-INVOICEDOBJECTIDENTIFIER.adoc[]
+
+include::specification/PUF-006-MIMECODES.adoc[]
+
+include::specification/PUF-007-ENDPOINTSCHEME.adoc[]
+
+include::specification/PUF-008-IDENTIFICATIONSCHEME.adoc[]
+
+include::specification/PUF-009-TAXTYPESCHEME.adoc[]
+
+include::specification/PUF-010-PAYMENTMEANSCODE.adoc[]
+
+include::specification/PUF-011-ALLOWANCECHARGEREASONCODE.adoc[]
+
+include::specification/PUF-012-TAXCATEGORYCODE.adoc[]
+
+include::specification/PUF-013-EXEMPTCODE.adoc[]
+
+include::specification/PUF-014-UOMCODE.adoc[]
+
+include::specification/PUF-015-ITEMTYPEIDENTIFICATIONCODE.adoc[]
+
+:!sectnums:
 
 include::specification/support.adoc[]

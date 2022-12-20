@@ -1,0 +1,88 @@
+== Overview 
+
+Certain elements require the use of PUF specific Code list. Below you will find the lists and where the lists are applicable.
+
+In some of these code lists PUF only points towards an external code list to be used.
+
+Other times the code list to be used is a mix between values defined specifically for PUF and other external list(s).
+
+Lastly, in some cases, *all* the values are defined solely for PUF.
+
+.Table of the code lists used
+[%autowidth.stretch]
+|===
+|Business Term |Path |listID
+
+|Registration Data Id Type
+|`puf:PartyExtension/puf:RegistrationData/puf:IDType`
+|<<_puf_001_registrationdata>>
+
+|Additional Destination Address Identifier
+|`puf:PartyExtension/puf:ADAID/puf:IDType`
+|<<_puf_002_adaid>>
+
+|Invoice Type Code
+|`cbc:InvoiceTypeCode` +
+`cbc:CreditNoteType`
+|<<_puf_003_invoicetypecode>>
+
+|Currency Code
+|`cbc:DocumentCurrencyCode` +
+`cbc:TaxCurrencyCode` +
+ `/*/@currencyID`
+|<<_puf_004_currencycode>>
+
+|Invoiced Object Identifier
+|`cac:AdditionalDocumentReference/cbc:ID/@schemeID`
+|<<_puf_005_invoicedobjectidentifier>>
+
+|Mime code
+|`cac:AdditionalDocumentReference/cac:Attachment/
+cbc:EmbeddedDocumentBinaryObject/@mimeCode`
+|<<_puf_006_mimecodes>>
+
+|Electronic address scheme
+|`cac:AccountingSupplierParty/cac:Party/cbc:EndpointID/@schemeID` +
+`cac:AccountingCustomerParty/cac:Party/cbc:EndpointID/@schemeID` +
+`cac:BuyerCustomerParty/cac:Party/cbc:EndpointID/@schemeID`
+|<<_puf_007_endpointscheme>>
+
+|Identification scheme
+|`cac:PartyIdentification/cbc:ID/@schemeID` +
+`cac:PartyLegalEntity/cbc:CompanyID/@schemeID` +
+`cac:Delivery/cac:DeliveryLocation/cbc:ID/@schemeID` +
+`cac:Item/cac:StandardItemIdentification/cbc:ID/@schemeID`
+|<<_puf_008_identificationscheme>>
+
+|Tax type scheme
+|`cac:TaxCategory/cac:TaxScheme/cbc:ID` +
+`cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID`
+|<<_puf_009_taxtypescheme>>
+
+|Payment means code
+|`cac:PaymentMeans/cbc:PaymentMeansCode`
+|<<_puf_010_paymentmeanscode>>
+
+|Allowance charge reason codes
+|`cac:AllowanceCharge/cbc:AllowanceChargeReasonCode`
+|<<_puf_011_allowancechargereasoncode>>
+
+|Tax category codes
+|`cac:TaxCategory/cbc:ID`
+|<<_puf_012_taxcategorycode>>
+
+|Tax exemption codes
+|`cac:TaxCategory/cbc:TaxExemptionReasonCode`
+|<<_puf_013_exemptcode>>
+
+|Unit of measure codes
+|`cbc:InvoicedQuantity/@unitCode` +
+`cbc:CreditedQuantity/@unitCode` +
+`cac:Price/cbc:BaseQuantity/@unitCode`
+|<<_puf_014_uomcode>>
+
+|Item type identification code
+|`cac:Item/cac:CommodityClassification/
+cbc:ItemClassificationCode/@listID`
+|<<_puf_015_itemtypeidentificationcode>>
+|===

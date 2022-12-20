@@ -1,0 +1,26 @@
+== PUF-002-ADAID
+
+The value consist of "country code:type of value". Country code states which country the value is applicable for.
+
+|===
+|Value |Description
+
+|`FR:ServiceCode`
+|Code of the receiving unit behind French Government portal.
+
+|`ES:OficinaContable`
+|Code for the accounting office (Oficina Contable).
+
+|`ES:OrganoGestor`
+|Code for the management agency (Órgano Gestor).
+
+|`ES:UnidadTramitadora`
+|Code for the processing authority unit (Unidad Tramitadora).
+
+|`ES:OrganoProponente`
+|Code for the proposing agency (Órgano Proponente).
+
+|`GEN:UnitCode`
+|General code for defining the unit of a company.
+
+|===

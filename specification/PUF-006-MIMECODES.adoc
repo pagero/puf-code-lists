@@ -1,0 +1,18 @@
+== PUF-006-MIMECODES
+
+List of available MIME codes.
+
+|===
+|Value | Description
+
+|`text/csv` |Comma separated value file.
+
+|`application/pdf` |PDF document.
+
+|`image/jpeg` |JPEG image.
+
+|`application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` |Spreadsheet document.
+
+|`application/vnd.oasis.opendocument.spreadsheet` |Spreadsheet document.
+
+|===

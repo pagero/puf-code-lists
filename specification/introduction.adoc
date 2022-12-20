@@ -1,8 +1,10 @@
+== Introduction
+
 Pagero Universal Format, hereafter referred to as "PUF", is a business document specification developed and maintained by https://www.pagero.com[Pagero Group]. 
 
 PUF is based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language version 2.3 (UBL 2.3)].
 
-=== Version and changelog
+== Version and changelog
 
 .Version
 |===
@@ -10,29 +12,3 @@ PUF is based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business 
 
 |1.0 |2022-12-19 |First version published.
 |===
-
-=== Release management
-
-PUF will be continuously updated to meet new market demands. 
-
-In order to support backward compatibility, the XSD schema is built with the use of "other" elements. 
-
-The "other" elements in the XSD will prevent validation error for customers who do not frequently keep the XSD schema up-to-date.
-
-==== Minor release
-
-A minor release will always be backward compatible and will take place without prior notice and will be implemented whenever needed. 
-
-Minor releases may include bugfixes, new elements, schematron updates and other features. 
-
-These releases can be followed on https://github.com/pagero/puf[GitHub].
-
-==== Major release
-
-A major release may include changes that are not backward compatible. 
-
-Such a release will be notified at least three months prior to date of implementation, to users who registered an account on Pagero validex or on https://github.com/pagero/puf[GitHub].
-
-To register for PUF major release notification you can create a free account on https://pagero.validex.net[Pagero Validex]. 
-
-But we urge all interested parties to follow the project on https://github.com/pagero/puf[GitHub] where all releases will be notified.
