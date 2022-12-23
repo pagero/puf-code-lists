@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.9">
+<meta name="generator" content="Asciidoctor 2.0.12">
 <meta name="copyright" content="Pagero Group">
 <title>PUF Code lists 1.0</title>
 <style>
@@ -475,6 +475,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_puf_013_exemptcode">13. PUF-013-EXEMPTCODE</a></li>
 <li><a href="#_puf_014_uomcode">14. PUF-014-UOMCODE</a></li>
 <li><a href="#_puf_015_itemtypeidentificationcode">15. PUF-015-ITEMTYPEIDENTIFICATIONCODE</a></li>
+<li><a href="#_puf_016_invoicestatuscode">16. PUF-016-INVOICESTATUSCODE</a>
+<ul class="sectlevel2">
+<li><a href="#_additional_invoice_status_codes_added_in_puf">16.1. Additional Invoice Status Codes added in PUF</a></li>
+</ul>
+</li>
 <li><a href="#_support">Support</a></li>
 </ul>
 </div>
@@ -529,7 +534,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_overview"><a class="anchor" href="#_overview"></a><a class="link" href="#_overview">Overview</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Certain elements require the use of PUF specific Code list. Below you will find the lists and where the lists are applicable.</p>
+<p>Certain elements require the use of PUF specific Code list. Below you will find the lists.</p>
+</div>
+<div class="paragraph">
+<p>In the specification for each message/document type you will find an overview on where the different code lists are applicable.</p>
 </div>
 <div class="paragraph">
 <p>In some of these code lists PUF only points towards an external code list to be used.</p>
@@ -540,111 +548,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Lastly, in some cases, <strong>all</strong> the values are defined solely for PUF.</p>
 </div>
-<table class="tableblock frame-all grid-all fit-content stretch">
-<caption class="title">Table 2. Table of the code lists used</caption>
-<colgroup>
-<col>
-<col>
-<col>
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Business Term</th>
-<th class="tableblock halign-left valign-top">Path</th>
-<th class="tableblock halign-left valign-top">listID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Registration Data Id Type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>puf:PartyExtension/puf:RegistrationData/puf:IDType</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_001_registrationdata">PUF-001-REGISTRATIONDATA</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Additional Destination Address Identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>puf:PartyExtension/puf:ADAID/puf:IDType</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_002_adaid">PUF-002-ADAID</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Type Code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:InvoiceTypeCode</code><br>
-<code>cbc:CreditNoteType</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_003_invoicetypecode">PUF-003-INVOICETYPECODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Currency Code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:DocumentCurrencyCode</code><br>
-<code>cbc:TaxCurrencyCode</code><br>
- <code>/*/@currencyID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_004_currencycode">PUF-004-CURRENCYCODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invoiced Object Identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AdditionalDocumentReference/cbc:ID/@schemeID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_005_invoicedobjectidentifier">PUF-005-INVOICEDOBJECTIDENTIFIER</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mime code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AdditionalDocumentReference/cac:Attachment/
-cbc:EmbeddedDocumentBinaryObject/@mimeCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_006_mimecodes">PUF-006-MIMECODES</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Electronic address scheme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AccountingSupplierParty/cac:Party/cbc:EndpointID/@schemeID</code><br>
-<code>cac:AccountingCustomerParty/cac:Party/cbc:EndpointID/@schemeID</code><br>
-<code>cac:BuyerCustomerParty/cac:Party/cbc:EndpointID/@schemeID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_007_endpointscheme">PUF-007-ENDPOINTSCHEME</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Identification scheme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyIdentification/cbc:ID/@schemeID</code><br>
-<code>cac:PartyLegalEntity/cbc:CompanyID/@schemeID</code><br>
-<code>cac:Delivery/cac:DeliveryLocation/cbc:ID/@schemeID</code><br>
-<code>cac:Item/cac:StandardItemIdentification/cbc:ID/@schemeID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_008_identificationscheme">PUF-008-IDENTIFICATIONSCHEME</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tax type scheme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxCategory/cac:TaxScheme/cbc:ID</code><br>
-<code>cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_009_taxtypescheme">PUF-009-TAXTYPESCHEME</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Payment means code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PaymentMeans/cbc:PaymentMeansCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_010_paymentmeanscode">PUF-010-PAYMENTMEANSCODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Allowance charge reason codes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:AllowanceCharge/cbc:AllowanceChargeReasonCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_011_allowancechargereasoncode">PUF-011-ALLOWANCECHARGEREASONCODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tax category codes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxCategory/cbc:ID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_012_taxcategorycode">PUF-012-TAXCATEGORYCODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tax exemption codes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:TaxCategory/cbc:TaxExemptionReasonCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_013_exemptcode">PUF-013-EXEMPTCODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unit of measure codes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:InvoicedQuantity/@unitCode</code><br>
-<code>cbc:CreditedQuantity/@unitCode</code><br>
-<code>cac:Price/cbc:BaseQuantity/@unitCode</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_014_uomcode">PUF-014-UOMCODE</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Item type identification code</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:Item/cac:CommodityClassification/
-cbc:ItemClassificationCode/@listID</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_puf_015_itemtypeidentificationcode">PUF-015-ITEMTYPEIDENTIFICATIONCODE</a></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -1607,6 +1510,38 @@ LN : Not in liquidation</p></td>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Values must be from <a href="https://peppol.org">OpenPeppol&#8217;s</a> code list <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7143/">Item type identification code</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_puf_016_invoicestatuscode"><a class="anchor" href="#_puf_016_invoicestatuscode"></a><a class="link" href="#_puf_016_invoicestatuscode">16. PUF-016-INVOICESTATUSCODE</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Supported values can be found in <a href="https://peppol.org">OpenPeppol&#8217;s</a> code list <a href="https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/">Invoice Status Code</a>.</p>
+</div>
+<div class="paragraph">
+<p>For additional identification scheme identifier added in PUF see below recommendations.</p>
+</div>
+<div class="sect2">
+<h3 id="_additional_invoice_status_codes_added_in_puf"><a class="anchor" href="#_additional_invoice_status_codes_added_in_puf"></a><a class="link" href="#_additional_invoice_status_codes_added_in_puf">16.1. Additional Invoice Status Codes added in PUF</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VF</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validation Failure.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>

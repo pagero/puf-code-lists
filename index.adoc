@@ -52,6 +52,8 @@ include::specification/PUF-014-UOMCODE.adoc[]
 
 include::specification/PUF-015-ITEMTYPEIDENTIFICATIONCODE.adoc[]
 
+include::specification/PUF-016-INVOICESTATUSCODE.adoc[]
+
 :!sectnums:
 
 include::specification/support.adoc[]
