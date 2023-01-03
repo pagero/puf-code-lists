@@ -1,6 +1,6 @@
 == PUF-017-CLEARANCESTATUSCODE
 
-Available clearance/reporting status codes
+List of available clearance/reporting status codes.
 
 |===
 |Value |Description
