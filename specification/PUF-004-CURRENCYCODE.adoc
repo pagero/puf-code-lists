@@ -1,3 +1,3 @@
 == PUF-004-CURRENCYCODE
 
-For available values see https://peppol.org[OpenPeppol's] code list of three character currency codes see https://en.wikipedia.org/wiki/ISO_4217[Currency Codes].
+For available values see https://peppol.org[OpenPeppol's, window=_blank] code list of three character currency codes see https://en.wikipedia.org/wiki/ISO_4217[Currency Codes, window=_blank].

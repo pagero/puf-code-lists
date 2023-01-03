@@ -41,4 +41,4 @@ _Ordering customer tells the bank to use the payment system 'Reference giro'. Us
 
 |===
 
-For all available codes see https://peppo.org[OpenPeppol's] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code].
+For all available codes see https://peppo.org[OpenPeppol's, window=_blank] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code, window=_blank].

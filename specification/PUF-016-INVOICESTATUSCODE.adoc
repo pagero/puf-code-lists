@@ -1,6 +1,6 @@
 == PUF-016-INVOICESTATUSCODE
 
-Supported values can be found in https://peppol.org[OpenPeppol's] code list https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/[Invoice Status Code].
+Supported values can be found in https://peppol.org[OpenPeppol's, window=_blank] code list https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/[Invoice Status Code, window=_blank].
 
 For additional identification scheme identifier added in PUF see below recommendations.
 

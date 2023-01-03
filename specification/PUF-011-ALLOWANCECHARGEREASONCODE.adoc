@@ -7,8 +7,8 @@ Below you will find links to recommended lists.
 |===
 |Link |Description
 
-|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189[] | Allowance reason codes (UNCL5189 subset).
+|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189[window=_blank] | Allowance reason codes (UNCL5189 subset).
 
-|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161[] | Charge reason code (UNCL7161 subset).
+|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161[window=_blank] | Charge reason code (UNCL7161 subset).
 
 |===

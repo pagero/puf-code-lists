@@ -1,8 +1,8 @@
 == Introduction
 
-Pagero Universal Format, hereafter referred to as "PUF", is a business document specification developed and maintained by https://www.pagero.com[Pagero Group]. 
+Pagero Universal Format, hereafter referred to as "PUF", is a business document specification developed and maintained by https://www.pagero.com[Pagero Group, window=_blank]. 
 
-PUF is based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language version 2.3 (UBL 2.3)].
+PUF is based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language version 2.3 (UBL 2.3), window=_blank].
 
 Certain elements require the use of PUF specific code lists. Below you will find all these lists.
 
