@@ -5,10 +5,10 @@ Values can differ depending on which legal domain you are in or if there are oth
 Below you will find links to recommended lists.
 
 |===
-|Link
+|Link |Description
 
-|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189/[OpenPeppol | UNCL5189 - Allowance reason codes]
+|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189[] | Allowance reason codes (UNCL5189 subset).
 
-|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161/[OpenPeppol | UNCL7161 - Charge reason codes]
+|https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161[] | Charge reason code (UNCL7161 subset).
 
 |===

@@ -18,8 +18,6 @@ A specification based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal 
 
 include::specification/introduction.adoc[]
 
-include::specification/overview.adoc[]
-
 :sectnums:
 
 include::specification/PUF-001-REGISTRATIONDATA.adoc[]

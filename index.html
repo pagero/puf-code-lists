@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.12">
+<meta name="generator" content="Asciidoctor 2.0.9">
 <meta name="copyright" content="Pagero Group">
 <title>PUF Code lists 1.0</title>
 <style>
@@ -439,7 +439,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_introduction">Introduction</a></li>
 <li><a href="#_version_and_changelog">Version and changelog</a></li>
-<li><a href="#_overview">Overview</a></li>
 <li><a href="#_puf_001_registrationdata">1. PUF-001-REGISTRATIONDATA</a></li>
 <li><a href="#_puf_002_adaid">2. PUF-002-ADAID</a></li>
 <li><a href="#_puf_003_invoicetypecode">3. PUF-003-INVOICETYPECODE</a>
@@ -498,6 +497,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>PUF is based on <a href="https://docs.oasis-open.org/ubl/UBL-2.3.html">Universal Business Language version 2.3 (UBL 2.3)</a>.</p>
 </div>
+<div class="paragraph">
+<p>Certain elements require the use of PUF specific Code list. Below you will find the lists.</p>
+</div>
+<div class="paragraph">
+<p>In the specification for each message/document type you will find an overview on where the different code lists are applicable.</p>
+</div>
+<div class="paragraph">
+<p>In some of these code lists PUF only points towards an external code list to be used.</p>
+</div>
+<div class="paragraph">
+<p>Other times the code list to be used is a mix between values defined specifically for PUF and other external list(s).</p>
+</div>
+<div class="paragraph">
+<p>Lastly, in some cases, <strong>all</strong> the values are defined solely for PUF.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -525,26 +539,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_overview"><a class="anchor" href="#_overview"></a><a class="link" href="#_overview">Overview</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Certain elements require the use of PUF specific Code list. Below you will find the lists.</p>
-</div>
-<div class="paragraph">
-<p>In the specification for each message/document type you will find an overview on where the different code lists are applicable.</p>
-</div>
-<div class="paragraph">
-<p>In some of these code lists PUF only points towards an external code list to be used.</p>
-</div>
-<div class="paragraph">
-<p>Other times the code list to be used is a mix between values defined specifically for PUF and other external list(s).</p>
-</div>
-<div class="paragraph">
-<p>Lastly, in some cases, <strong>all</strong> the values are defined solely for PUF.</p>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -865,7 +859,7 @@ LN : Not in liquidation</p></td>
 <h2 id="_puf_007_endpointscheme"><a class="anchor" href="#_puf_007_endpointscheme"></a><a class="link" href="#_puf_007_endpointscheme">7. PUF-007-ENDPOINTSCHEME</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For available values see <a href="https://peppol.org">OpenPeppol&#8217;s</a> code list <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/">Electronic address scheme</a></p>
+<p>For available values see <a href="https://peppol.org">OpenPeppol&#8217;s</a> code list <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/">Electronic address scheme</a>.</p>
 </div>
 </div>
 </div>
@@ -1093,7 +1087,7 @@ LN : Not in liquidation</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AAG</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Harmonised sales tax, Canadian<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Harmonised sales tax, Canadian.<br>
 <em>A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable.</em></p></td>
 </tr>
 <tr>
@@ -1220,25 +1214,23 @@ LN : Not in liquidation</p></td>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Link</th>
+<th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189/" class="bare">https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189/</a>[OpenPeppol</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189" class="bare">https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5189</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allowance reason codes (UNCL5189 subset).</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UNCL5189 - Allowance reason codes]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161/" class="bare">https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161/</a>[OpenPeppol</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UNCL7161 - Charge reason codes]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161" class="bare">https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Charge reason code (UNCL7161 subset).</p></td>
 </tr>
 </tbody>
 </table>

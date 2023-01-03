@@ -4,6 +4,16 @@ Pagero Universal Format, hereafter referred to as "PUF", is a business document 
 
 PUF is based on https://docs.oasis-open.org/ubl/UBL-2.3.html[Universal Business Language version 2.3 (UBL 2.3)].
 
+Certain elements require the use of PUF specific Code list. Below you will find the lists.
+
+In the specification for each message/document type you will find an overview on where the different code lists are applicable.
+
+In some of these code lists PUF only points towards an external code list to be used.
+
+Other times the code list to be used is a mix between values defined specifically for PUF and other external list(s).
+
+Lastly, in some cases, *all* the values are defined solely for PUF.
+
 == Version and changelog
 
 .Version
