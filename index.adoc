@@ -54,6 +54,8 @@ include::specification/PUF-016-INVOICESTATUSCODE.adoc[]
 
 include::specification/PUF-017-CLEARANCESTATUSCODE.adoc[]
 
+include::specification/PUF-018-APPLICATIONRESPONSECODE.adoc[]
+
 :!sectnums:
 
 include::specification/support.adoc[]
