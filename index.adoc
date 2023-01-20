@@ -44,7 +44,7 @@ include::specification/PUF-011-ALLOWANCECHARGEREASONCODE.adoc[]
 
 include::specification/PUF-012-TAXCATEGORYCODE.adoc[]
 
-include::specification/PUF-013-EXEMPTCODE.adoc[]
+include::specification/PUF-013-TAXEXEMPTIONCODE.adoc[]
 
 include::specification/PUF-014-UOMCODE.adoc[]
 

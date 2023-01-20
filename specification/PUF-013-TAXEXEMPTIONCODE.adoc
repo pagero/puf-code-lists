@@ -1,4 +1,4 @@
-== PUF-013-EXEMPTCODE
+== PUF-013-TAXEXEMPTIONCODE
 
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.
 
