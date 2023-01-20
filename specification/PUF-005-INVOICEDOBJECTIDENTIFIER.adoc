@@ -1,3 +1,3 @@
 == PUF-005-INVOICEDOBJECTIDENTIFIER
 
-For available values see https://peppol.org[OpenPeppol's, window=_blank] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL1153/[Invoice Object identifier schemes, window=_blank].
+For available values see https://peppol.org[OpenPeppol's^] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL1153/[Invoiced object identifier scheme (UNCL 1153)^].

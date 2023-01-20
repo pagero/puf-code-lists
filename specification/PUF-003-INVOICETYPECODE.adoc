@@ -6,39 +6,40 @@ List of available general invoice type codes.
 |Value |Description
 
 |`380`
-|Invoice, only applicable only with UBL message/document type Invoice.
+|Invoice, only applicable within UBL message/document type Invoice.
 
 |`381`
-|Credit note, only applicable only with UBL message/document type CreditNote.
+|Credit note, only applicable within UBL message/document type CreditNote.
 
 |`383`
-|Debit note, only applicable only with UBL message/document type Invoice.
+|Debit note, only applicable within UBL message/document type Invoice.
 
 |===
 
-=== Invoice Type Codes Saudi Arabia
+=== Invoice type codes Saudi Arabia
 
-The below listed InvoiceTypeCodes are available for use in Saudi Arabia.
+The below listed invoice type codes are available for use in Saudi Arabia.
 
 |===
 |Value |Description
 
-
 |`388`
-|Tax Invoice, only applicable only with UBL message/document type Invoice.
+|Tax Invoice, only applicable within UBL message/document type Invoice.
 
 |`381`
-|Credit note, only applicable only with UBL message/document type CreditNote.
+|Credit note, only applicable within UBL message/document type CreditNote.
 
 |`383`
-|Debit note, only applicable only with UBL message/document type Invoice.
+|Debit note, only applicable within UBL message/document type Invoice.
 |===
 
-=== Invoice Subtype Codes Saudi Arabia
+=== Invoice subtype codes Saudi Arabia
 
-In addition to the InvoiceTypeCode it is required to provide invoice subtypes. This should be placed in `cbc:InvoiceTypeCode/@name` and must follow a certain syntax.
+In addition to the invoice type code it is required to provide invoice subtypes. 
 
-Structure on the value must be *NNPNESB* (Example 0100000) where:
+This should be placed in `cbc:InvoiceTypeCode/@name` and must follow a certain syntax.
+
+Structure of the value must be *NNPNESB* (e.g. `0100000`) where:
 
 |===
 |Value |Supported values
@@ -49,7 +50,7 @@ Structure on the value must be *NNPNESB* (Example 0100000) where:
 02 for simplified tax invoice.
 
 |`P (Position 3)`
-|3rd Party invoice transaction, 0 for false, 1 for true.
+|3rd party invoice transaction, 0 for false, 1 for true.
 
 |`N (Position 4)`
 |Nominal invoice transaction, 0 for false, 1 for true.
@@ -61,6 +62,7 @@ Structure on the value must be *NNPNESB* (Example 0100000) where:
 |Summary invoice transaction, 0 for false, 1 for true.
 
 |`B (Position 7)`
-|Self-billed invoice transaction, 0 for false, 1 for true. Note that only 0 is currently supported.
+|Self-billed invoice transaction, 0 for false, 1 for true. +
+Note that only 0 is currently supported.
 
 |===

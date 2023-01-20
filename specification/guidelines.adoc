@@ -1,9 +1,9 @@
-PUF was originally designed to support *all* information and content as described in the various https://peppol.org/library/[Peppol BIS transactions, window=_blank], but with the added advantage of adding support for segments/elements that are not present or allowed in the https://peppol.org/library/[Peppol BIS transactions, window=_blank].
+PUF was originally designed to support *all* information and content as described in the various https://peppol.org/library/[Peppol BIS transactions^], but with the added advantage of adding support for segments/elements that are not present or allowed in the https://peppol.org/library/[Peppol BIS transactions^].
 
 While PUF aim to fully support various Peppol BIS transactions, it will not necessarily be restricted to the same (somewhat restrictive) business rules provided by OpenPeppol.
 
-PUF will, however, always stay compliant to the https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3, window=_blank] structure.
+PUF will, however, always stay compliant to the https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3^] structure.
 
-In areas where support for certain information is available in the existing https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3, window=_blank] structure, PUF implements these elements.
+In areas where support for certain information is available in the existing https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3^] structure, PUF implements these elements.
 
-In other areas where there are no suitable elements in the existing https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3, window=_blank] schema, PUF implements `ext:UBLExtensions`.
+In other areas where there are no suitable elements in the existing https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3^] schema, PUF implements `ext:UBLExtensions`.

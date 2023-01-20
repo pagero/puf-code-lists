@@ -37,8 +37,9 @@ _Direct debit inside the Single Euro Payment Area (SEPA) system._
 
 |`93`
 |Reference giro +
-_Ordering customer tells the bank to use the payment system 'Reference giro'. Used in the Finnish national banking system._
+_Ordering customer tells the bank to use the payment system 'Reference giro'. +
+Used in the Finnish national banking system._
 
 |===
 
-For all available codes see https://peppo.org[OpenPeppol's, window=_blank] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code, window=_blank].
+For all available codes see https://peppo.org[OpenPeppol's^] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code (UNCL4461)^].

@@ -2,5 +2,5 @@
 
 Values can differ depending on which legal domain you are in or if there are other types of business requirements.
 
-However, https://peppol.org[OpenPeppol's, window=_blank] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/[UN/ECE Recommendation 20, window=_blank] and
-https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec21/[UN/ECE Recommendation 21, window=_blank] can be recommended.
+However, https://peppol.org[OpenPeppol's^] code lists https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/[UN/ECE Recommendation 20^] and
+https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec21/[UN/ECE Recommendation 21^] are recommended.
