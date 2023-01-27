@@ -1,0 +1,27 @@
+== PUF-019-DOCUMENTREFERENCEDOCTYPECODE
+
+List of available document type codes.
+
+|===
+|Value |Description
+
+|`9`
+|Price/sales catalogue
+
+|`380`
+|Commercial Invoice
+
+|`381`
+|Credit note
+
+|`383`
+|Debit note
+
+|`384`
+|Corrected invoice
+
+|`386`
+|Prepayment Invoice
+
+|===
+

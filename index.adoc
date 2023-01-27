@@ -56,6 +56,8 @@ include::specification/PUF-017-CLEARANCESTATUSCODE.adoc[]
 
 include::specification/PUF-018-APPLICATIONRESPONSECODE.adoc[]
 
+include::specification/PUF-019-DOCUMENTREFERENCEDOCTYPECODE.adoc[]
+
 :!sectnums:
 
 include::specification/support.adoc[]
