@@ -7,6 +7,73 @@ For `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/@schem
 
 For additional identification scheme identifier added in PUF see below recommendations.
 
+=== Identification scheme Basque Country
+
+|===
+|Value |Description
+
+|`TB:PASSPORT`
+|Passport ID.
+
+|`TB:OFFICIAL_ID`
+|Official ID document issued by country or territory of residence.
+
+|`TB:RC`
+|Residence certificate.
+
+|`TB:OTHER`
+|Other identifying document.
+
+|===
+
+=== Identification scheme Canada
+
+|===
+|Value |Description
+
+|`CA:GST`
+|Goods and Services Tax (GST) Number.
+
+|`CA:HST`
+|Harmonized Sales Tax (HST) Number.
+
+|`CA:PST`
+|Provincial Sales Tax (PST) Number.
+
+|`CA:QST`
+|Quebec Sales Tax (QST) Number.
+
+|===
+
+=== Identification scheme Hungary
+
+|===
+|Value |Description
+
+|`HU:TaxpayerId`
+|Tax number.
+
+|`HU:GroupMemberTaxpayerId`
+|Group member tax number.
+
+|===
+
+=== Identification scheme India
+
+|===
+|Value |Description
+
+|`IN:PAN`
+|PAN is a 10-digit unique identification alpha-numeric number.
+
+|`IN:GSTIN`
+|GSTIN is a 15-digit PAN-based unique identification number assigned to every registered person under GST.
+
+|`IN:CIN`
+|Corporate Identification Number (CIN) is a 21 digits alpha-numeric unique identification number that is assigned by the Registrar of Companies (ROC).
+
+|===
+
 === Identification scheme Saudi Arabia
 |===
 |Value |Description
@@ -46,54 +113,6 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |`SA:OTH`
 |Other ID.
-
-|===
-
-=== Identification scheme India
-
-|===
-|Value |Description
-
-|`IN:PAN`
-|PAN is a 10-digit unique identification alpha-numeric number.
-
-|`IN:GSTIN`
-|GSTIN is a 15-digit PAN-based unique identification number assigned to every registered person under GST.
-
-|`IN:CIN`
-|Corporate Identification Number (CIN) is a 21 digits alpha-numeric unique identification number that is assigned by the Registrar of Companies (ROC).
-
-|===
-
-=== Identification scheme Hungary
-
-|===
-|Value |Description
-
-|`HU:TaxpayerId`
-|Tax number.
-
-|`HU:GroupMemberTaxpayerId`
-|Group member tax number.
-
-|===
-
-=== Identification scheme Basque Country
-
-|===
-|Value |Description
-
-|`TB:PASSPORT`
-|Passport ID.
-
-|`TB:OFFICIAL_ID`
-|Official ID document issued by country or territory of residence.
-
-|`TB:RC`
-|Residence certificate.
-
-|`TB:OTHER`
-|Other identifying document.
 
 |===
 

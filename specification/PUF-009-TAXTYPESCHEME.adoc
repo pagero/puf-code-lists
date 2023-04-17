@@ -18,14 +18,14 @@ List of available tax type scheme codes.
 |State/provincial sales tax.
 
 |`AAG`
-|Harmonised sales tax, Canadian. +
+|Harmonised sales tax (HST), Canadian. +
 _A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable._
 
 |`AAH`
-|Quebec sales tax.
+|Quebec sales tax (QST).
 
 |`AAI`
-|Canadian provincial sales tax.
+|Canadian provincial sales tax (PST).
 
 |`IGST`
 |Integrated Goods and Services Tax, India.
