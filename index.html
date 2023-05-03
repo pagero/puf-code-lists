@@ -459,6 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_puf_017_clearancestatuscode">17. PUF-017-CLEARANCESTATUSCODE</a></li>
 <li><a href="#_puf_018_applicationresponsecode">18. PUF-018-APPLICATIONRESPONSECODE</a></li>
 <li><a href="#_puf_019_documentreferencedoctypecode">19. PUF-019-DOCUMENTREFERENCEDOCTYPECODE</a></li>
+<li><a href="#_puf_020_errorclassificationcode">20. PUF-020-ERRORCLASSIFICATIONCODE</a></li>
 <li><a href="#_support">Support</a></li>
 </ul>
 </div>
@@ -1660,6 +1661,705 @@ Used in the Finnish national banking system.</em></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_puf_020_errorclassificationcode"><a class="anchor" href="#_puf_020_errorclassificationcode"></a><a class="link" href="#_puf_020_errorclassificationcode">20. PUF-020-ERRORCLASSIFICATIONCODE</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>List of internal Pagero error codes that can be received in a <a href="https://pagero.github.io/puf-technical-acknowledgement/" target="_blank" rel="noopener">Technical Acknowledgement.</a></p>
+</div>
+<div class="sect2">
+<h3 id="attachment--print-errors"><a class="anchor" href="#attachment--print-errors"></a><a class="link" href="#attachment--print-errors">20.1. Attachment &amp; print errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment is missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate legal presentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment is empty.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment max size exceeded.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PDF out of bounds for print.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment matching service error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unsupported font for print.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10800</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Print service requires presentation PDF.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Pagero-online-system-errors"><a class="anchor" href="#Pagero-online-system-errors"></a><a class="link" href="#Pagero-online-system-errors">20.2. Pagero Online system errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate control mandatory.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate invoice number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate interchangeid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sender party not equals customer GLN.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sender party not equals customer name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sender party not equals customer no id.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sender party not equals customer org no.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11800</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sender party not equals customer VAT no.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>12100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Logotype waiting add approval.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>12200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Logotype waiting delete approval.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>12300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User not allowed to send for customer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>12400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate invoice number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>12500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Too many documents in batch.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>13200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No business document found.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>13300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No data found.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="document-content-errors"><a class="anchor" href="#document-content-errors"></a><a class="link" href="#document-content-errors">20.3. Document content errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid due date.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid invoice row amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid OCR (Payment reference)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid total net amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid total net amount, no net amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid total total amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid vat amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14800</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Missing invoice date.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14900</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer VAT registration Country Code missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>15100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seller VAT registration Country Code missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>15200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document type missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>15300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No net amount in movable direction.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="format-validation-errors"><a class="anchor" href="#format-validation-errors"></a><a class="link" href="#format-validation-errors">20.4. Format validation errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schematron validation failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed for van.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BGC Invoice missing orgno.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Missing value in invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18501</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Article unitCode missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18502</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booking date missing. (Advertisement)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18503</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer postal address missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18504</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer street name missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18505</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer street name missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18506</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer Tax Code invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18507</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BuyerLineItemNum missing (xCBL).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18508</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BuyerOrganisationUnitNumber misplaced (Finvoice).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18509</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post Code not valid (FatturaPA).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18510</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario incorrect (FatturaPA).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18511</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario missing (FatturaPA).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18512</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario missing (FatturaPA).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18513</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Currency Code missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18514</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date format incorrect (FatturaPA).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18515</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date pattern invalid (xCBL).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18517</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Due Date missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18518</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Due Date missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18521</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax Amount missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18522</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invocie Row missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18524</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax Amount missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18525</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceNetAmountHUF missing in invoiceVatAmount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18526</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid End Date.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18527</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Rows missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18528</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Note Number Invalid (FatturPA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18529</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Namespace missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18530</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order Reference ID missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18531</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OverDueFineAmount Invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18532</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Line missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18533</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code City missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18535</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Details missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18536</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Details missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18537</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Details missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18538</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seller Or Buyer Street missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18539</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seller PostCode missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18540</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seller street/post box</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18541</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Line missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18542</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Taxable Amount missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18543</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TaxCode invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18544</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Town missing (FatturaPA).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18545</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TaxSubtotal incomplete.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18546</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unit of measure missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18549</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rate VAT not allowed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18550</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rate VAT not allowed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18551</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">summaryGrossData missing invoiceGrossAmountHUF.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18552</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vatRateNetData missing vatRateNetAmountHUF.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18553</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vatRateVatData missing vatRateVatAmountHUF.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="Pagero-online-validation-errors"><a class="anchor" href="#Pagero-online-validation-errors"></a><a class="link" href="#Pagero-online-validation-errors">20.5. Pagero Online validation errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validation stop command.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validation stop command resolvable.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Too many characters in invoice number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non numerical invoice number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid currency.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid country code.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid input in document.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="compliance-errors"><a class="anchor" href="#compliance-errors"></a><a class="link" href="#compliance-errors">20.6. Compliance errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>24100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment with digsig type restricted by compliance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>24200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment with digsig type restricted by country.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>24300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment with digsig type restricted by service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>24400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compliance validation failure.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="factoring-errors"><a class="anchor" href="#factoring-errors"></a><a class="link" href="#factoring-errors">20.7. Factoring errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>26100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Missing customer provided information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>26200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">More than one document in batch.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>26300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not accepted by factoring provider.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="clearance-errors"><a class="anchor" href="#clearance-errors"></a><a class="link" href="#clearance-errors">20.8. Clearance errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>27100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clearance rejected.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>27200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clearance validation error.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="routing-errors"><a class="anchor" href="#routing-errors"></a><a class="link" href="#routing-errors">20.9. Routing errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issuer not approved.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issuer not approved.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Missing sender Electronic ID.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient not found in registry.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient not found.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient connection needs routing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient connection not found.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28800</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient not active.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>28900</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient not found.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>29000</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient not reachable.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>29100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recipient request not yet approved.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>29200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Routing request not yet approved.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>29300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service provider required id missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>29400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transit communication not allowed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="manual-errors"><a class="anchor" href="#manual-errors"></a><a class="link" href="#manual-errors">20.10. Manual errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message to user.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message to service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General Validation error.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="delivery-result-errors"><a class="anchor" href="#delivery-result-errors"></a><a class="link" href="#delivery-result-errors">20.11. Delivery result errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General delivery result error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40101</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid email address (Resolvable).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40102</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid buyer order number (Resolvable).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40103</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid personal contact name (Resolvable).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40104</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid receiver reference value1 (Resolvable).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40105</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid receiver reference value2 (Resolvable).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>40106</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid department (Resolvable).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">

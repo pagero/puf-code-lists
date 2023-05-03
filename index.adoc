@@ -58,6 +58,8 @@ include::specification/PUF-018-APPLICATIONRESPONSECODE.adoc[]
 
 include::specification/PUF-019-DOCUMENTREFERENCEDOCTYPECODE.adoc[]
 
+include::specification/PUF-020-ERRORCLASSIFICATIONCODE.adoc[]
+
 :!sectnums:
 
 include::specification/support.adoc[]

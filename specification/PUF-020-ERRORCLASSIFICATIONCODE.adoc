@@ -1,0 +1,216 @@
+== PUF-020-ERRORCLASSIFICATIONCODE
+
+List of internal Pagero error codes that can be received in a https://pagero.github.io/puf-technical-acknowledgement/[Technical Acknowledgement.^]
+
+[[attachment--print-errors]]
+=== Attachment & print errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `10100` | Attachment is missing.
+| `10200` | Duplicate legal presentation.
+| `10300` | Attachment is empty.
+| `10400` | Attachment max size exceeded.
+| `10500` | PDF out of bounds for print.
+| `10600` | Attachment matching service error.
+| `10700` | Unsupported font for print.
+| `10800` | Print service requires presentation PDF.
+|===
+
+[[Pagero-online-system-errors]]
+=== Pagero Online system errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `11100`| Duplicate control mandatory.
+| `11200`| Duplicate invoice number.
+| `11300`| Duplicate interchangeid.
+| `11400`| Sender party not equals customer GLN.
+| `11500`| Sender party not equals customer name.
+| `11600`| Sender party not equals customer no id.
+| `11700`| Sender party not equals customer org no.
+| `11800`| Sender party not equals customer VAT no.
+| `12100`| Logotype waiting add approval.
+| `12200`| Logotype waiting delete approval.
+| `12300`| User not allowed to send for customer.
+| `12400`| Duplicate invoice number.
+| `12500`| Too many documents in batch.
+| `13200`| No business document found.
+| `13300`| No data found.
+|===
+
+[[document-content-errors]]
+=== Document content errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `14100` | Invalid due date.
+| `14200` | Invalid invoice row amount.
+| `14300` | Invalid OCR (Payment reference)
+| `14400` | Invalid total net amount.
+| `14500` | Invalid total net amount, no net amount.
+| `14600` | Invalid total total amount.
+| `14700` | Invalid vat amount.
+| `14800` | Missing invoice date.
+| `14900` | Buyer VAT registration Country Code missing.
+| `15100` | Seller VAT registration Country Code missing.
+| `15200` | Document type missing.
+| `15300` | No net amount in movable direction.
+|===
+
+[[format-validation-errors]]
+=== Format validation errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `18100` | Schematron validation failure.
+| `18200` | Xml validation failed for van.
+| `18300` | BGC Invoice missing orgno.
+| `18400` | Missing value in invoice.
+| `18500` | Xml validation failed.
+| `18501` | Article unitCode missing.
+| `18502` | Booking date missing. (Advertisement)
+| `18503` | Buyer postal address missing.
+| `18504` | Buyer street name missing.
+| `18505` | Buyer street name missing.
+| `18506` | Buyer Tax Code invalid.
+| `18507` | BuyerLineItemNum missing (xCBL).
+| `18508` | BuyerOrganisationUnitNumber misplaced (Finvoice).
+| `18509` | Post Code not valid (FatturaPA).
+| `18510` | CodiceDestinatario incorrect (FatturaPA).
+| `18511` | CodiceDestinatario missing (FatturaPA).
+| `18512` | CodiceDestinatario missing (FatturaPA).
+| `18513` | Currency Code missing.
+| `18514` | Date format incorrect (FatturaPA).
+| `18515` | Date pattern invalid (xCBL).
+| `18517` | Due Date missing.
+| `18518` | Due Date missing.
+| `18521` | Tax Amount missing.
+| `18522` | Invocie Row missing.
+| `18524` | Tax Amount missing.
+| `18525` | invoiceNetAmountHUF missing in invoiceVatAmount.
+| `18526` | Invalid End Date.
+| `18527` | Invoice Rows missing.
+| `18528` | Note Number Invalid (FatturPA)
+| `18529` | Namespace missing.
+| `18530` | Order Reference ID missing.
+| `18531` | OverDueFineAmount Invalid.
+| `18532` | Invoice Line missing.
+| `18533` | Post code City missing.
+| `18535` | Bank Details missing.
+| `18536` | Bank Details missing.
+| `18537` | Bank Details missing.
+| `18538` | Seller Or Buyer Street missing.
+| `18539` | Seller PostCode missing.
+| `18540` | Seller street/post box
+| `18541` | Invoice Line missing.
+| `18542` | Taxable Amount missing.
+| `18543` | TaxCode invalid.
+| `18544` | Town missing (FatturaPA).
+| `18545` | TaxSubtotal incomplete.
+| `18546` | Unit of measure missing.
+| `18549` | Zero rate VAT not allowed.
+| `18550` | Zero rate VAT not allowed.
+| `18551` | summaryGrossData missing invoiceGrossAmountHUF.
+| `18552` | vatRateNetData missing vatRateNetAmountHUF.
+| `18553` | vatRateVatData missing vatRateVatAmountHUF.
+|===
+
+[[Pagero-online-validation-errors]]
+=== Pagero Online validation errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `20100` | Validation stop command.
+| `20200` | Validation stop command resolvable.
+| `20300` | Too many characters in invoice number.
+| `20400` | Non numerical invoice number.
+| `20500` | Invalid currency.
+| `20600` | Invalid country code.
+| `20700` | Invalid input in document.
+|===
+
+[[compliance-errors]]
+=== Compliance errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `24100` | Attachment with digsig type restricted by compliance.
+| `24200` | Attachment with digsig type restricted by country.
+| `24300` | Attachment with digsig type restricted by service provider.
+| `24400` | Compliance validation failure.
+|===
+
+[[factoring-errors]]
+=== Factoring errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `26100` | Missing customer provided information.
+| `26200` | More than one document in batch.
+| `26300` | Not accepted by factoring provider.
+|===
+
+[[clearance-errors]]
+=== Clearance errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `27100` | Clearance rejected.
+| `27200` | Clearance validation error.
+|===
+[[routing-errors]]
+=== Routing errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `28100` | Issuer not approved.
+| `28200` | Issuer not approved.
+| `28300` | Missing sender Electronic ID.
+| `28400` | Recipient not found in registry.
+| `28500` | Recipient not found.
+| `28600` | Recipient connection needs routing.
+| `28700` | Recipient connection not found.
+| `28800` | Recipient not active.
+| `28900` | Recipient not found.
+| `29000` | Recipient not reachable.
+| `29100` | Recipient request not yet approved.
+| `29200` | Routing request not yet approved.
+| `29300` | Service provider required id missing.
+| `29400` | Transit communication not allowed.
+|===
+
+[[manual-errors]]
+=== Manual errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `30100` | Message to user.
+| `30200` | Message to service provider.
+| `30300` | General Validation error.
+|===
+
+[[delivery-result-errors]]
+=== Delivery result errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `40100` | General delivery result error.
+| `40101` | Invalid email address (Resolvable).
+| `40102` | Invalid buyer order number (Resolvable).
+| `40103` | Invalid personal contact name (Resolvable).
+| `40104` | Invalid receiver reference value1 (Resolvable).
+| `40105` | Invalid receiver reference value2 (Resolvable).
+| `40106` | Invalid department (Resolvable).
+|===
