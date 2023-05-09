@@ -35,6 +35,9 @@ The below listed invoice type codes are available for use in Saudi Arabia.
 
 |`383`
 |Debit note, only applicable within UBL message/document type Invoice.
+
+|`386`
+|Prepayment invoice, only applicable within UBL message/document type Invoice.
 |===
 
 === Invoice subtype codes Saudi Arabia
