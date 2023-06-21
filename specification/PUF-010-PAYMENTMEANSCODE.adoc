@@ -42,4 +42,4 @@ Used in the Finnish national banking system._
 
 |===
 
-For all available codes see https://peppo.org[OpenPeppol's^] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code (UNCL4461)^].
+For all available codes see https://peppol.org[OpenPeppol's^] list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL4461/[Payment means code (UNCL4461)^].
