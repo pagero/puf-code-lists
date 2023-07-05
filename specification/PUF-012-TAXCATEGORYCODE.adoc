@@ -1,6 +1,6 @@
 == PUF-012-TAXCATEGORYCODE
 
-Standard european tax category codes can be found in https://peppo.org[OpenPeppol's^] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code (Subset of UNCL5305)^].
+Standard european tax category codes can be found in https://peppol.org[OpenPeppol's^] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code (Subset of UNCL5305)^].
 
 For additional codes added in PUF see below code recommendations.
 
