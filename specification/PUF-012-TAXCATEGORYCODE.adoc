@@ -1,6 +1,6 @@
 == PUF-012-TAXCATEGORYCODE
 
-Standard european tax category codes can be found in https://peppol.org[OpenPeppol's^] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code (Subset of UNCL5305)^].
+Standard european tax category codes can be found in https://peppo.org[OpenPeppol's^] code list https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/[Duty or tax or fee category code (Subset of UNCL5305)^].
 
 For additional codes added in PUF see below code recommendations.
 
@@ -157,3 +157,273 @@ For additional codes added in PUF see below code recommendations.
 |Non-taxable under location rules.
 
 |===
+
+=== Tax category codes Türkiye
+
+*The most common tax category code is 0015, which indicates regular VAT.*
+
+|===
+|Value |Description
+
+|`0015`
+|GERÇEK USULDE KATMA DEĞER VERGİSİ
+|===
+
+.*Click here for a complete list of all tax category codes in Türkiye.*
+[%collapsible]
+====
+|===
+|Value |Description
+
+|`0003`
+|GELİR VERGİSİ STOPAJI
+
+|`0011`
+|KURUMLAR VERGİSİ STOPAJI
+
+|`0015`
+|GERÇEK USULDE KATMA DEĞER VERGİSİ
+
+|`0021`
+|BANKA MUAMELELERİ VERGİSİ
+
+|`0022`
+|SİGORTA MUAMELELERİ VERGİSİ
+
+|`0061`
+|KAYNAK KULLANIMI DESTEKLEME FONU KESİNTİSİ
+
+|`0071`
+|PETROL VE DOĞALGAZ ÜRÜNLERİNE İLİŞKİN ÖZEL TÜKETİM VERGİSİ
+
+|`0073`
+|KOLALI GAZOZ, ALKOLLÜ İÇEÇEKLER VE TÜTÜN MAMÜLLERİNE İLİŞKİN ÖZEL TÜKETİM VERGİSİ
+
+|`0074`
+|DAYANIKLI TÜKETİM VE DİĞER MALLARA İLİŞKİN ÖZEL TÜKETİM VERGİSİ
+
+|`0075`
+|ALKOLLÜ İÇEÇEKLERE İLİŞKİN ÖZEL TÜKETİM VERGİSİ
+
+|`0076`
+|TÜTÜN MAMÜLLERİNE İLİŞKİN ÖZEL TÜKETİM VERGİSİ
+
+|`0077`
+|KOLALI GAZOZLARA İLİŞKİN ÖZEL TÜKETİM VERGİSİ
+
+|`1047`
+|DAMGA VERGİSİ
+
+|`1048`
+|5035 SAYILI KANUNA GÖRE DAMGA VERGİSİ
+
+|`4071`
+|ELEKTRİK VE HAVAGAZI TÜKETİM VERGİSİ
+
+|`4080`
+|ÖZEL İLETİŞİM VERGİSİ
+
+|`4081`
+|5035 SAYILI KANUNA GÖRE ÖZEL İLETİŞİM VERGİSİ
+
+|`4171`
+|PETROL VE DOĞALGAZ ÜRÜNLERİNE İLİŞKİN ÖTV TEVKİFATI
+
+|`8001`
+|BORSA TESCİL ÜCRETİ
+
+|`8002`
+|ENERJİ FONU
+
+|`8004`
+|TRT PAYI
+
+|`8005`
+|ELEKTRİK TÜKETİM VERGİSİ
+
+|`8006`
+|TELSİZ KULLANIM ÜCRETİ
+
+|`8007`
+|TELSİZ RUHSAT ÜCRETİ
+
+|`8008`
+|ÇEVRE TEMİZLİK VERGİSİ
+
+|`9021`
+|4961 BANKA SİGORTA MUAMELELERİ VERGİSİ
+
+|`9040`
+|MERA FONU
+
+|`9077`
+|MOTORLU TAŞIT ARAÇLARINA İLİŞKİN ÖZEL TÜKETİM VERGİSİ (TESCİLE TABİ OLANLAR)
+
+|`9944`
+|BELEDİYELERE ÖDENEN HAL RÜSUMU
+
+|===
+
+*Tax codes for tax withholding*
+|===
+|Value |Description
+
+|`601`
+|YAPIM İŞLERİ İLE BU İŞLERLE BİRLİKTE İFA EDİLEN MÜHENDİSLİK-MİMARLIK VE ETÜT-PROJE HİZMETLERİ [GT 117-Bölüm (3.2.1)]
+
+|`602`
+|ETÜT, PLAN-PROJE, DANIŞMANLIK, DENETİM VE BENZERİ HİZMETLER[GT 117-Bölüm (3.2.2)]
+
+|`603`
+|MAKİNE, TEÇHİZAT, DEMİRBAŞ VE TAŞITLARA AİT TADİL, BAKIM VE ONARIM HİZMETLERİ [GT 117-Bölüm (3.2.3)]
+
+|`604`
+|YEMEK SERVİS HİZMETİ [GT 117-Bölüm (3.2.4)]
+
+|`605`
+|ORGANİZASYON HİZMETİ [GT 117-Bölüm (3.2.4)]
+
+|`606`
+|İŞGÜCÜ TEMİN HİZMETLERİ [GT 117-Bölüm (3.2.5)]
+
+|`607`
+|ÖZEL GÜVENLİK HİZMETİ [GT 117-Bölüm (3.2.5)]
+
+|`608`
+|YAPI DENETİM HİZMETLERİ [GT 117-Bölüm (3.2.6)]
+
+|`609`
+|FASON OLARAK YAPTIRILAN TEKSTİL VE KONFEKSİYON İŞLERİ, ÇANTA VE AYAKKABI DİKİM İŞLERİ VE BU İŞLERE ARACILIK HİZMETLERİ [GT 117-Bölüm (3.2.7)]
+
+|`610`
+|TURİSTİK MAĞAZALARA VERİLEN MÜŞTERİ BULMA / GÖTÜRME HİZMETLERİ [GT 117-Bölüm (3.2.8)]
+
+|`611`
+|SPOR KULÜPLERİNİN YAYIN, REKLÂM VE İSİM HAKKI GELİRLERİNE KONU İŞLEMLERİ [GT 117-Bölüm (3.2.9)]
+
+|`612`
+|TEMİZLİK HİZMETİ [GT 117-Bölüm (3.2.10)]
+
+|`613`
+|ÇEVRE VE BAHÇE BAKIM HİZMETLERİ [GT 117-Bölüm (3.2.10)]
+
+|`614`
+|SERVİS TAŞIMACILIĞI HİZMETİ [GT 117-Bölüm (3.2.11)]
+
+|`615`
+|HER TÜRLÜ BASKI VE BASIM HİZMETLERİ [GT 117-Bölüm (3.2.12)]
+
+|`616`
+|Diğer Hizmetler [KDVGUT-(I/C-2.1.3.2.13)]
+
+|`617`
+|HURDA METALDEN ELDE EDİLEN KÜLÇE TESLİMLERİ [GT 117-Bölüm (3.3.1)]
+
+|`618`
+|HURDA METALDEN ELDE EDİLENLER DIŞINDAKİ BAKIR, ÇİNKO DEMİR ; ÇELİK ALÜMİNYUM VE KURŞUN KÜLÇE TESLİMLERİ [KDVGUT-(I/C-2.1.3.3.1)]
+
+|`619`
+|BAKIR, ÇİNKO VE ALÜMİNYUM ÜRÜNLERİNİN TESLİMİ [GT 117-Bölüm (3.3.2)]
+
+|`620`
+|İSTİSNADAN VAZGEÇENLERİN HURDA VE ATIK TESLİMİ [GT 117-Bölüm (3.3.3)]
+
+|`621`
+|METAL, PLASTİK, LASTİK, KAUÇUK, KÂĞIT VE CAM HURDA VE ATIKLARDAN ELDE EDİLEN HAMMADDE TESLİMİ [GT 117-Bölüm (3.3.4)]
+
+|`622`
+|PAMUK, TİFTİK, YÜN VE YAPAĞI İLE HAM POST VE DERİ TESLİMLERİ [GT 117-Bölüm (3.3.5)]
+
+|`623`
+|AĞAÇ VE ORMAN ÜRÜNLERİ TESLİMİ [GT 117-Bölüm (3.3.6)]
+
+|`624`
+|YÜK TAŞIMACILIĞI HİZMETİ [KDVGUT-(I/C-2.1.3.2.11)]
+
+|`625`
+|TİCARİ REKLAM HİZMETLERİ [KDVGUT-(I/C-2.1.3.2.15)]
+
+|`626`
+|DİĞER TESLİMLER [KDVGUT-(I/C-2.1.3.3.7.)]
+
+|`627`
+|DEMİR-ÇELİK ÜRÜNLERİNİN TESLİMİ [KDVGUT-(I/C-2.1.3.3.8)]”
+
+|`801`
+|Yapım İşleri ile Bu İşlerle Birlikte İfa Edilen Mühendislik-Mimarlık ve Etüt-Proje Hizmetleri[KDVGUT-(I/C-2.1.3.2.1)]
+
+|`802`
+|Etüt, Plan-Proje, Danışmanlık, Denetim ve Benzeri Hizmetler[KDVGUT-(I/C-2.1.3.2.2)]
+
+|`803`
+|Makine, Teçhizat, Demirbaş ve Taşıtlara Ait Tadil, Bakım ve Onarım Hizmetleri[KDVGUT- (I/C-2.1.3.2.3)]
+
+|`804`
+|Yemek Servis Hizmeti[KDVGUT-(I/C-2.1.3.2.4)]
+
+|`805`
+|Organizasyon Hizmeti[KDVGUT-(I/C-2.1.3.2.4)]
+
+|`806`
+|İşgücü Temin Hizmetleri[KDVGUT-(I/C-2.1.3.2.5)]
+
+|`807`
+|Özel Güvenlik Hizmeti[KDVGUT-(I/C-2.1.3.2.5)]
+
+|`808`
+|Yapı Denetim Hizmetleri[KDVGUT-(I/C-2.1.3.2.6)]
+
+|`809`
+|Fason Olarak Yaptırılan Tekstil ve Konfeksiyon İşleri, Çanta ve Ayakkabı Dikim İşleri ve Bu İşlere Aracılık Hizmetleri[KDVGUT-(I/C-2.1.3.2.7)]
+
+|`810`
+|Turistik Mağazalara Verilen Müşteri Bulma/ Götürme Hizmetleri[KDVGUT-(I/C-2.1.3.2.8)]
+
+|`811`
+|Spor Kulüplerinin Yayın, Reklâm ve İsim Hakkı Gelirlerine Konu İşlemleri[KDVGUT-(I/C-2.1.3.2.9)]
+
+|`812`
+|Temizlik Hizmeti[KDVGUT-(I/C-2.1.3.2.10)]
+
+|`813`
+|Çevre ve Bahçe Bakım Hizmetleri[KDVGUT-(I/C-2.1.3.2.10)]
+
+|`814`
+|Servis Taşımacılığı Hizmeti[KDVGUT-(I/C-2.1.3.2.11)]
+
+|`815`
+|Her Türlü Baskı ve Basım Hizmetleri[KDVGUT-(I/C-2.1.3.2.12)]
+
+|`816`
+|Hurda Metalden Elde Edilen Külçe Teslimleri[KDVGUT-(I/C-2.1.3.3.1)]
+
+|`817`
+|Hurda Metalden Elde Edilenler Dışındaki Bakır, Çinko, Demir Çelik, Alüminyum ve Kurşun Külçe Teslimi [KDVGUT-(I/C-2.1.3.3.1)]
+
+|`818`
+|Bakır, Çinko, Alüminyum ve Kurşun Ürünlerinin Teslimi[KDVGUT-(I/C-2.1.3.3.2)]
+
+|`819`
+|İstisnadan Vazgeçenlerin Hurda ve Atık Teslimi[KDVGUT-(I/C-2.1.3.3.3)]
+
+|`820`
+|Metal, Plastik, Lastik, Kauçuk, Kâğıt ve Cam Hurda ve Atıklardan Elde Edilen Hammadde Teslimi[KDVGUT-(I/C-2.1.3.3.4)]
+
+|`821`
+|Pamuk, Tiftik, Yün ve Yapağı İle Ham Post ve Deri Teslimleri[KDVGUT-(I/C-2.1.3.3.5)]
+
+|`822`
+|Ağaç ve Orman Ürünleri Teslimi[KDVGUT-(I/C-2.1.3.3.6)]
+
+|`823`
+|Yük Taşımacılığı Hizmeti [KDVGUT-(I/C-2.1.3.2.11)]
+
+|`824`
+|Ticari Reklam Hizmetleri [KDVGUT-(I/C-2.1.3.2.15)]
+
+|`825`
+|Demir-Çelik Ürünlerinin Teslimi [KDVGUT-(I/C-2.1.3.3.8)]
+
+
+|===
+====
