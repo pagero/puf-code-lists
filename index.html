@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.12">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="author" content="Copyright &copy; 2022, Pagero Group">
 <meta name="copyright" content="Pagero Group">
 <title>PUF Code lists 1.0</title>
 <style>
@@ -525,6 +526,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Added <a href="https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode" target="_blank" rel="noopener">PUF-020-ERRORCLASSIFICATIONCODE</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023-09-04</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Updated <a href="https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode" target="_blank" rel="noopener">PUF-020-ERRORCLASSIFICATIONCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2359,221 +2365,262 @@ Used in the Finnish national banking system.</em></p></td>
 </div>
 <div class="sect2">
 <h3 id="format-validation-errors"><a class="anchor" href="#format-validation-errors"></a><a class="link" href="#format-validation-errors">20.4. Format validation errors</a></h3>
+<div class="paragraph">
+<p>Column 'Format name' specifies which format that have triggered the error. If your source format is not in the list then the error has been triggered by the target format of the recipient.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 66.6667%;">
+<col style="width: 25%;">
+<col style="width: 50%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Pagero error code</th>
 <th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Format name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18100</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Schematron validation failure.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18200</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed for van.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed for VAN.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18300</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BGC Invoice missing orgno.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Missing organization number.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BGC Invoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18400</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Missing value in invoice.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18500</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18501</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Article unitCode missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18502</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Booking date missing. (Advertisement)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Booking date missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AdsML</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18503</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Buyer postal address missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pagero Original Print</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18504</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18504</code>, <code>18505</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Buyer street name missing.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18505</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer street name missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finvoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18506</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Buyer Tax Code invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18507</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BuyerLineItemNum missing (xCBL).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BuyerLineItemNum missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xCBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18508</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BuyerOrganisationUnitNumber misplaced (Finvoice).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BuyerOrganisationUnitNumber misplaced.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finvoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18509</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Post Code not valid (FatturaPA).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post Code not valid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18510</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario incorrect (FatturaPA).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario incorrect</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18511</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario missing (FatturaPA).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18512</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario missing (FatturaPA).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18511</code>, <code>18512</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodiceDestinatario missing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18513</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Currency Code missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18514</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date format incorrect (FatturaPA).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date format incorrect</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18515</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date pattern invalid (xCBL).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date pattern invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xCBL</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18517</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18517</code>, <code>18518</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Due Date missing.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18518</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Due Date missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BGC Invoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18521</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tax Amount missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18522</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invocie Row missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Row missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finvoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18524</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tax Amount missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cXML</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18525</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">invoiceNetAmountHUF missing in invoiceVatAmount.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18526</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid End Date.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceData XML (Hungary)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18527</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Rows missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18528</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Note Number Invalid (FatturPA)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Note Number Invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18529</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Namespace missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18530</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Order Reference ID missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18531</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OverDueFineAmount Invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PenalitaPagamentiRitardati Invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18532</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Line missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18533</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Post code City missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18535</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bank Details missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18534</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid PrezzoTotale.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18536</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18535</code>, <code>18536</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bank Details missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finvoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18537</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bank Details missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TEAPPS</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18538</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Seller Or Buyer Street missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cXML</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18539</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Seller PostCode missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finvoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18540</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Seller street/post box</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seller street/post box missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18541</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Invoice Line missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Svefaktura 1.0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18542</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Taxable Amount missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18543</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TaxCode invalid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid DeliveryOrganisationTaxCode.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finvoice</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18544</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Town missing (FatturaPA).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Town missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FatturaPA</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18545</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TaxSubtotal incomplete.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tungsten Master Map</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18546</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unit of measure missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xCBL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18549</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rate VAT not allowed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rate VAT not allowed, header.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceData XML (Hungary)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18550</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rate VAT not allowed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rate VAT not allowed, line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceData XML (Hungary)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18551</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">summaryGrossData missing invoiceGrossAmountHUF.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceData XML (Hungary)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18552</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vatRateNetData missing vatRateNetAmountHUF.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceData XML (Hungary)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18553</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vatRateVatData missing vatRateVatAmountHUF.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">invoiceData XML (Hungary)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18554</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order- or Buyer reference missing.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Peppol BIS / UBL</p></td>
 </tr>
 </tbody>
 </table>
