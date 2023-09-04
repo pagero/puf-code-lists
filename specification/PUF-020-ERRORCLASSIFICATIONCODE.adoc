@@ -63,62 +63,60 @@ List of internal Pagero error codes that can be received in a https://pagero.git
 
 [[format-validation-errors]]
 === Format validation errors
+The 'Format Name' column helps identify the format responsible for triggering the error. If your issuing format isn't listed, the error likely originated from the recipient's target format.
+[cols="1,2,1",options="header"]
+|===
+| Pagero error code | Description | Format name
+| `18100` | Schematron validation failure. | General
+| `18200` | Xml validation failed for VAN. | General
+| `18300` | Missing organization number. | BGC Invoice
+| `18400` | Missing value in invoice. | General
+| `18500` | Xml validation failed. | General
+| `18501` | Article unitCode missing. | Peppol BIS / UBL
+| `18502` | Booking date missing. | AdsML
+| `18503` | Buyer postal address missing. | Pagero Original Print
+| `18504`, `18505` | Buyer street name missing. | Finvoice
+| `18506` | Buyer Tax Code invalid. | FatturaPA
+| `18507` | BuyerLineItemNum missing. | xCBL
+| `18508` | BuyerOrganisationUnitNumber misplaced. | Finvoice
+| `18509` | Post Code not valid. | FatturaPA
+| `18510` | CodiceDestinatario incorrect | FatturaPA
+| `18511`, `18512` | CodiceDestinatario missing | FatturaPA
+| `18513` | Currency Code missing. | Peppol BIS / UBL
+| `18514` | Date format incorrect | FatturaPA
+| `18515` | Date pattern invalid. | xCBL
+| `18517`, `18518` | Due Date missing. | BGC Invoice
+| `18521` | Tax Amount missing. | Peppol BIS / UBL
+| `18522` | Invoice Row missing. | Finvoice
+| `18524` | Tax Amount missing. | cXML
+| `18525` | invoiceNetAmountHUF missing in invoiceVatAmount. | invoiceData XML (Hungary)
+| `18527` | Invoice Rows missing. | FatturaPA
+| `18528` | Note Number Invalid. | FatturaPA
+| `18529` | Namespace missing. | Peppol BIS / UBL
+| `18530` | Order Reference ID missing. | Peppol BIS / UBL
+| `18531` | PenalitaPagamentiRitardati Invalid. | FatturaPA
+| `18532` | Invoice Line missing. | Peppol BIS / UBL
+| `18533` | Post code City missing. | FatturaPA
+| `18534` | Invalid PrezzoTotale. | FatturaPA
+| `18535`, `18536` | Bank Details missing. | Finvoice
+| `18537` | Bank Details missing. | TEAPPS
+| `18538` | Seller Or Buyer Street missing. | cXML
+| `18539` | Seller PostCode missing. | Finvoice
+| `18540` | Seller street/post box missing. | FatturaPA
+| `18541` | Invoice Line missing. | Svefaktura 1.0
+| `18542` | Taxable Amount missing. | Peppol BIS / UBL
+| `18543` | Invalid DeliveryOrganisationTaxCode. | Finvoice
+| `18544` | Town missing. | FatturaPA
+| `18545` | TaxSubtotal incomplete. | Tungsten Master Map
+| `18546` | Unit of measure missing. | xCBL
+| `18549` | Zero rate VAT not allowed, header. | invoiceData XML (Hungary)
+| `18550` | Zero rate VAT not allowed, line. | invoiceData XML (Hungary)
+| `18551` | summaryGrossData missing invoiceGrossAmountHUF. | invoiceData XML (Hungary)
+| `18552` | vatRateNetData missing vatRateNetAmountHUF. | invoiceData XML (Hungary)
+| `18553` | vatRateVatData missing vatRateVatAmountHUF. | invoiceData XML (Hungary)
+| `18554` | Order- or Buyer reference missing. | Peppol BIS / UBL
+|===
 
-[cols="1,2",options="header"]
-|===
-| Pagero error code | Description
-| `18100` | Schematron validation failure.
-| `18200` | Xml validation failed for van.
-| `18300` | BGC Invoice missing orgno.
-| `18400` | Missing value in invoice.
-| `18500` | Xml validation failed.
-| `18501` | Article unitCode missing.
-| `18502` | Booking date missing. (Advertisement)
-| `18503` | Buyer postal address missing.
-| `18504` | Buyer street name missing.
-| `18505` | Buyer street name missing.
-| `18506` | Buyer Tax Code invalid.
-| `18507` | BuyerLineItemNum missing (xCBL).
-| `18508` | BuyerOrganisationUnitNumber misplaced (Finvoice).
-| `18509` | Post Code not valid (FatturaPA).
-| `18510` | CodiceDestinatario incorrect (FatturaPA).
-| `18511` | CodiceDestinatario missing (FatturaPA).
-| `18512` | CodiceDestinatario missing (FatturaPA).
-| `18513` | Currency Code missing.
-| `18514` | Date format incorrect (FatturaPA).
-| `18515` | Date pattern invalid (xCBL).
-| `18517` | Due Date missing.
-| `18518` | Due Date missing.
-| `18521` | Tax Amount missing.
-| `18522` | Invocie Row missing.
-| `18524` | Tax Amount missing.
-| `18525` | invoiceNetAmountHUF missing in invoiceVatAmount.
-| `18526` | Invalid End Date.
-| `18527` | Invoice Rows missing.
-| `18528` | Note Number Invalid (FatturPA)
-| `18529` | Namespace missing.
-| `18530` | Order Reference ID missing.
-| `18531` | OverDueFineAmount Invalid.
-| `18532` | Invoice Line missing.
-| `18533` | Post code City missing.
-| `18535` | Bank Details missing.
-| `18536` | Bank Details missing.
-| `18537` | Bank Details missing.
-| `18538` | Seller Or Buyer Street missing.
-| `18539` | Seller PostCode missing.
-| `18540` | Seller street/post box
-| `18541` | Invoice Line missing.
-| `18542` | Taxable Amount missing.
-| `18543` | TaxCode invalid.
-| `18544` | Town missing (FatturaPA).
-| `18545` | TaxSubtotal incomplete.
-| `18546` | Unit of measure missing.
-| `18549` | Zero rate VAT not allowed.
-| `18550` | Zero rate VAT not allowed.
-| `18551` | summaryGrossData missing invoiceGrossAmountHUF.
-| `18552` | vatRateNetData missing vatRateNetAmountHUF.
-| `18553` | vatRateVatData missing vatRateVatAmountHUF.
-|===
 
 [[Pagero-online-validation-errors]]
 === Pagero Online validation errors
