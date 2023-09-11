@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
-<meta name="author" content="Copyright &copy; 2022, Pagero Group">
+<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="author" content="Copyright &copy; 2023, Pagero Group">
 <meta name="copyright" content="Pagero Group">
 <title>PUF Code lists 1.0</title>
 <style>
@@ -433,7 +433,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.0</h1>
 <div class="details">
-<span id="author" class="author">Copyright &copy; 2022, Pagero Group</span><br>
+<span id="author" class="author">Copyright &copy; 2023, Pagero Group</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
 </div>
 <div id="toc" class="toc2">
@@ -443,24 +443,64 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_version_and_changelog">Version and changelog</a></li>
 <li><a href="#_puf_001_registrationdata">1. PUF-001-REGISTRATIONDATA</a></li>
 <li><a href="#_puf_002_adaid">2. PUF-002-ADAID</a></li>
-<li><a href="#_puf_003_invoicetypecode">3. PUF-003-INVOICETYPECODE</a></li>
+<li><a href="#_puf_003_invoicetypecode">3. PUF-003-INVOICETYPECODE</a>
+<ul class="sectlevel2">
+<li><a href="#_invoice_type_codes_saudi_arabia">3.1. Invoice type codes Saudi Arabia</a></li>
+<li><a href="#_invoice_subtype_codes_saudi_arabia">3.2. Invoice subtype codes Saudi Arabia</a></li>
+</ul>
+</li>
 <li><a href="#_puf_004_currencycode">4. PUF-004-CURRENCYCODE</a></li>
 <li><a href="#_puf_005_invoicedobjectidentifier">5. PUF-005-INVOICEDOBJECTIDENTIFIER</a></li>
 <li><a href="#_puf_006_mimecodes">6. PUF-006-MIMECODES</a></li>
 <li><a href="#_puf_007_endpointscheme">7. PUF-007-ENDPOINTSCHEME</a></li>
-<li><a href="#_puf_008_identificationscheme">8. PUF-008-IDENTIFICATIONSCHEME</a></li>
+<li><a href="#_puf_008_identificationscheme">8. PUF-008-IDENTIFICATIONSCHEME</a>
+<ul class="sectlevel2">
+<li><a href="#_identification_scheme_basque_country">8.1. Identification scheme Basque Country</a></li>
+<li><a href="#_identification_scheme_canada">8.2. Identification scheme Canada</a></li>
+<li><a href="#_identification_scheme_hungary">8.3. Identification scheme Hungary</a></li>
+<li><a href="#_identification_scheme_india">8.4. Identification scheme India</a></li>
+<li><a href="#_identification_scheme_saudi_arabia">8.5. Identification scheme Saudi Arabia</a></li>
+<li><a href="#_identification_scheme_serbia">8.6. Identification scheme Serbia</a></li>
+</ul>
+</li>
 <li><a href="#_puf_009_taxtypescheme">9. PUF-009-TAXTYPESCHEME</a></li>
 <li><a href="#_puf_010_paymentmeanscode">10. PUF-010-PAYMENTMEANSCODE</a></li>
 <li><a href="#_puf_011_allowancechargereasoncode">11. PUF-011-ALLOWANCECHARGEREASONCODE</a></li>
-<li><a href="#_puf_012_taxcategorycode">12. PUF-012-TAXCATEGORYCODE</a></li>
-<li><a href="#_puf_013_taxexemptioncode">13. PUF-013-TAXEXEMPTIONCODE</a></li>
+<li><a href="#_puf_012_taxcategorycode">12. PUF-012-TAXCATEGORYCODE</a>
+<ul class="sectlevel2">
+<li><a href="#_tax_category_codes_serbia">12.1. Tax category codes Serbia</a></li>
+<li><a href="#_tax_category_codes_singapore">12.2. Tax category codes Singapore</a></li>
+<li><a href="#_tax_category_codes_portugal">12.3. Tax category codes Portugal</a></li>
+<li><a href="#_tax_category_codes_basque_country">12.4. Tax category codes Basque Country</a></li>
+<li><a href="#_tax_category_codes_türkiye">12.5. Tax category codes Türkiye</a></li>
+</ul>
+</li>
+<li><a href="#_puf_013_taxexemptioncode">13. PUF-013-TAXEXEMPTIONCODE</a>
+<ul class="sectlevel2">
+<li><a href="#_tax_exemption_codes_in_italy">13.1. Tax Exemption Codes in Italy</a></li>
+</ul>
+</li>
 <li><a href="#_puf_014_uomcode">14. PUF-014-UOMCODE</a></li>
 <li><a href="#_puf_015_itemtypeidentificationcode">15. PUF-015-ITEMTYPEIDENTIFICATIONCODE</a></li>
 <li><a href="#_puf_016_invoicestatuscode">16. PUF-016-INVOICESTATUSCODE</a></li>
 <li><a href="#_puf_017_clearancestatuscode">17. PUF-017-CLEARANCESTATUSCODE</a></li>
 <li><a href="#_puf_018_applicationresponsecode">18. PUF-018-APPLICATIONRESPONSECODE</a></li>
 <li><a href="#_puf_019_documentreferencedoctypecode">19. PUF-019-DOCUMENTREFERENCEDOCTYPECODE</a></li>
-<li><a href="#_puf_020_errorclassificationcode">20. PUF-020-ERRORCLASSIFICATIONCODE</a></li>
+<li><a href="#_puf_020_errorclassificationcode">20. PUF-020-ERRORCLASSIFICATIONCODE</a>
+<ul class="sectlevel2">
+<li><a href="#attachment--print-errors">20.1. Attachment &amp; print errors</a></li>
+<li><a href="#Pagero-online-system-errors">20.2. Pagero Online system errors</a></li>
+<li><a href="#document-content-errors">20.3. Document content errors</a></li>
+<li><a href="#format-validation-errors">20.4. Format validation errors</a></li>
+<li><a href="#Pagero-online-validation-errors">20.5. Pagero Online validation errors</a></li>
+<li><a href="#compliance-errors">20.6. Compliance errors</a></li>
+<li><a href="#factoring-errors">20.7. Factoring errors</a></li>
+<li><a href="#clearance-errors">20.8. Clearance errors</a></li>
+<li><a href="#routing-errors">20.9. Routing errors</a></li>
+<li><a href="#manual-errors">20.10. Manual errors</a></li>
+<li><a href="#delivery-result-errors">20.11. Delivery result errors</a></li>
+</ul>
+</li>
 <li><a href="#_support">Support</a></li>
 </ul>
 </div>
@@ -2366,7 +2406,7 @@ Used in the Finnish national banking system.</em></p></td>
 <div class="sect2">
 <h3 id="format-validation-errors"><a class="anchor" href="#format-validation-errors"></a><a class="link" href="#format-validation-errors">20.4. Format validation errors</a></h3>
 <div class="paragraph">
-<p>Column 'Format name' specifies which format that have triggered the error. If your source format is not in the list then the error has been triggered by the target format of the recipient.</p>
+<p>The 'Format Name' column helps identify the format responsible for triggering the error. If your issuing format isn&#8217;t listed, the error likely originated from the recipient&#8217;s target format.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
