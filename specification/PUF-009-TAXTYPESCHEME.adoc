@@ -12,20 +12,20 @@ List of available tax type scheme codes.
 |Goods and Services Tax.
 
 |`LOC`
-|Sales tax.
+|Local Sales Tax.
 
 |`STT`
-|State/provincial sales tax.
+|State/Provincial Sales Tax.
 
 |`AAG`
-|Harmonised sales tax (HST), Canadian. +
+|Harmonised Sales Tax (HST), Canadian. +
 _A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable._
 
 |`AAH`
-|Quebec sales tax (QST).
+|Quebec Sales Tax (QST), Canadian.
 
 |`AAI`
-|Canadian provincial sales tax (PST).
+|Provincial Sales Tax (PST), Canadian.
 
 |`IGST`
 |Integrated Goods and Services Tax, India.
