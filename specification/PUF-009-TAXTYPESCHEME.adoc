@@ -27,6 +27,9 @@ _A harmonized sales tax consisting of a goods and service tax, a Canadian provin
 |`AAI`
 |Provincial Sales Tax (PST), Canadian.
 
+|`SST`
+|Sales and Services Tax, Malaysia.
+
 |`IGST`
 |Integrated Goods and Services Tax, India.
 
