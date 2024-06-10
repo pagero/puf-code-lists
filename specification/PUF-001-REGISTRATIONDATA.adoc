@@ -68,4 +68,7 @@ LN = Not in liquidation.
 |`FR:APE`
 |Business activity classification code.
 
+|`MY:CertEx`
+|Authorisation Number for Certified Exporter (e.g., ATIGA number).
+
 |===
