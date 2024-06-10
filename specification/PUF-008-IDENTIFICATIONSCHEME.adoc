@@ -74,6 +74,38 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |===
 
+=== Identification scheme Israel
+
+|===
+|Value |Description
+
+|`IL:UNION_VAT`
+|Union VAT number.
+
+|===
+
+=== Identification scheme Malaysia
+
+|===
+|Value |Description
+
+|`MY:BRN`
+|Business registration number.
+
+|`MY:PASSPORT`
+|Passport number.
+
+|`MY:TTX`
+|Tourism tax registration number.
+
+|`MY:ARMY`
+|Military Personnel identification number.
+
+|`MY:NRIC`
+|For MyPR and MyKAS to use MY:NRIC scheme.
+
+|===
+
 === Identification scheme Saudi Arabia
 |===
 |Value |Description
