@@ -14,6 +14,9 @@ List of available general invoice type codes.
 |`383`
 |Debit note, only applicable within UBL message/document type Invoice.
 
+|`384`
+|Corrected invoice, only applicable within UBL message/document type Invoice.
+
 |`386`
 |Prepayment invoice, only applicable within UBL message/document type Invoice.
 
