@@ -89,6 +89,9 @@ For additional identification scheme identifier added in PUF see below recommend
 |===
 |Value |Description
 
+|`MY:TIN`
+|Tax identification number.
+
 |`MY:BRN`
 |Business registration number.
 
