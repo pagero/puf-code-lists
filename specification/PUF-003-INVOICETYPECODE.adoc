@@ -76,3 +76,33 @@ Structure of the value must be *NNPNESB* (e.g. `0100000`) where:
 Note that only 0 is currently supported.
 
 |===
+=== Invoice type codes for Philippines
+
+The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.
+|===
+|Invoice Type |Invoice Type Code |Invoice Type Code @name
+
+|Sales Invoice (SI)
+|380
+|01
+
+|Debit Note (DN)
+|383
+|02
+
+|Credit Note (CN)
+|381
+|03
+
+|Service Billing (SB)
+|380
+|04
+
+|Official Receipt (OR)
+|380
+|05
+
+|Corrective Invoice
+|384
+|01-05
+|===

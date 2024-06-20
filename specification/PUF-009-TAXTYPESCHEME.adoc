@@ -1,57 +1,76 @@
 == PUF-009-TAXTYPESCHEME
 
-List of available tax type scheme codes.
-
+=== General tax type scheme codes
 |===
 |Value |Description
-
-|`VAT`
-|Value Added Tax.
 
 |`GST`
 |Goods and Services Tax.
 
+|`INC`
+|Income Tax
+
 |`LOC`
 |Local Sales Tax.
+
+|`PER`
+|Percentage Tax.
+
+|`SST`
+|Sales and Services Tax.
 
 |`STT`
 |State/Provincial Sales Tax.
 
+|`VAT`
+|Value Added Tax.
+|===
+
+=== Country-Specific tax type scheme codes
+
+==== Canada
+
+|===
+|Value |Description
+
 |`AAG`
-|Harmonised Sales Tax (HST), Canadian. +
+|Harmonised Sales Tax (HST). +
 _A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable._
 
 |`AAH`
-|Quebec Sales Tax (QST), Canadian.
+|Quebec Sales Tax (QST).
 
 |`AAI`
-|Provincial Sales Tax (PST), Canadian.
+|Provincial Sales Tax (PST).
+|===
 
-|`SST`
-|Sales and Services Tax, Malaysia.
-
-|`IGST`
-|Integrated Goods and Services Tax, India.
-
-|`CGST`
-|Central Goods and Services Tax, India.
-
-|`SGST`
-|State Goods and Services Tax, India.
-
-|`UTGST`
-|Union Territory Goods and Services Tax, India.
-
-|`CESS`
-|CESS, India.
-
-|`CESS Non advol`
-|CESS Non Ad Valorem, India.
-
-|`STATECESS`
-|State CESS, India.
-
-|`STATECESS Non Advol`
-|State CESS Non Ad Valorem, India.
+==== India
 
 |===
+|Value |Description
+
+|`CESS`
+|CESS.
+
+|`CESS Non advol`
+|CESS Non Ad Valorem.
+
+|`CGST`
+|Central Goods and Services Tax.
+
+|`IGST`
+|Integrated Goods and Services Tax.
+
+|`SGST`
+|State Goods and Services Tax.
+
+|`STATECESS`
+|State CESS.
+
+|`STATECESS Non Advol`
+|State CESS Non Ad Valorem.
+
+|`UTGST`
+|Union Territory Goods and Services Tax.
+|===
+

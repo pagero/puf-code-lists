@@ -68,10 +68,10 @@ The 'Format Name' column helps identify the format responsible for triggering th
 |===
 | Pagero error code | Description | Format name
 | `18100` | Schematron validation failure. | General
-| `18200` | Xml validation failed for VAN. | General
+| `18200` | XML validation failed for VAN. | General
 | `18300` | Missing organization number. | BGC Invoice
 | `18400` | Missing value in invoice. | General
-| `18500` | Xml validation failed. | General
+| `18500` | XML validation failed. | General
 | `18501` | Article unitCode missing. | Peppol BIS / UBL
 | `18502` | Booking date missing. | AdsML
 | `18503` | Buyer postal address missing. | Pagero Original Print
