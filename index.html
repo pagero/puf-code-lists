@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.12">
+<meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="author" content="Copyright &copy; 2024, Pagero Group">
 <meta name="copyright" content="Pagero Group">
 <title>PUF Code lists 1.0</title>
 <style>
@@ -432,7 +433,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.0</h1>
 <div class="details">
-<span id="author" class="author">Copyright &copy; 2023, Pagero Group</span><br>
+<span id="author" class="author">Copyright &copy; 2024, Pagero Group</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
 </div>
 <div id="toc" class="toc2">
@@ -446,6 +447,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_invoice_type_codes_saudi_arabia">3.1. Invoice type codes Saudi Arabia</a></li>
 <li><a href="#_invoice_subtype_codes_saudi_arabia">3.2. Invoice subtype codes Saudi Arabia</a></li>
+<li><a href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></li>
 </ul>
 </li>
 <li><a href="#_puf_004_currencycode">4. PUF-004-CURRENCYCODE</a></li>
@@ -464,15 +466,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_identification_scheme_serbia">8.8. Identification scheme Serbia</a></li>
 </ul>
 </li>
-<li><a href="#_puf_009_taxtypescheme">9. PUF-009-TAXTYPESCHEME</a></li>
+<li><a href="#_puf_009_taxtypescheme">9. PUF-009-TAXTYPESCHEME</a>
+<ul class="sectlevel2">
+<li><a href="#_general_tax_type_scheme_codes">9.1. General tax type scheme codes</a></li>
+<li><a href="#_country_specific_tax_type_scheme_codes">9.2. Country-Specific tax type scheme codes</a></li>
+</ul>
+</li>
 <li><a href="#_puf_010_paymentmeanscode">10. PUF-010-PAYMENTMEANSCODE</a></li>
-<li><a href="#_puf_011_allowancechargereasoncode">11. PUF-011-ALLOWANCECHARGEREASONCODE</a></li>
+<li><a href="#_puf_011_allowancechargereasoncode">11. PUF-011-ALLOWANCECHARGEREASONCODE</a>
+<ul class="sectlevel2">
+<li><a href="#_allowance_reason_codes_philippines">11.1. Allowance reason codes Philippines</a></li>
+</ul>
+</li>
 <li><a href="#_puf_012_taxcategorycode">12. PUF-012-TAXCATEGORYCODE</a>
 <ul class="sectlevel2">
-<li><a href="#_tax_category_codes_serbia">12.1. Tax category codes Serbia</a></li>
-<li><a href="#_tax_category_codes_singapore">12.2. Tax category codes Singapore</a></li>
-<li><a href="#_tax_category_codes_portugal">12.3. Tax category codes Portugal</a></li>
-<li><a href="#_tax_category_codes_basque_country">12.4. Tax category codes Basque Country</a></li>
+<li><a href="#_tax_category_codes_basque_country">12.1. Tax category codes Basque Country</a></li>
+<li><a href="#_tax_category_codes_portugal">12.2. Tax category codes Portugal</a></li>
+<li><a href="#_tax_category_codes_serbia">12.3. Tax category codes Serbia</a></li>
+<li><a href="#_tax_category_codes_singapore">12.4. Tax category codes Singapore</a></li>
 <li><a href="#_tax_category_codes_türkiye">12.5. Tax category codes Türkiye</a></li>
 </ul>
 </li>
@@ -572,6 +583,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2023-09-04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Updated <a href="https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode" target="_blank" rel="noopener">PUF-020-ERRORCLASSIFICATIONCODE</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-06-18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added Philippine specific codes. Rearrange <a href="https://pagero.github.io/puf-code-lists/#_puf_009_taxtypescheme" target="_blank" rel="noopener">PUF-009-TAXTYPESCHEME</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -675,6 +691,13 @@ LN = Not in liquidation.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>MY:CertEx</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Authorisation Number for Certified Exporter (e.g., ATIGA number).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PH:SellerType</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplier VAT Registration<br></p>
+<p class="tableblock">Allowed values: 0 or 1.<br></p>
+<p class="tableblock">0 = VAT Registered.<br>
+1 = Non VAT registered.</p></td>
 </tr>
 </tbody>
 </table>
@@ -853,6 +876,58 @@ LN = Not in liquidation.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>B (Position 7)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed invoice transaction, 0 for false, 1 for true.<br>
 Note that only 0 is currently supported.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_invoice_type_codes_for_philippines"><a class="anchor" href="#_invoice_type_codes_for_philippines"></a><a class="link" href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></h3>
+<div class="paragraph">
+<p>The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Invoice Type</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code @name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sales Invoice (SI)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">01</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Debit Note (DN)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">383</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">02</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit Note (CN)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">03</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Service Billing (SB)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">04</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Official Receipt (OR)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">01-05</p></td>
 </tr>
 </tbody>
 </table>
@@ -1211,9 +1286,8 @@ Note that only 0 is currently supported.</p></td>
 <div class="sect1">
 <h2 id="_puf_009_taxtypescheme"><a class="anchor" href="#_puf_009_taxtypescheme"></a><a class="link" href="#_puf_009_taxtypescheme">9. PUF-009-TAXTYPESCHEME</a></h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>List of available tax type scheme codes.</p>
-</div>
+<div class="sect2">
+<h3 id="_general_tax_type_scheme_codes"><a class="anchor" href="#_general_tax_type_scheme_codes"></a><a class="link" href="#_general_tax_type_scheme_codes">9.1. General tax type scheme codes</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1227,72 +1301,118 @@ Note that only 0 is currently supported.</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VAT</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Value Added Tax.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>GST</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Goods and Services Tax.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>INC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Income Tax</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOC</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Local Sales Tax.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Percentage Tax.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sales and Services Tax.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>STT</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">State/Provincial Sales Tax.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VAT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value Added Tax.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_country_specific_tax_type_scheme_codes"><a class="anchor" href="#_country_specific_tax_type_scheme_codes"></a><a class="link" href="#_country_specific_tax_type_scheme_codes">9.2. Country-Specific tax type scheme codes</a></h3>
+<div class="sect3">
+<h4 id="_canada"><a class="anchor" href="#_canada"></a><a class="link" href="#_canada">9.2.1. Canada</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AAG</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Harmonised Sales Tax (HST), Canadian.<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Harmonised Sales Tax (HST).<br>
 <em>A harmonized sales tax consisting of a goods and service tax, a Canadian provincial sales tax and, as applicable, a Quebec sales tax which is recoverable.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AAH</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Quebec Sales Tax (QST), Canadian.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quebec Sales Tax (QST).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AAI</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Provincial Sales Tax (PST), Canadian.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SST</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sales and Services Tax, Malaysia.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IGST</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Integrated Goods and Services Tax, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CGST</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Central Goods and Services Tax, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SGST</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">State Goods and Services Tax, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UTGST</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Union Territory Goods and Services Tax, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CESS</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CESS, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CESS Non advol</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CESS Non Ad Valorem, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>STATECESS</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">State CESS, India.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>STATECESS Non Advol</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">State CESS Non Ad Valorem, India.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provincial Sales Tax (PST).</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_india"><a class="anchor" href="#_india"></a><a class="link" href="#_india">9.2.2. India</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CESS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CESS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CESS Non advol</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CESS Non Ad Valorem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CGST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Central Goods and Services Tax.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IGST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integrated Goods and Services Tax.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SGST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State Goods and Services Tax.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>STATECESS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State CESS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>STATECESS Non Advol</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">State CESS Non Ad Valorem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UTGST</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Union Territory Goods and Services Tax.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1396,6 +1516,34 @@ Used in the Finnish national banking system.</em></p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>For additional codes added in PUF see below code recommendations.</p>
+</div>
+<div class="sect2">
+<h3 id="_allowance_reason_codes_philippines"><a class="anchor" href="#_allowance_reason_codes_philippines"></a><a class="link" href="#_allowance_reason_codes_philippines">11.1. Allowance reason codes Philippines</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Senior Citizen Discount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PWD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Person With Disability Discount</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1408,7 +1556,7 @@ Used in the Finnish national banking system.</em></p></td>
 <p>For additional codes added in PUF see below code recommendations.</p>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_serbia"><a class="anchor" href="#_tax_category_codes_serbia"></a><a class="link" href="#_tax_category_codes_serbia">12.1. Tax category codes Serbia</a></h3>
+<h3 id="_tax_category_codes_basque_country"><a class="anchor" href="#_tax_category_codes_basque_country"></a><a class="link" href="#_tax_category_codes_basque_country">12.1. Tax category codes Basque Country</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1423,118 +1571,29 @@ Used in the Finnish national banking system.</em></p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standard rate.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Without reverse charge (default).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse Charge.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Z</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated goods/tax exemption with right to deduction.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">With reverse charge.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt from VAT/tax exemption without deduction rights.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt from VAT.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-taxable under Art. 7, 14, Others.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>O</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Services outside scope of VAT.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OE</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Services outside scope of VAT 2.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SS</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Special procedures.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>N</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cancellation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-taxable under location rules.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_singapore"><a class="anchor" href="#_tax_category_codes_singapore"></a><a class="link" href="#_tax_category_codes_singapore">12.2. Tax category codes Singapore</a></h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Value</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SR</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Local supply of goods and services.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRCA-S</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Customer accounting supply made by the supplier.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRCA-C</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Customer accounting supply made by the customer on supplier&#8217;s behalf.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ZR</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies involving goods for export/ provision of international services.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES33</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specific categories of exempt supplies listed under regulation 33 of the GST (general) regulations.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ESN33</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt supplies other than those listed under regulation 33 of the GST (general) regulations.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DS</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies required to be reported pursuant to the GST legislation.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OS</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies outside the scope of the GST act.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NG</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies from a company which is not registered for GST.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SROVR</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Overseas vendor registration regime for Business-to-Consumer (“B2C”) supplies of imported digital services.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SROVR-RS</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supply of remote services accountable by the electronic marketplace under the Overseas Vendor Registration Regime.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SROVR-LVG</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supply of LVG accountable by the redeliverer or electronic marketplace on behalf of third-party suppliers.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRLVG</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Own supply of LVG.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRRC</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse charge regime for Business-to-Business (“B2B”) supplies of imported services.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_tax_category_codes_portugal"><a class="anchor" href="#_tax_category_codes_portugal"></a><a class="link" href="#_tax_category_codes_portugal">12.3. Tax category codes Portugal</a></h3>
+<h3 id="_tax_category_codes_portugal"><a class="anchor" href="#_tax_category_codes_portugal"></a><a class="link" href="#_tax_category_codes_portugal">12.2. Tax category codes Portugal</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1607,7 +1666,7 @@ Used in the Finnish national banking system.</em></p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_basque_country"><a class="anchor" href="#_tax_category_codes_basque_country"></a><a class="link" href="#_tax_category_codes_basque_country">12.4. Tax category codes Basque Country</a></h3>
+<h3 id="_tax_category_codes_serbia"><a class="anchor" href="#_tax_category_codes_serbia"></a><a class="link" href="#_tax_category_codes_serbia">12.3. Tax category codes Serbia</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1622,23 +1681,112 @@ Used in the Finnish national banking system.</em></p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Without reverse charge (default).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard rate.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">With reverse charge.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse Charge.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Z</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated goods/tax exemption with right to deduction.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt from VAT/tax exemption without deduction rights.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OT</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Non-taxable under Art. 7, 14, Others.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt from VAT.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RL</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Non-taxable under location rules.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>O</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services outside scope of VAT.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services outside scope of VAT 2.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special procedures.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>N</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cancellation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_tax_category_codes_singapore"><a class="anchor" href="#_tax_category_codes_singapore"></a><a class="link" href="#_tax_category_codes_singapore">12.4. Tax category codes Singapore</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Local supply of goods and services.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRCA-S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Customer accounting supply made by the supplier.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRCA-C</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Customer accounting supply made by the customer on supplier&#8217;s behalf.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ZR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies involving goods for export/ provision of international services.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES33</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specific categories of exempt supplies listed under regulation 33 of the GST (general) regulations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ESN33</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt supplies other than those listed under regulation 33 of the GST (general) regulations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies required to be reported pursuant to the GST legislation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies outside the scope of the GST act.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NG</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplies from a company which is not registered for GST.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SROVR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overseas vendor registration regime for Business-to-Consumer (“B2C”) supplies of imported digital services.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SROVR-RS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supply of remote services accountable by the electronic marketplace under the Overseas Vendor Registration Regime.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SROVR-LVG</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supply of LVG accountable by the redeliverer or electronic marketplace on behalf of third-party suppliers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRLVG</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Own supply of LVG.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SRRC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse charge regime for Business-to-Business (“B2B”) supplies of imported services.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2504,7 +2652,7 @@ Used in the Finnish national banking system.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18200</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed for VAN.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XML validation failed for VAN.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">General</p></td>
 </tr>
 <tr>
@@ -2519,7 +2667,7 @@ Used in the Finnish national banking system.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>18500</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xml validation failed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XML validation failed.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">General</p></td>
 </tr>
 <tr>

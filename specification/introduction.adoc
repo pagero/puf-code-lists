@@ -23,4 +23,5 @@ Lastly, in some cases, *all* the values are defined solely for PUF.
 |1.0 |2022-12-19 |First version published.
 |1.1|2023-05-04|Added https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode[PUF-020-ERRORCLASSIFICATIONCODE^]
 |1.2|2023-09-04|Updated https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode[PUF-020-ERRORCLASSIFICATIONCODE^]
+|1.3|2024-06-18|Added Philippine specific codes. Rearrange https://pagero.github.io/puf-code-lists/#_puf_009_taxtypescheme[PUF-009-TAXTYPESCHEME^]
 |===

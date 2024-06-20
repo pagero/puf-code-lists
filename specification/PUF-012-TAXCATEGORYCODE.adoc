@@ -4,6 +4,77 @@ Standard european tax category codes can be found in https://peppol.org[OpenPepp
 
 For additional codes added in PUF see below code recommendations.
 
+=== Tax category codes Basque Country
+
+|===
+|Value |Description
+
+|`S`
+|Without reverse charge (default).
+
+|`AE`
+|With reverse charge.
+
+|`E`
+|Exempt.
+
+|`OT`
+|Non-taxable under Art. 7, 14, Others.
+
+|`RL`
+|Non-taxable under location rules.
+
+|===
+
+=== Tax category codes Portugal
+
+|===
+|Value |Description
+
+|`AA`
+|Lower rate.
+
+|`S`
+|Standard rate.
+
+|`E`
+|Exempt.
+
+|`Z`
+|Zero rated goods.
+
+|`AE`
+|VAT Reverse Charge.
+
+|`G`
+|Free export item, VAT not charged.
+
+|`O`
+|Services outside scope of tax.
+
+|`RED`
+|Reduced rate.
+
+|`INT`
+|Intermediate.
+
+|`NOR`
+|Normal rate.
+
+|`ISE`
+|Exempt.
+
+|`OUT`
+|Others, applicable to special VAT schemes.
+
+|`NA`
+|In case of non-subjection to VAT or IS. On receipts issued without itemized tax must be filled with "NA".
+
+|`IC`
+|Intra-Community VAT.
+
+|===
+
 === Tax category codes Serbia
 
 |===
@@ -84,77 +155,6 @@ For additional codes added in PUF see below code recommendations.
 
 |`SRRC`
 |Reverse charge regime for Business-to-Business (“B2B”) supplies of imported services.
-
-|===
-
-=== Tax category codes Portugal
-
-|===
-|Value |Description
-
-|`AA`
-|Lower rate.
-
-|`S`
-|Standard rate.
-
-|`E`
-|Exempt.
-
-|`Z`
-|Zero rated goods.
-
-|`AE`
-|VAT Reverse Charge.
-
-|`G`
-|Free export item, VAT not charged.
-
-|`O`
-|Services outside scope of tax.
-
-|`RED`
-|Reduced rate.
-
-|`INT`
-|Intermediate.
-
-|`NOR`
-|Normal rate.
-
-|`ISE`
-|Exempt.
-
-|`OUT`
-|Others, applicable to special VAT schemes.
-
-|`NA`
-|In case of non-subjection to VAT or IS. On receipts issued without itemized tax must be filled with "NA".
-
-|`IC`
-|Intra-Community VAT.
-
-|===
-
-=== Tax category codes Basque Country
-
-|===
-|Value |Description
-
-|`S`
-|Without reverse charge (default).
-
-|`AE`
-|With reverse charge.
-
-|`E`
-|Exempt.
-
-|`OT`
-|Non-taxable under Art. 7, 14, Others.
-
-|`RL`
-|Non-taxable under location rules.
 
 |===
 

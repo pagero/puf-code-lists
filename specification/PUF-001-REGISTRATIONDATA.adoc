@@ -71,4 +71,12 @@ LN = Not in liquidation.
 |`MY:CertEx`
 |Authorisation Number for Certified Exporter (e.g., ATIGA number).
 
+|`PH:SellerType`
+|Supplier VAT Registration +
+
+Allowed values: 0 or 1. +
+
+0 = VAT Registered. +
+1 = Non VAT registered.
+
 |===

@@ -12,3 +12,13 @@ Below you will find links to recommended lists.
 |https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL7161[window=_blank] | Charge reason code (UNCL7161 subset).
 
 |===
+
+For additional codes added in PUF see below code recommendations.
+
+=== Allowance reason codes Philippines
+|===
+|Value |Description
+
+|SC | Senior Citizen Discount.
+|PWD | Person With Disability Discount
+|===
