@@ -162,7 +162,7 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |===
 
-=== Identification scheme Türkyie
+=== Identification scheme Türkiye
 
 |===
 |Value |Description
