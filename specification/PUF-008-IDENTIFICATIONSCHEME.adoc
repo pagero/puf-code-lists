@@ -110,6 +110,7 @@ For additional identification scheme identifier added in PUF see below recommend
 |===
 
 === Identification scheme Saudi Arabia
+
 |===
 |Value |Description
 
@@ -158,5 +159,72 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |`RS:JBKJS`
 |Unique ID number used for public entities.
+
+|===
+
+=== Identification scheme Türkyie
+
+|===
+|Value |Description
+
+|`TR:HIZMETNO`
+|Service number.
+
+|`TR:TESISATNO`
+|Installation number.
+
+|`TR:TELEFONNO`
+|Telephone number.
+
+|`TR:DISTRIBUTORNO`
+|Distributor number.
+
+|`TR:TICARETSICILNO`
+|Trade Registry number.
+
+|`TR:TAPDKNO`
+|TAPDK number issued by the Tobacco and Alcohol Market Regulatory Authority.
+
+|`TR:BAYINO`
+|Dealer number.
+
+|`TR:ABONENO`
+|Subscriber number.
+
+|`TR:SAYACNO`
+|Meter number.
+
+|`TR:EPDKNO`
+|EPDK number issued by the Energy Market Regulatory Authority.
+
+|`TR:SUBENO`
+|Branch Number.
+
+|`TR:PASAPORTNO`
+|Passport number.
+
+|`TR:ARACIKURUMETIKET`
+|Brokerage label.
+
+|`TR:ARACIKURUMVKN`
+|Brokerage tax number.
+
+|`TR:CIFTCINO`
+|Farmer registration number.
+
+|`TR:IMALATCINO`
+|Manufacturer number.
+
+|`TR:DOSYANO`
+|File (dossier) number.
+
+|`TR:HASTANO`
+|Hospital patient number.
+
+|`TR:MERSISNO`
+|Central Registration System number for businesses.
+
+|`TR:URETICINOTR`
+|Producer number.
 
 |===
