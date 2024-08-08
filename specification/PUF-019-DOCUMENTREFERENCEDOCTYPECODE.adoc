@@ -8,6 +8,9 @@ List of available document type codes.
 |`9`
 |Price/sales catalogue
 
+|`71`
+|Request for payment
+
 |`380`
 |Commercial Invoice
 
@@ -23,5 +26,9 @@ List of available document type codes.
 |`386`
 |Prepayment Invoice
 
+|`388`
+|Tax invoice
+
 |===
+
 
