@@ -143,6 +143,7 @@ The 'Format Name' column helps identify the format responsible for triggering th
 | `24200` | Attachment with digsig type restricted by country.
 | `24300` | Attachment with digsig type restricted by service provider.
 | `24400` | Compliance validation failure.
+| `24401` | Invalid email address (Resolvable).
 |===
 
 [[factoring-errors]]
