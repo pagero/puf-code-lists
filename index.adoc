@@ -60,6 +60,8 @@ include::specification/PUF-019-DOCUMENTREFERENCEDOCTYPECODE.adoc[]
 
 include::specification/PUF-020-ERRORCLASSIFICATIONCODE.adoc[]
 
+include::specification/PUF-021-ROLECODE.adoc[]
+
 :!sectnums:
 
 include::specification/support.adoc[]
