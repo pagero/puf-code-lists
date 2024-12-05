@@ -1,0 +1,11 @@
+== PUF-021-ROLECODE
+
+List of available Agent Parties.
+
+|===
+|Value |Description
+
+|`LD`
+|Buyer's tax representative party 
+
+|===
