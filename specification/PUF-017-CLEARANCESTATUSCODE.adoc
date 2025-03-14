@@ -6,12 +6,12 @@ List of available clearance/reporting status codes.
 |Value |Description
 
 |`APPROVED`
-|Approved by clearance authority.
+|Approved by clearance/tax authority.
 
 |`APPROVED_WITH_WARNINGS`
-|Approved by clearance authority with warnings.
+|Approved by clearance/tax authority with warnings.
 
 |`REJECTED`
-|Rejected by clearance authority.
+|Rejected by clearance/tax authority.
 
 |===
