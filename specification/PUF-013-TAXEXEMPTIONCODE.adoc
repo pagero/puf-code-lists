@@ -75,3 +75,59 @@ To provide Natura codes in Italy, use the following codelist:
 |IVA assolta in altro stato UE (prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-octies, comma 1 lett. a, b, art. 74-sexies DPR 633/72)
 
 |===
+
+=== Tax Exemption Codes in Hungary
+
+To provide tax exemption codes in Hungary, use the following codelist:
+
+|===
+|Value |Description
+
+|`AAM`
+|Personal tax exemption
+
+|`TAM`
+|Tax-exempt activity or tax-exempt due to being in public interest or special in nature
+
+|`KBAET`
+|Intra-Community exempt supply, without new means of transport
+
+|`KBAUK`
+|Tax-exempt, intra-Community sales of new means of transport
+
+|`EAM`
+|Tax-exempt, extra-Community sales of goods (export of goods to a non-EU country)
+
+|`NAM`
+|Tax-exempt on other grounds related to international transaction
+
+|`UNKNOWN`
+|It can be used for modifying and cancelling invoices referencing a pre-3.0 invoice or without any background, if the value cannot be established.
+
+|===
+
+The following codes can be used for Outside the scope of VAT:
+
+|===
+|Value |Description
+
+|`ATK`
+|Outside the scope of VAT
+
+|`EUFAD37`
+|Based on section 37 of the VAT Act, a reverse charge transaction carried out in another Member State
+
+|`EUFADE`
+|Reverse charge transaction carried out in another Member State, not subject to Section 37 of the VAT Act
+
+|`EUE`
+|Non-reverse charge transaction performed in another Member State
+
+|`HO`
+|Transaction in a third country
+
+|`UNKNOWN`
+|It can be used for modifying and cancelling invoices referencing a pre-3.0 invoice or without any background, if the value cannot be established.
+
+|===
+
