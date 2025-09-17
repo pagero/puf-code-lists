@@ -7,6 +7,16 @@ For `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/@schem
 
 For additional identification scheme identifier added in PUF see below recommendations.
 
+=== Identification scheme General
+
+|===
+|Value |Description
+
+|`EORI`
+|Economic Operator Registration and Identification (EORI) number. 
+
+|===
+
 === Identification scheme Basque Country
 
 |===
@@ -106,6 +116,22 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |`MY:NRIC`
 |For MyPR and MyKAS to use MY:NRIC scheme.
+
+|===
+
+=== Identification scheme Poland
+
+|===
+|Value |Description
+
+|`PL:KRS`
+|National Court Register number.
+
+|`PL:REGON`
+|National Official Business Register identifier.
+
+|`PL:BDO`
+|BDO number.
 
 |===
 
