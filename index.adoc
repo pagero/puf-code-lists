@@ -1,7 +1,7 @@
 :doctitle: image:images/puf-logo.png[float="center", width=100%] PUF Code lists 1.4
-:author: Copyright &copy; 2024, Pagero Group
+:author: Copyright &copy; 2025, Pagero, Part of Thomson Reuters
 :email: https://pagero.com
-:copyright: Pagero Group
+:copyright: Pagero, Part of Thomson Reuters
 :minor: 1.4
 :revision: 1.4
 :toc: left

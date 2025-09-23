@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Copyright &copy; 2024, Pagero Group">
-<meta name="copyright" content="Pagero Group">
+<meta name="author" content="Copyright &copy; 2025, Pagero, Part of Thomson Reuters">
+<meta name="copyright" content="Pagero, Part of Thomson Reuters">
 <title>PUF Code lists 1.4</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -433,7 +433,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.4</h1>
 <div class="details">
-<span id="author" class="author">Copyright &copy; 2024, Pagero Group</span><br>
+<span id="author" class="author">Copyright &copy; 2025, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
 </div>
 <div id="toc" class="toc2">
@@ -448,6 +448,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_invoice_type_codes_saudi_arabia">3.1. Invoice type codes Saudi Arabia</a></li>
 <li><a href="#_invoice_subtype_codes_saudi_arabia">3.2. Invoice subtype codes Saudi Arabia</a></li>
 <li><a href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></li>
+<li><a href="#_invoice_type_codes_for_croatia">3.4. Invoice type codes for Croatia</a></li>
 </ul>
 </li>
 <li><a href="#_puf_004_currencycode">4. PUF-004-CURRENCYCODE</a></li>
@@ -482,10 +483,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_puf_012_taxcategorycode">12. PUF-012-TAXCATEGORYCODE</a>
 <ul class="sectlevel2">
 <li><a href="#_tax_category_codes_basque_country">12.1. Tax category codes Basque Country</a></li>
-<li><a href="#_tax_category_codes_portugal">12.2. Tax category codes Portugal</a></li>
-<li><a href="#_tax_category_codes_serbia">12.3. Tax category codes Serbia</a></li>
-<li><a href="#_tax_category_codes_singapore">12.4. Tax category codes Singapore</a></li>
-<li><a href="#_tax_category_codes_türkiye">12.5. Tax category codes Türkiye</a></li>
+<li><a href="#_tax_category_codes_croatia">12.2. Tax category codes Croatia</a></li>
+<li><a href="#_tax_category_codes_portugal">12.3. Tax category codes Portugal</a></li>
+<li><a href="#_tax_category_codes_serbia">12.4. Tax category codes Serbia</a></li>
+<li><a href="#_tax_category_codes_singapore">12.5. Tax category codes Singapore</a></li>
+<li><a href="#_tax_category_codes_türkiye">12.6. Tax category codes Türkiye</a></li>
 </ul>
 </li>
 <li><a href="#_puf_013_taxexemptioncode">13. PUF-013-TAXEXEMPTIONCODE</a>
@@ -936,6 +938,111 @@ Note that only 0 is currently supported.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Corrective Invoice</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">01-05</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_invoice_type_codes_for_croatia"><a class="anchor" href="#_invoice_type_codes_for_croatia"></a><a class="link" href="#_invoice_type_codes_for_croatia">3.4. Invoice type codes for Croatia</a></h3>
+<div class="paragraph">
+<p>The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute for Croatian implementation in PUF.</p>
+</div>
+<div class="paragraph">
+<p>Note: The Invoice Type Code @name should contain the Croatian process type identifier (P1-P12, P99).</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Invoice Type</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code @name</th>
+<th class="tableblock halign-left valign-top">UBL Document Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard Invoice (Contract-based)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Periodic Invoice (Contract-based)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Independent Purchase Order Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advance Payment Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">386</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spot Payment Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre-delivery Payment Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">386</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice with Delivery Note Reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice with Delivery Note and Receipt Reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit Note (Negative amounts/Returns)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CreditNote</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective Invoice (Cancellation/Correction)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Partial/Final Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billing Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Custom Process Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P99</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
 </tr>
 </tbody>
 </table>
@@ -1698,7 +1805,91 @@ Used in the Finnish national banking system.</em></p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_portugal"><a class="anchor" href="#_tax_category_codes_portugal"></a><a class="link" href="#_tax_category_codes_portugal">12.2. Tax category codes Portugal</a></h3>
+<h3 id="_tax_category_codes_croatia"><a class="anchor" href="#_tax_category_codes_croatia"></a><a class="link" href="#_tax_category_codes_croatia">12.2. Tax category codes Croatia</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Tax Scheme Name (cbc:Name)</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:PDV25</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PDV 25% - Standard rate.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:PDV13</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PDV 13% - Reduced rate.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:PDV5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PDV 5% - Reduced rate.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:AE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse charge.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt from Tax.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:G</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>G</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Free export item, VAT not charged.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:O</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>O</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Outside scope of VAT, Article 5 of VAT Act.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:K</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>K</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VAT exempt for intra-Community supply of goods.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:Z</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Z</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated goods.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:POVNAK</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Return fee.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:PP</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special tax on consumption in the catering industry.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:PPMV</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax on motor vehicles.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HR:N</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not subject to VAT.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_tax_category_codes_portugal"><a class="anchor" href="#_tax_category_codes_portugal"></a><a class="link" href="#_tax_category_codes_portugal">12.3. Tax category codes Portugal</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1771,7 +1962,7 @@ Used in the Finnish national banking system.</em></p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_serbia"><a class="anchor" href="#_tax_category_codes_serbia"></a><a class="link" href="#_tax_category_codes_serbia">12.3. Tax category codes Serbia</a></h3>
+<h3 id="_tax_category_codes_serbia"><a class="anchor" href="#_tax_category_codes_serbia"></a><a class="link" href="#_tax_category_codes_serbia">12.4. Tax category codes Serbia</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1824,7 +2015,7 @@ Used in the Finnish national banking system.</em></p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_singapore"><a class="anchor" href="#_tax_category_codes_singapore"></a><a class="link" href="#_tax_category_codes_singapore">12.4. Tax category codes Singapore</a></h3>
+<h3 id="_tax_category_codes_singapore"><a class="anchor" href="#_tax_category_codes_singapore"></a><a class="link" href="#_tax_category_codes_singapore">12.5. Tax category codes Singapore</a></h3>
 <div class="paragraph">
 <p>Below you can find the applicable codes for supplies</p>
 </div>
@@ -2001,7 +2192,7 @@ Used in the Finnish national banking system.</em></p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_tax_category_codes_türkiye"><a class="anchor" href="#_tax_category_codes_türkiye"></a><a class="link" href="#_tax_category_codes_türkiye">12.5. Tax category codes Türkiye</a></h3>
+<h3 id="_tax_category_codes_türkiye"><a class="anchor" href="#_tax_category_codes_türkiye"></a><a class="link" href="#_tax_category_codes_türkiye">12.6. Tax category codes Türkiye</a></h3>
 <div class="paragraph">
 <p><strong>The most common tax category code is 0015, which indicates regular VAT.</strong></p>
 </div>

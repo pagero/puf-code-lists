@@ -106,3 +106,79 @@ The following table outlines the different invoice types, their corresponding In
 |384
 |01-05
 |===
+
+=== Invoice type codes for Croatia
+
+The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute for Croatian implementation in PUF.
+
+Note: The Invoice Type Code @name should contain the Croatian process type identifier (P1-P12, P99).
+
+|===
+|Invoice Type |Invoice Type Code |Invoice Type Code @name |UBL Document Type
+
+|Standard Invoice (Contract-based)
+|380
+|P1
+|Invoice
+
+|Periodic Invoice (Contract-based)
+|380
+|P2
+|Invoice
+
+|Independent Purchase Order Invoice
+|380
+|P3
+|Invoice
+
+|Advance Payment Invoice
+|386
+|P4
+|Invoice
+
+|Spot Payment Invoice
+|380
+|P5
+|Invoice
+
+|Pre-delivery Payment Invoice
+|386
+|P6
+|Invoice
+
+|Invoice with Delivery Note Reference
+|380
+|P7
+|Invoice
+
+|Invoice with Delivery Note and Receipt Reference
+|380
+|P8
+|Invoice
+
+|Credit Note (Negative amounts/Returns)
+|381
+|P9
+|CreditNote
+
+|Corrective Invoice (Cancellation/Correction)
+|384
+|P10
+|Invoice
+
+|Partial/Final Invoice
+|380
+|P11
+|Invoice
+
+|Self-billing Invoice
+|380
+|P12
+|Invoice
+
+|Custom Process Invoice
+|380
+|P99
+|Invoice
+
+|===
