@@ -26,6 +26,66 @@ For additional codes added in PUF see below code recommendations.
 
 |===
 
+=== Tax category codes Croatia
+
+|===
+|Tax Scheme Name (cbc:Name) |Tax Category ID (cbc:ID) |Description
+
+|`HR:PDV25`
+|`S`
+|PDV 25% - Standard rate.
+
+|`HR:PDV13`
+|`S`
+|PDV 13% - Reduced rate.
+
+|`HR:PDV5`
+|`S`
+|PDV 5% - Reduced rate.
+
+|`HR:AE`
+|`AE`
+|Reverse charge.
+
+|`HR:E`
+|`E`
+|Exempt from Tax.
+
+|`HR:G`
+|`G`
+|Free export item, VAT not charged.
+
+|`HR:O`
+|`O`
+|Outside scope of VAT, Article 5 of VAT Act.
+
+|`HR:K`
+|`K`
+|VAT exempt for intra-Community supply of goods.
+
+|`HR:Z`
+|`Z`
+|Zero rated goods.
+
+|`HR:POVNAK`
+|`E`
+|Return fee.
+
+|`HR:PP`
+|`E`
+|Special tax on consumption in the catering industry.
+
+|`HR:PPMV`
+|`E`
+|Tax on motor vehicles.
+
+|`HR:N`
+|`E`
+|Not subject to VAT.
+
+|===
+
+
 === Tax category codes Portugal
 
 |===
