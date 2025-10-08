@@ -131,3 +131,60 @@ The following codes can be used for Outside the scope of VAT:
 
 |===
 
+=== Tax Exemption Codes in Spain (VeriFactu)
+
+To provide exemption codes for Spanish VeriFactu e-invoicing, use the following codelist.
+
+These codes apply to IVA (Spanish VAT), IGIC (Canary Islands), and IPSI (Ceuta/Melilla) operations.
+
+==== Exemption Codes (Exempt Operations)
+
+Use these codes when `cac:TaxCategory/cbc:ID = 'E'`:
+
+|===
+|Value |Description
+
+|`E1`
+|Exempt pursuant to Article 20 of the VAT Act +
+(Exenta por el artículo 20)
+
+|`E2`
+|Exempt pursuant to Article 21 of the VAT Act +
+(Exenta por el artículo 21)
+
+|`E3`
+|Exempt pursuant to Article 22 of the VAT Act +
+(Exenta por el artículo 22)
+
+|`E4`
+|Exempt pursuant to Articles 23 and 24 of the VAT Act +
+(Exenta por el artículo 23 y 24)
+
+|`E5`
+|Exempt pursuant to Article 25 of the VAT Act +
+(Exenta por el artículo 25)
+
+|`E6`
+|Exempt due to other reasons +
+(Exenta por otra causa)
+
+|===
+
+==== No-Subject Codes (Not Subject to Tax)
+
+Use these codes when `cac:TaxCategory/cbc:ID = 'O'`:
+
+|===
+|Value |Description
+
+|`N1`
+|Not subject pursuant to Article 7, 14, or other articles of the VAT Act +
+(No sujeta por el artículo 7, 14, otros)
+
+|`N2`
+|Not subject due to location rules +
+(No sujeta por reglas de localización)
+
+|===
+
+

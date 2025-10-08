@@ -182,3 +182,64 @@ Note: The Invoice Type Code @name should contain the Croatian process type ident
 |Invoice
 
 |===
+
+=== Invoice type codes for Spain (VeriFactu)
+
+The following table outlines the different invoice types (Lista L2) used in the Spanish VeriFactu system.
+
+Note: The Invoice Type Code @name should contain the Spanish invoice type identifier (F1-F3, R1-R5). References to LIVA (Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido) in this list should be understood as applying to equivalent regulations in the Canary Islands, Ceuta, and Melilla where applicable.
+
+In Spain, corrections can be handled using either CreditNote or Invoice (with type code 384 for corrective invoices) depending on the business scenario.
+
+|===
+|Invoice Type |Invoice Type Code |Invoice Type Code @name |UBL Document Type |Description
+
+|Standard Invoice
+|380
+|F1
+|Invoice
+|Factura (art. 6, 7.2 y 7.3 del RD 1619/2012)
+
+|Simplified Invoice
+|380
+|F2
+|Invoice
+|Factura Simplificada y Facturas sin identificación del destinatario art. 6.1.d) RD 1619/2012
+
+|Substitute Invoice
+|380
+|F3
+|Invoice
+|Factura emitida en sustitución de facturas simplificadas facturadas y declaradas
+
+|Rectificative Invoice (Legal Error)
+|384 or 381
+|R1
+|Invoice or CreditNote
+|Factura Rectificativa (Error fundado en derecho y Art. 80 Uno Dos y Seis LIVA)
+
+|Rectificative Invoice (Art. 80.3)
+|384 or 381
+|R2
+|Invoice or CreditNote
+|Factura Rectificativa (Art. 80.3)
+
+|Rectificative Invoice (Art. 80.4)
+|384 or 381
+|R3
+|Invoice or CreditNote
+|Factura Rectificativa (Art. 80.4)
+
+|Rectificative Invoice (Other)
+|384 or 381
+|R4
+|Invoice or CreditNote
+|Factura Rectificativa (Resto)
+
+|Rectificative Simplified Invoice
+|384 or 381
+|R5
+|Invoice or CreditNote
+|Factura Rectificativa en facturas simplificadas
+
+|===
