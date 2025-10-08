@@ -449,6 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_invoice_subtype_codes_saudi_arabia">3.2. Invoice subtype codes Saudi Arabia</a></li>
 <li><a href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></li>
 <li><a href="#_invoice_type_codes_for_croatia">3.4. Invoice type codes for Croatia</a></li>
+<li><a href="#_invoice_type_codes_for_spain_verifactu">3.5. Invoice type codes for Spain (VeriFactu)</a></li>
 </ul>
 </li>
 <li><a href="#_puf_004_currencycode">4. PUF-004-CURRENCYCODE</a></li>
@@ -467,7 +468,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_identification_scheme_poland">8.8. Identification scheme Poland</a></li>
 <li><a href="#_identification_scheme_saudi_arabia">8.9. Identification scheme Saudi Arabia</a></li>
 <li><a href="#_identification_scheme_serbia">8.10. Identification scheme Serbia</a></li>
-<li><a href="#_identification_scheme_türkiye">8.11. Identification scheme Türkiye</a></li>
+<li><a href="#_identification_scheme_spain">8.11. Identification scheme Spain</a></li>
+<li><a href="#_identification_scheme_türkiye">8.12. Identification scheme Türkiye</a></li>
 </ul>
 </li>
 <li><a href="#_puf_009_taxtypescheme">9. PUF-009-TAXTYPESCHEME</a>
@@ -496,6 +498,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_tax_exemption_codes_in_italy">13.1. Tax Exemption Codes in Italy</a></li>
 <li><a href="#_tax_exemption_codes_in_hungary">13.2. Tax Exemption Codes in Hungary</a></li>
+<li><a href="#_tax_exemption_codes_in_spain_verifactu">13.3. Tax Exemption Codes in Spain (VeriFactu)</a></li>
 </ul>
 </li>
 <li><a href="#_puf_014_uomcode">14. PUF-014-UOMCODE</a></li>
@@ -520,6 +523,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_puf_021_rolecode">21. PUF-021-ROLECODE</a></li>
+<li><a href="#_puf_022_specialregimekey">22. PUF-022-SPECIALREGIMEKEY</a>
+<ul class="sectlevel2">
+<li><a href="#_spanish_regime_keys_iva_vat">22.1. Spanish Regime Keys – IVA (VAT)</a></li>
+<li><a href="#_spanish_regime_keys_igic_ipsi_l8b">22.2. Spanish Regime Keys – IGIC / IPSI (L8B)</a></li>
+</ul>
+</li>
 <li><a href="#_support">Support</a></li>
 </ul>
 </div>
@@ -1049,6 +1058,94 @@ Note that only 0 is currently supported.</p></td>
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_invoice_type_codes_for_spain_verifactu"><a class="anchor" href="#_invoice_type_codes_for_spain_verifactu"></a><a class="link" href="#_invoice_type_codes_for_spain_verifactu">3.5. Invoice type codes for Spain (VeriFactu)</a></h3>
+<div class="paragraph">
+<p>The following table outlines the different invoice types (Lista L2) used in the Spanish VeriFactu system.</p>
+</div>
+<div class="paragraph">
+<p>Note: The Invoice Type Code @name should contain the Spanish invoice type identifier (F1-F3, R1-R5). References to LIVA (Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido) in this list should be understood as applying to equivalent regulations in the Canary Islands, Ceuta, and Melilla where applicable.</p>
+</div>
+<div class="paragraph">
+<p>In Spain, corrections can be handled using either CreditNote or Invoice (with type code 384 for corrective invoices) depending on the business scenario.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Invoice Type</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code @name</th>
+<th class="tableblock halign-left valign-top">UBL Document Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura (art. 6, 7.2 y 7.3 del RD 1619/2012)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simplified Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura Simplificada y Facturas sin identificación del destinatario art. 6.1.d) RD 1619/2012</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Substitute Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura emitida en sustitución de facturas simplificadas facturadas y declaradas</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificative Invoice (Legal Error)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 or 381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">R1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice or CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura Rectificativa (Error fundado en derecho y Art. 80 Uno Dos y Seis LIVA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificative Invoice (Art. 80.3)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 or 381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">R2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice or CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura Rectificativa (Art. 80.3)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificative Invoice (Art. 80.4)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 or 381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">R3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice or CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura Rectificativa (Art. 80.4)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificative Invoice (Other)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 or 381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">R4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice or CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura Rectificativa (Resto)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificative Simplified Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 or 381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">R5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice or CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factura Rectificativa en facturas simplificadas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1449,7 +1546,44 @@ Note that only 0 is currently supported.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_identification_scheme_türkiye"><a class="anchor" href="#_identification_scheme_türkiye"></a><a class="link" href="#_identification_scheme_türkiye">8.11. Identification scheme Türkiye</a></h3>
+<h3 id="_identification_scheme_spain"><a class="anchor" href="#_identification_scheme_spain"></a><a class="link" href="#_identification_scheme_spain">8.11. Identification scheme Spain</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES:PASSPORT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Passport.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES:OFFICIAL_ID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Official ID document issued by the country or territory of residence.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES:RC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Residence certificate.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES:OTHER</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other proof document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ES:NOT_REGISTERED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not registered identifier.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_identification_scheme_türkiye"><a class="anchor" href="#_identification_scheme_türkiye"></a><a class="link" href="#_identification_scheme_türkiye">8.12. Identification scheme Türkiye</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1672,6 +1806,35 @@ Note that only 0 is currently supported.</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>UTGST</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Union Territory Goods and Services Tax.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_spain"><a class="anchor" href="#_spain"></a><a class="link" href="#_spain">9.2.3. Spain</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IGIC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Canary Islands General Indirect Tax (Impuesto General Indirecto Canario).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IPSI</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax for Production, Services and Importation in Ceuta and Melilla (Impuesto sobre la Producción, los Servicios y la Importación).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IRPF</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personal Income Tax in Spain (Impuesto sobre la Renta de las Personas Físicas).</p></td>
 </tr>
 </tbody>
 </table>
@@ -2831,6 +2994,95 @@ Used in the Finnish national banking system.</em></p></td>
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_tax_exemption_codes_in_spain_verifactu"><a class="anchor" href="#_tax_exemption_codes_in_spain_verifactu"></a><a class="link" href="#_tax_exemption_codes_in_spain_verifactu">13.3. Tax Exemption Codes in Spain (VeriFactu)</a></h3>
+<div class="paragraph">
+<p>To provide exemption codes for Spanish VeriFactu e-invoicing, use the following codelist.</p>
+</div>
+<div class="paragraph">
+<p>These codes apply to IVA (Spanish VAT), IGIC (Canary Islands), and IPSI (Ceuta/Melilla) operations.</p>
+</div>
+<div class="sect3">
+<h4 id="_exemption_codes_exempt_operations"><a class="anchor" href="#_exemption_codes_exempt_operations"></a><a class="link" href="#_exemption_codes_exempt_operations">13.3.1. Exemption Codes (Exempt Operations)</a></h4>
+<div class="paragraph">
+<p>Use these codes when <code>cac:TaxCategory/cbc:ID = 'E'</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt pursuant to Article 20 of the VAT Act<br>
+(Exenta por el artículo 20)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt pursuant to Article 21 of the VAT Act<br>
+(Exenta por el artículo 21)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt pursuant to Article 22 of the VAT Act<br>
+(Exenta por el artículo 22)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt pursuant to Articles 23 and 24 of the VAT Act<br>
+(Exenta por el artículo 23 y 24)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt pursuant to Article 25 of the VAT Act<br>
+(Exenta por el artículo 25)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>E6</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt due to other reasons<br>
+(Exenta por otra causa)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_no_subject_codes_not_subject_to_tax"><a class="anchor" href="#_no_subject_codes_not_subject_to_tax"></a><a class="link" href="#_no_subject_codes_not_subject_to_tax">13.3.2. No-Subject Codes (Not Subject to Tax)</a></h4>
+<div class="paragraph">
+<p>Use these codes when <code>cac:TaxCategory/cbc:ID = 'O'</code>:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>N1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not subject pursuant to Article 7, 14, or other articles of the VAT Act<br>
+(No sujeta por el artículo 7, 14, otros)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>N2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not subject due to location rules<br>
+(No sujeta por reglas de localización)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -3745,6 +3997,229 @@ Used in the Finnish national banking system.</em></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_puf_022_specialregimekey"><a class="anchor" href="#_puf_022_specialregimekey"></a><a class="link" href="#_puf_022_specialregimekey">22. PUF-022-SPECIALREGIMEKEY</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This code list provides identifiers for special tax regimes or transaction schemes that may affect indirect tax determination, reporting or bookkeeping.</p>
+</div>
+<div class="sect2">
+<h3 id="_spanish_regime_keys_iva_vat"><a class="anchor" href="#_spanish_regime_keys_iva_vat"></a><a class="link" href="#_spanish_regime_keys_iva_vat">22.1. Spanish Regime Keys – IVA (VAT)</a></h3>
+<div class="paragraph">
+<p>Use when <code>cac:TaxScheme/cbc:ID = 'VAT'</code> (mainland Spain). Values mirror the authoritative AEAT catalogue.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General regime<br>
+(Operación de régimen general)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Export<br>
+(Exportación)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>03</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used goods, works of art, antiques, and collectibles<br>
+(Operaciones a las que se aplique el régimen especial de bienes usados, objetos de arte, antigüedades y objetos de colección)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>04</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Investment gold regime<br>
+(Régimen especial del oro de inversión)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>05</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel agencies regime<br>
+(Régimen especial de las agencias de viajes)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>06</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VAT group - advanced level<br>
+(Régimen especial grupo de entidades en IVA - Nivel Avanzado)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>07</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cash accounting scheme<br>
+(Régimen especial del criterio de caja)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>08</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operations subject to IPSI / IGIC<br>
+(Operaciones sujetas al IPSI / IGIC)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>09</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel agency services acting as mediators<br>
+(Facturación de las prestaciones de servicios de agencias de viaje que actúan como mediadoras en nombre y por cuenta ajena - D.A.4ª RD1619/2012)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collections on behalf of third parties of professional fees or property rights<br>
+(Cobros por cuenta de terceros de honorarios profesionales o de derechos derivados de la propiedad industrial, de autor u otros - D.A.3ª RD1619/2012)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Business premises rental operations<br>
+(Operaciones de arrendamiento de local de negocio)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice with VAT pending accrual in public administration certifications<br>
+(Factura con IVA pendiente de devengo en certificaciones de obra cuyo destinatario sea una Administración Pública)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>15</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice with VAT pending accrual in successive tract operations<br>
+(Factura con IVA pendiente de devengo en operaciones de tracto sucesivo)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>17</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operation under OSS and IOSS regimes<br>
+(Operación acogida a alguno de los regímenes previstos en el Capítulo XI del Título IX - OSS e IOSS)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalence surcharge<br>
+(Recargo de equivalencia)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>19</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special agriculture, livestock, and fishing regimes<br>
+(Operaciones de actividades incluidas en el Régimen Especial de Agricultura, Ganadería y Pesca - REAGYP)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simplified regime<br>
+(Régimen simplificado)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_spanish_regime_keys_igic_ipsi_l8b"><a class="anchor" href="#_spanish_regime_keys_igic_ipsi_l8b"></a><a class="link" href="#_spanish_regime_keys_igic_ipsi_l8b">22.2. Spanish Regime Keys – IGIC / IPSI (L8B)</a></h3>
+<div class="paragraph">
+<p>Use when:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>cac:TaxScheme/cbc:ID = 'IGIC'</code> (Canary Islands)</p>
+</li>
+<li>
+<p><code>cac:TaxScheme/cbc:ID = 'IPSI'</code> (Ceuta and Melilla)</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General regime<br>
+(Operación de régimen general)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Export<br>
+(Exportación)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>03</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used goods, works of art, antiques, and collectibles<br>
+(Operaciones a las que se aplique el régimen especial de bienes usados, objetos de arte, antigüedades y objetos de colección)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>04</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Investment gold regime<br>
+(Régimen especial del oro de inversión)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>05</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel agencies regime<br>
+(Régimen especial de las agencias de viajes)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>06</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IGIC group - advanced level<br>
+(Régimen especial grupo de entidades en IGIC - Nivel Avanzado)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>07</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cash accounting scheme<br>
+(Régimen especial del criterio de caja)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>08</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operations subject to IPSI / IVA<br>
+(Operaciones sujetas al IPSI / IVA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>09</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel agency services acting as mediators<br>
+(Facturación de las prestaciones de servicios de agencias de viaje que actúan como mediadoras en nombre y por cuenta ajena - D.A.4ª RD1619/2012)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collections on behalf of third parties of professional fees or property rights<br>
+(Cobros por cuenta de terceros de honorarios profesionales o de derechos derivados de la propiedad industrial, de autor u otros - D.A.3ª RD1619/2012)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>11</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Business premises rental operations<br>
+(Operaciones de arrendamiento de local de negocio)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>14</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice with IGIC pending accrual in public administration certifications<br>
+(Factura con IGIC pendiente de devengo en certificaciones de obra cuyo destinatario sea una Administración Pública)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>15</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice with IGIC pending accrual in successive tract operations<br>
+(Factura con IGIC pendiente de devengo en operaciones de tracto sucesivo)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>17</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special retail trader regime<br>
+(Régimen especial de comerciante minorista)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>18</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special regime for small businesses or professionals<br>
+(Régimen especial del pequeño empresario o profesional)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>19</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exempt domestic operations per Article 25 Law 19/1994<br>
+(Operaciones interiores exentas por aplicación artículo 25 Ley 19/1994)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">

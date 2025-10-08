@@ -188,6 +188,28 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |===
 
+=== Identification scheme Spain
+
+|===
+|Value |Description
+
+|`ES:PASSPORT`
+|Passport.
+
+|`ES:OFFICIAL_ID`
+|Official ID document issued by the country or territory of residence.
+
+|`ES:RC`
+|Residence certificate.
+
+|`ES:OTHER`
+|Other proof document.
+
+|`ES:NOT_REGISTERED`
+|Not registered identifier.
+
+|===
+
 === Identification scheme Türkiye
 
 |===

@@ -74,3 +74,18 @@ _A harmonized sales tax consisting of a goods and service tax, a Canadian provin
 |Union Territory Goods and Services Tax.
 |===
 
+==== Spain
+
+|===
+|Value |Description
+
+|`IGIC`
+|Canary Islands General Indirect Tax (Impuesto General Indirecto Canario).
+
+|`IPSI`
+|Tax for Production, Services and Importation in Ceuta and Melilla (Impuesto sobre la Producción, los Servicios y la Importación).
+
+|`IRPF`
+|Personal Income Tax in Spain (Impuesto sobre la Renta de las Personas Físicas).
+|===
+

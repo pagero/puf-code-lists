@@ -62,6 +62,8 @@ include::specification/PUF-020-ERRORCLASSIFICATIONCODE.adoc[]
 
 include::specification/PUF-021-ROLECODE.adoc[]
 
+include::specification/PUF-022-SPECIALREGIMEKEY.adoc[]
+
 :!sectnums:
 
 include::specification/support.adoc[]
