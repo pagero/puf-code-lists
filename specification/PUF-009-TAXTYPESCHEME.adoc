@@ -74,6 +74,33 @@ _A harmonized sales tax consisting of a goods and service tax, a Canadian provin
 |Union Territory Goods and Services Tax.
 |===
 
+==== Poland
+
+|===
+|Value |Description
+
+|`OO`
+|Reverse charge (odwrotne obciążenie).
+
+|`ZW`
+|VAT‑exempt (zwolnienie z VAT).
+
+|`NP-I`
+|Non‑taxable, outside Polish VAT scope because the place of supply is outside Poland (poza zakresem – miejsce opodatkowania poza Polską).
+
+|`NP-II`
+|Non‑taxable specific services under Article 100(1)(4). Typically B2B services to EU VAT taxpayers where the place of supply is in another EU country.
+
+|`0-KR`
+| Zero rated domestic VAT rate (stawka 0% krajowa).
+
+|`0-WDT`
+|Zero rated for intra‑EU supply of goods (wewnątrzwspólnotowa dostawa towarów).
+
+|`0-EX`
+|Zero rated for export of goods outside the EU (eksport towarów).
+|===
+
 ==== Spain
 
 |===

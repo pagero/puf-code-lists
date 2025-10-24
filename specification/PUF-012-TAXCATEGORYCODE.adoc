@@ -85,6 +85,45 @@ For additional codes added in PUF see below code recommendations.
 
 |===
 
+=== Tax category codes Poland
+
+|===
+|Value |Description
+
+|`S`
+|Standard rate.
+
+|`E`
+|Exempt.
+
+|`Z`
+|Zero rated goods.
+
+|`AE`
+|VAT Reverse Charge.
+
+|`G`
+|Free export item, VAT not charged.
+
+|`O`
+|Services outside scope of tax.
+
+|`K`
+|VAT exempt for EEA intra-community supply of goods and services.
+
+|`D`
+|Indication that the VAT margin scheme for travel agents is applied.
+
+|`F`
+|Indication that the VAT margin scheme for second-hand goods is applied.
+
+|`I`
+|Indication that the VAT margin scheme for works of art is applied.
+
+|`J`
+|Indication that the VAT margin scheme for collectors items and antiques is applied.
+
+|===
 
 === Tax category codes Portugal
 
