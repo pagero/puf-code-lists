@@ -1812,52 +1812,7 @@ Note that only 0 is currently supported.</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_poland"><a class="anchor" href="#_poland"></a><a class="link" href="#_poland">9.2.3. Poland</a></h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Value</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OO</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse charge (odwrotne obciążenie).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ZW</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">VAT‑exempt (zwolnienie z VAT).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NP-I</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Non‑taxable, outside Polish VAT scope because the place of supply is outside Poland (poza zakresem – miejsce opodatkowania poza Polską).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NP-II</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Non‑taxable specific services under Article 100(1)(4). Typically B2B services to EU VAT taxpayers where the place of supply is in another EU country.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0-KR</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated domestic VAT rate (stawka 0% krajowa).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0-WDT</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated for intra‑EU supply of goods (wewnątrzwspólnotowa dostawa towarów).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0-EX</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated for export of goods outside the EU (eksport towarów).</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_spain"><a class="anchor" href="#_spain"></a><a class="link" href="#_spain">9.2.4. Spain</a></h4>
+<h4 id="_spain"><a class="anchor" href="#_spain"></a><a class="link" href="#_spain">9.2.3. Spain</a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2037,7 +1992,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2075,7 +2030,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Tax Scheme Name (cbc:Name)</th>
+<th class="tableblock halign-left valign-top">Tax Category Name (cbc:Name)</th>
 <th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
@@ -2158,7 +2113,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2209,6 +2164,48 @@ Used in the Finnish national banking system.</em></p></td>
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Tax Category Name (cbc:Name)</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>OO</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse charge (odwrotne obciążenie).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ZW</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VAT‑exempt (zwolnienie z VAT).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NP-I</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non‑taxable, outside Polish VAT scope because the place of supply is outside Poland (poza zakresem – miejsce opodatkowania poza Polską).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NP-II</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non‑taxable specific services under Article 100(1)(4). Typically B2B services to EU VAT taxpayers where the place of supply is in another EU country.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0-KR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated domestic VAT rate (stawka 0% krajowa).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0-WDT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated for intra‑EU supply of goods (wewnątrzwspólnotowa dostawa towarów).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0-EX</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zero rated for export of goods outside the EU (eksport towarów).</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_tax_category_codes_portugal"><a class="anchor" href="#_tax_category_codes_portugal"></a><a class="link" href="#_tax_category_codes_portugal">12.4. Tax category codes Portugal</a></h3>
@@ -2219,7 +2216,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2292,7 +2289,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2348,7 +2345,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2421,7 +2418,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2525,7 +2522,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2546,7 +2543,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
@@ -2679,7 +2676,7 @@ Used in the Finnish national banking system.</em></p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Tax Category ID (cbc:ID)</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
