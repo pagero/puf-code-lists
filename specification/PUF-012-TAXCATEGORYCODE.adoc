@@ -7,7 +7,7 @@ For additional codes added in PUF see below code recommendations.
 === Tax category codes Basque Country
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`S`
 |Without reverse charge (default).
@@ -29,7 +29,7 @@ For additional codes added in PUF see below code recommendations.
 === Tax category codes Croatia
 
 |===
-|Tax Scheme Name (cbc:Name) |Tax Category ID (cbc:ID) |Description
+|Tax Category Name (cbc:Name) |Tax Category ID (cbc:ID) |Description
 
 |`HR:PDV25`
 |`S`
@@ -88,7 +88,7 @@ For additional codes added in PUF see below code recommendations.
 === Tax category codes Poland
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`S`
 |Standard rate.
@@ -125,10 +125,35 @@ For additional codes added in PUF see below code recommendations.
 
 |===
 
+|===
+|Tax Category Name (cbc:Name) |Description
+
+|`OO`
+|Reverse charge (odwrotne obciążenie).
+
+|`ZW`
+|VAT‑exempt (zwolnienie z VAT).
+
+|`NP-I`
+|Non‑taxable, outside Polish VAT scope because the place of supply is outside Poland (poza zakresem – miejsce opodatkowania poza Polską).
+
+|`NP-II`
+|Non‑taxable specific services under Article 100(1)(4). Typically B2B services to EU VAT taxpayers where the place of supply is in another EU country.
+
+|`0-KR`
+| Zero rated domestic VAT rate (stawka 0% krajowa).
+
+|`0-WDT`
+|Zero rated for intra‑EU supply of goods (wewnątrzwspólnotowa dostawa towarów).
+
+|`0-EX`
+|Zero rated for export of goods outside the EU (eksport towarów).
+|===
+
 === Tax category codes Portugal
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`AA`
 |Lower rate.
@@ -177,7 +202,7 @@ For additional codes added in PUF see below code recommendations.
 === Tax category codes Serbia
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`S`
 |Standard rate.
@@ -212,7 +237,7 @@ For additional codes added in PUF see below code recommendations.
 Below you can find the applicable codes for supplies
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`SR`
 |Local supply of goods and services.
@@ -261,7 +286,7 @@ Below you can find the applicable codes for supplies
 Below you can find the applicable codes for purchases
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`TX`
 |Standard-rated taxable purchases.
@@ -335,7 +360,7 @@ Below you can find the applicable codes for purchases
 *The most common tax category code is 0015, which indicates regular VAT.*
 
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`0015`
 |GERÇEK USULDE KATMA DEĞER VERGİSİ
@@ -345,7 +370,7 @@ Below you can find the applicable codes for purchases
 [%collapsible]
 ====
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`0003`
 |GELİR VERGİSİ STOPAJI
@@ -438,7 +463,7 @@ Below you can find the applicable codes for purchases
 
 *Tax codes for tax withholding*
 |===
-|Value |Description
+|Tax Category ID (cbc:ID) |Description
 
 |`601`
 |YAPIM İŞLERİ İLE BU İŞLERLE BİRLİKTE İFA EDİLEN MÜHENDİSLİK-MİMARLIK VE ETÜT-PROJE HİZMETLERİ [GT 117-Bölüm (3.2.1)]
