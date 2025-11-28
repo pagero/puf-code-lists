@@ -153,4 +153,25 @@ Use when:
 |Exempt domestic operations per Article 25 Law 19/1994 +
 (Operaciones interiores exentas por aplicación artículo 25 Ley 19/1994)
 
+|`20`
+|Operations subject to IPSI (IGIC only) +
+(Operaciones sujetas al IPSI)
+
+|`21`
+|Simplified regime (IGIC only) +
+(Régimen simplificado)
+
 |===
+
+=== Spanish Regime Keys – IPSI Specific
+
+For IPSI operations (`cac:TaxScheme/cbc:ID = 'IPSI'`), the following regime keys are acceptable:
+
+* `01` – General regime
+* `08` – Operations subject to IGIC / IVA
+* `11` – Business premises rental operations
+* `18` – Special regime per Article 73.4 and 73.5 of IPSI Tax Ordinance (Ceuta only)
+* `19` – Exempt domestic operations
+* `20` – Simplified regime (objective estimation)
+
+NOTE: Using other regime keys for IPSI will generate a warning (accepted with errors) until 31/12/2026, and will be rejected from 01/01/2027.
