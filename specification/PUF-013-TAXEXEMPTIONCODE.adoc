@@ -137,52 +137,160 @@ To provide exemption codes for Spanish VeriFactu e-invoicing, use the following 
 
 These codes apply to IVA (Spanish VAT), IGIC (Canary Islands), and IPSI (Ceuta/Melilla) operations.
 
-==== Exemption Codes (Exempt Operations)
+==== Exemption Codes – IVA (Spanish VAT)
 
-Use these codes when `cac:TaxCategory/cbc:ID = 'E'`:
+Use these codes when `cac:TaxScheme/cbc:ID = 'VAT'` and `cac:TaxCategory/cbc:ID = 'E'`:
 
 |===
 |Value |Description
 
 |`E1`
-|Exempt pursuant to Article 20 of the VAT Act +
+|Exempt pursuant to Article 20 of Law 37/1992 (IVA) +
 (Exenta por el artículo 20)
 
 |`E2`
-|Exempt pursuant to Article 21 of the VAT Act +
+|Exempt pursuant to Article 21 of Law 37/1992 (IVA) +
 (Exenta por el artículo 21)
 
 |`E3`
-|Exempt pursuant to Article 22 of the VAT Act +
+|Exempt pursuant to Article 22 of Law 37/1992 (IVA) +
 (Exenta por el artículo 22)
 
 |`E4`
-|Exempt pursuant to Articles 23 and 24 of the VAT Act +
+|Exempt pursuant to Articles 23 and 24 of Law 37/1992 (IVA) +
 (Exenta por el artículo 23 y 24)
 
 |`E5`
-|Exempt pursuant to Article 25 of the VAT Act +
+|Exempt pursuant to Article 25 of Law 37/1992 (IVA) +
 (Exenta por el artículo 25)
 
 |`E6`
-|Exempt due to other reasons +
+|Exempt due to other reasons per Law 37/1992 (IVA) +
 (Exenta por otra causa)
 
 |===
 
-==== No-Subject Codes (Not Subject to Tax)
+==== Exemption Codes – IGIC (Canary Islands)
 
-Use these codes when `cac:TaxCategory/cbc:ID = 'O'`:
+Use these codes when `cac:TaxScheme/cbc:ID = 'IGIC'` and `cac:TaxCategory/cbc:ID = 'E'`:
+
+|===
+|Value |Description
+
+|`E1`
+|Exempt pursuant to Chapter I of Decree Legislative 1/2025 (IGIC consolidated text) +
+(Exenta por el Capítulo I del Decreto Legislativo 1/2025)
+
+|`E2`
+|Exempt pursuant to Article 11 of Law 20/1991 (IGIC) +
+(Exenta por el artículo 11)
+
+|`E3`
+|Exempt pursuant to Article 12 of Law 20/1991 (IGIC) +
+(Exenta por el artículo 12)
+
+|`E4`
+|Exempt pursuant to Article 13 of Law 20/1991 (IGIC) +
+(Exenta por el artículo 13)
+
+|`E5`
+|Exempt pursuant to Article 25 of Law 20/1991 (IGIC) +
+(Exenta por el artículo 25)
+
+|`E6`
+|Exempt pursuant to Article 47 of Law 20/1991 (IGIC) +
+(Exenta por el artículo 47)
+
+|`E7`
+|Exempt pursuant to Article 90 of Decree Legislative 1/2025 (IGIC consolidated text) +
+(Exenta por el artículo 90 del Decreto Legislativo 1/2025)
+
+|`E8`
+|Exempt due to other reasons per Law 20/1991 (IGIC) +
+(Exenta por otra causa)
+
+|===
+
+==== Exemption Codes – IPSI (Ceuta and Melilla)
+
+Use these codes when `cac:TaxScheme/cbc:ID = 'IPSI'` and `cac:TaxCategory/cbc:ID = 'E'`:
+
+|===
+|Value |Description
+
+|`E1`
+|Exempt pursuant to Article 7 of Law 8/1991 (IPSI) +
+(Exenta por el artículo 7)
+
+|`E2`
+|Exempt pursuant to Article 8 of Law 8/1991 (IPSI) +
+(Exenta por el artículo 8)
+
+|`E3`
+|Exempt pursuant to Article 8 of Law 8/1991 (IPSI) +
+(Exenta por el artículo 8)
+
+|`E4`
+|Exempt pursuant to Articles 9 and 10 of Law 8/1991 (IPSI) +
+(Exenta por los artículos 9 y 10)
+
+|`E5`
+|Exempt pursuant to Article 8 of Law 8/1991 (IPSI) +
+(Exenta por el artículo 8)
+
+|`E6`
+|Exempt due to other reasons per Law 8/1991 (IPSI) +
+(Exenta por otra causa)
+
+|===
+
+==== No-Subject Codes – IVA (Spanish VAT)
+
+Use these codes when `cac:TaxScheme/cbc:ID = 'VAT'` and `cac:TaxCategory/cbc:ID = 'O'`:
 
 |===
 |Value |Description
 
 |`N1`
-|Not subject pursuant to Article 7, 14, or other articles of the VAT Act +
+|Not subject pursuant to Articles 7, 14, or other no-subject provisions of Law 37/1992 (IVA) +
 (No sujeta por el artículo 7, 14, otros)
 
 |`N2`
-|Not subject due to location rules +
+|Not subject due to location rules per Law 37/1992 (IVA) +
+(No sujeta por reglas de localización)
+
+|===
+
+==== No-Subject Codes – IGIC (Canary Islands)
+
+Use these codes when `cac:TaxScheme/cbc:ID = 'IGIC'` and `cac:TaxCategory/cbc:ID = 'O'`:
+
+|===
+|Value |Description
+
+|`N1`
+|Not subject pursuant to Article 9 or other no-subject provisions of Law 20/1991 (IGIC) +
+(No sujeta por el artículo 9, otros)
+
+|`N2`
+|Not subject due to location rules per Law 20/1991 (IGIC) +
+(No sujeta por reglas de localización)
+
+|===
+
+==== No-Subject Codes – IPSI (Ceuta and Melilla)
+
+Use these codes when `cac:TaxScheme/cbc:ID = 'IPSI'` and `cac:TaxCategory/cbc:ID = 'O'`:
+
+|===
+|Value |Description
+
+|`N1`
+|Not subject pursuant to Article 6 or other no-subject provisions of Law 8/1991 (IPSI) +
+(No sujeta por el artículo 6, otros)
+
+|`N2`
+|Not subject due to location rules per Law 8/1991 (IPSI) +
 (No sujeta por reglas de localización)
 
 |===
