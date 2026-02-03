@@ -450,6 +450,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></li>
 <li><a href="#_invoice_type_codes_for_croatia">3.4. Invoice type codes for Croatia</a></li>
 <li><a href="#_invoice_type_codes_for_spain_verifactu">3.5. Invoice type codes for Spain (VeriFactu)</a></li>
+<li><a href="#_business_process_codes_for_france">3.6. Business process codes for France</a></li>
 </ul>
 </li>
 <li><a href="#_puf_004_currencycode">4. PUF-004-CURRENCYCODE</a></li>
@@ -1147,6 +1148,180 @@ Note that only 0 is currently supported.</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect2">
+<h3 id="_business_process_codes_for_france"><a class="anchor" href="#_business_process_codes_for_france"></a><a class="link" href="#_business_process_codes_for_france">3.6. Business process codes for France</a></h3>
+<div class="paragraph">
+<p>The following table outlines the French business process types (Cadre de facturation) used in the French e-invoicing system.</p>
+</div>
+<div class="paragraph">
+<p>Note: The Invoice Type Code @name should contain the French business process identifier (B1-B7, S1-S7, M1-M7). The business process type indicates the nature of the transaction and affects VAT treatment.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Business Process</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code</th>
+<th class="tableblock halign-left valign-top">Invoice Type Code @name</th>
+<th class="tableblock halign-left valign-top">UBL Document Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Goods invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for goods</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for services</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mixed invoice (goods + services)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of a double invoice (delivery of goods and services that are not incidental to each other)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Goods invoice (already paid)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for goods already paid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services invoice (already paid)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for services already paid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mixed invoice (already paid)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of a double invoice already paid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final invoice for goods (after down payment)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of a final invoice (after down payment) for goods</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Final invoice for services (after down payment)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of a final invoice (after down payment) for services</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Double final invoice (after down payment)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of a double final invoice (after down payment)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subcontractor services invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for services by a subcontractor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Co-contractor services invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for services by a co-contractor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Goods invoice (e-reporting VAT collected)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for goods that has been the subject of e-reporting (VAT already collected)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Services invoice (e-reporting VAT collected)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submission of an invoice for a service provided that has been the subject of e-reporting (VAT already collected)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">381</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1, S1, or M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note follows the same business process code as the original invoice being credited</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrected invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1, S1, or M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrected invoice follows the same business process code as the invoice being corrected</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prepayment invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">386</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1, S1, or M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prepayment invoice uses the corresponding business process code for the goods/services type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">389</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1, S1, or M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed invoice uses the corresponding business process code for the transaction type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed credit note</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">261</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1, S1, or M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CreditNote</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed credit note follows the same business process code as the original invoice being credited</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed prepayment invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1, S1, or M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed prepayment invoice uses the corresponding business process code for the goods/services type</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Additional document type codes 501 (Self-billed factored invoice), 502 (Self-billed factored credit note), and 503 (Prepayment credit note) are under consideration for future implementation.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -4252,7 +4427,7 @@ Used in the Finnish national banking system.</em></p></td>
 <h2 id="_puf_021_rolecode"><a class="anchor" href="#_puf_021_rolecode"></a><a class="link" href="#_puf_021_rolecode">21. PUF-021-ROLECODE</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>List of available Agent Parties.</p>
+<p>List of available role codes.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -4267,8 +4442,36 @@ Used in the Finnish national banking system.</em></p></td>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AB</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Buyer&#8217;s agent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>II</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoicer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IV</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoicee</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>LD</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Buyer&#8217;s tax representative party</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payee</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seller&#8217;s agent</p></td>
 </tr>
 </tbody>
 </table>
