@@ -243,3 +243,130 @@ In Spain, corrections can be handled using either CreditNote or Invoice (with ty
 |Factura Rectificativa en facturas simplificadas
 
 |===
+
+=== Business process codes for France
+
+The following table outlines the French business process types (Cadre de facturation) used in the French e-invoicing system.
+
+Note: The Invoice Type Code @name should contain the French business process identifier (B1-B7, S1-S7, M1-M7). The business process type indicates the nature of the transaction and affects VAT treatment.
+
+|===
+|Business Process |Invoice Type Code |Invoice Type Code @name |UBL Document Type |Description
+
+|Goods invoice
+|380
+|B1
+|Invoice
+|Submission of an invoice for goods
+
+|Services invoice
+|380
+|S1
+|Invoice
+|Submission of an invoice for services
+
+|Mixed invoice (goods + services)
+|380
+|M1
+|Invoice
+|Submission of a double invoice (delivery of goods and services that are not incidental to each other)
+
+|Goods invoice (already paid)
+|380
+|B2
+|Invoice
+|Submission of an invoice for goods already paid
+
+|Services invoice (already paid)
+|380
+|S2
+|Invoice
+|Submission of an invoice for services already paid
+
+|Mixed invoice (already paid)
+|380
+|M2
+|Invoice
+|Submission of a double invoice already paid
+
+|Final invoice for goods (after down payment)
+|380
+|B4
+|Invoice
+|Submission of a final invoice (after down payment) for goods
+
+|Final invoice for services (after down payment)
+|380
+|S4
+|Invoice
+|Submission of a final invoice (after down payment) for services
+
+|Double final invoice (after down payment)
+|380
+|M4
+|Invoice
+|Submission of a double final invoice (after down payment)
+
+|Subcontractor services invoice
+|380
+|S5
+|Invoice
+|Submission of an invoice for services by a subcontractor
+
+|Co-contractor services invoice
+|380
+|S6
+|Invoice
+|Submission of an invoice for services by a co-contractor
+
+|Goods invoice (e-reporting VAT collected)
+|380
+|B7
+|Invoice
+|Submission of an invoice for goods that has been the subject of e-reporting (VAT already collected)
+
+|Services invoice (e-reporting VAT collected)
+|380
+|S7
+|Invoice
+|Submission of an invoice for a service provided that has been the subject of e-reporting (VAT already collected)
+
+|Credit note
+|381
+|B1, S1, or M1
+|CreditNote
+|Credit note follows the same business process code as the original invoice being credited
+
+|Corrected invoice
+|384
+|B1, S1, or M1
+|Invoice
+|Corrected invoice follows the same business process code as the invoice being corrected
+
+|Prepayment invoice
+|386
+|B1, S1, or M1
+|Invoice
+|Prepayment invoice uses the corresponding business process code for the goods/services type
+
+|Self-billed invoice
+|389
+|B1, S1, or M1
+|Invoice
+|Self-billed invoice uses the corresponding business process code for the transaction type
+
+|Self-billed credit note
+|261
+|B1, S1, or M1
+|CreditNote
+|Self-billed credit note follows the same business process code as the original invoice being credited
+
+|Self-billed prepayment invoice
+|500
+|B1, S1, or M1
+|Invoice
+|Self-billed prepayment invoice uses the corresponding business process code for the goods/services type
+
+|===
+
+NOTE: Additional document type codes 501 (Self-billed factored invoice), 502 (Self-billed factored credit note), and 503 (Prepayment credit note) are under consideration for future implementation.

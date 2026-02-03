@@ -1,11 +1,32 @@
 == PUF-021-ROLECODE
 
-List of available Agent Parties.
+List of available role codes.
 
 |===
 |Value |Description
 
+|`AB`
+|Buyer's agent
+
+|`DL`
+|Factor
+
+|`II`
+|Invoicer
+
+|`IV`
+|Invoicee
+
 |`LD`
-|Buyer's tax representative party 
+|Buyer's tax representative party
+
+|`PE`
+|Payee
+
+|`PR`
+|Payer
+
+|`SR`
+|Seller's agent
 
 |===
