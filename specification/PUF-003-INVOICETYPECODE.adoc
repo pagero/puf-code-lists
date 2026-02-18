@@ -246,127 +246,122 @@ In Spain, corrections can be handled using either CreditNote or Invoice (with ty
 
 === Business process codes for France
 
-The following table outlines the French business process types (Cadre de facturation) used in the French e-invoicing system.
+The business process type (Cadre de facturation) is specified using the `@name` attribute on the Invoice Type Code and indicates the nature of the transaction, affecting VAT treatment. The following tables list the currently supported codes.
 
-Note: The Invoice Type Code @name should contain the French business process identifier (B1-B7, S1-S7, M1-M7). The business process type indicates the nature of the transaction and affects VAT treatment.
+==== Standard invoice types (Invoice Type Code `380`)
 
+The series indicates the transaction category: B (goods), S (services), M (mixed goods and services).
+
+[cols="1,3,4", options="header"]
 |===
-|Business Process |Invoice Type Code |Invoice Type Code @name |UBL Document Type |Description
+|`@name` |Description |When to use
 
+|`B1`
 |Goods invoice
-|380
-|B1
-|Invoice
-|Submission of an invoice for goods
+|Standard invoice for the sale of goods
 
+|`S1`
 |Services invoice
-|380
-|S1
-|Invoice
-|Submission of an invoice for services
+|Standard invoice for the provision of services
 
+|`M1`
 |Mixed invoice (goods + services)
-|380
-|M1
-|Invoice
-|Submission of a double invoice (delivery of goods and services that are not incidental to each other)
+|Invoice covering both goods and services that are not incidental to each other
 
+|`B2`
 |Goods invoice (already paid)
-|380
-|B2
-|Invoice
-|Submission of an invoice for goods already paid
+|Invoice for goods where payment was made before invoicing
 
+|`S2`
 |Services invoice (already paid)
-|380
-|S2
-|Invoice
-|Submission of an invoice for services already paid
+|Invoice for services where payment was made before invoicing
 
+|`M2`
 |Mixed invoice (already paid)
-|380
-|M2
-|Invoice
-|Submission of a double invoice already paid
+|Mixed invoice where payment was made before invoicing
 
+|`B4`
 |Final invoice for goods (after down payment)
-|380
-|B4
-|Invoice
-|Submission of a final invoice (after down payment) for goods
+|Final goods invoice issued after one or more prepayment invoices (type `386`)
 
+|`S4`
 |Final invoice for services (after down payment)
-|380
-|S4
-|Invoice
-|Submission of a final invoice (after down payment) for services
+|Final services invoice issued after one or more prepayment invoices (type `386`)
 
+|`M4`
 |Double final invoice (after down payment)
-|380
-|M4
-|Invoice
-|Submission of a double final invoice (after down payment)
+|Final mixed invoice issued after one or more prepayment invoices (type `386`)
 
+|`S5`
 |Subcontractor services invoice
-|380
-|S5
-|Invoice
-|Submission of an invoice for services by a subcontractor
+|Invoice from a subcontractor for services rendered under a subcontracting arrangement
 
+|`S6`
 |Co-contractor services invoice
-|380
-|S6
-|Invoice
-|Submission of an invoice for services by a co-contractor
+|Invoice from a co-contractor for services rendered under a co-contracting arrangement
 
+|`B7`
 |Goods invoice (e-reporting VAT collected)
-|380
-|B7
-|Invoice
-|Submission of an invoice for goods that has been the subject of e-reporting (VAT already collected)
+|Invoice for goods where VAT was already collected and reported via e-reporting
 
+|`S7`
 |Services invoice (e-reporting VAT collected)
-|380
-|S7
-|Invoice
-|Submission of an invoice for a service provided that has been the subject of e-reporting (VAT already collected)
-
-|Credit note
-|381
-|B1, S1, or M1
-|CreditNote
-|Credit note follows the same business process code as the original invoice being credited
-
-|Corrected invoice
-|384
-|B1, S1, or M1
-|Invoice
-|Corrected invoice follows the same business process code as the invoice being corrected
-
-|Prepayment invoice
-|386
-|B1, S1, or M1
-|Invoice
-|Prepayment invoice uses the corresponding business process code for the goods/services type
-
-|Self-billed invoice
-|389
-|B1, S1, or M1
-|Invoice
-|Self-billed invoice uses the corresponding business process code for the transaction type
-
-|Self-billed credit note
-|261
-|B1, S1, or M1
-|CreditNote
-|Self-billed credit note follows the same business process code as the original invoice being credited
-
-|Self-billed prepayment invoice
-|500
-|B1, S1, or M1
-|Invoice
-|Self-billed prepayment invoice uses the corresponding business process code for the goods/services type
+|Invoice for services where VAT was already collected and reported via e-reporting
 
 |===
 
-NOTE: Additional document type codes 501 (Self-billed factored invoice), 502 (Self-billed factored credit note), and 503 (Prepayment credit note) are under consideration for future implementation.
+TIP: *Prepayment flow:* A prepayment invoice (type `386`) uses `B1`, `S1`, or `M1` as business process code. The corresponding final invoice (type `380`) then uses `B4`, `S4`, or `M4` and must reference the prepayment invoice via `cac:BillingReference`.
+
+==== Derived document types
+
+The following document types do not define their own business process codes — the `@name` value is derived from the underlying transaction.
+
+[cols="1,3,1,3", options="header"]
+|===
+|Invoice Type Code |Document Type |UBL Document Type |Business Process Code (`@name`)
+
+|`381`
+|Credit note
+|CreditNote
+|Same code as the original invoice being credited
+
+|`384`
+|Corrected invoice
+|Invoice
+|Same code as the invoice being corrected
+
+|`386`
+|Prepayment invoice
+|Invoice
+|`B1`, `S1`, or `M1` matching the goods/services type
+
+|`389`
+|Self-billed invoice
+|Invoice
+|Same code as would apply to a standard invoice (type `380`)
+
+|`261`
+|Self-billed credit note
+|CreditNote
+|Same code as the self-billed invoice being credited
+
+|`471`
+|Self-billed corrected invoice
+|Invoice
+|Same code as the self-billed invoice being corrected
+
+|`500`
+|Self-billed prepayment invoice
+|Invoice
+|`B1`, `S1`, or `M1` matching the goods/services type
+
+|`503`
+|Prepayment credit note
+|CreditNote
+|Same code as the prepayment invoice being credited
+
+|===
+
+For example, a credit note (`381`) crediting a subcontractor services invoice would use `@name="S5"`, while a corrected invoice (`384`) correcting an already-paid mixed invoice would use `@name="M2"`.
+
+NOTE: The French specification also defines factored invoice types (`393`, `396`, `472`) and self-billed factored types (`501`, `502`). These are not currently supported.
