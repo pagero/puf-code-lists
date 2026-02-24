@@ -505,7 +505,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_puf_014_uomcode">14. PUF-014-UOMCODE</a></li>
 <li><a href="#_puf_015_itemtypeidentificationcode">15. PUF-015-ITEMTYPEIDENTIFICATIONCODE</a></li>
-<li><a href="#_puf_016_invoicestatuscode">16. PUF-016-INVOICESTATUSCODE</a></li>
+<li><a href="#_puf_016_invoicestatuscode">16. PUF-016-INVOICESTATUSCODE</a>
+<ul class="sectlevel2">
+<li><a href="#_recipient_processing_codes">16.1. Recipient processing codes</a></li>
+<li><a href="#_validation_codes">16.2. Validation codes</a></li>
+<li><a href="#_payment_lifecycle_codes">16.3. Payment lifecycle codes</a></li>
+<li><a href="#_platform_lifecycle_codes_france">16.4. Platform lifecycle codes (France)</a></li>
+<li><a href="#_general_codes">16.5. General codes</a></li>
+</ul>
+</li>
 <li><a href="#_puf_017_clearancestatuscode">17. PUF-017-CLEARANCESTATUSCODE</a></li>
 <li><a href="#_puf_018_applicationresponsecode">18. PUF-018-APPLICATIONRESPONSECODE</a></li>
 <li><a href="#_puf_019_documentreferencedoctypecode">19. PUF-019-DOCUMENTREFERENCEDOCTYPECODE</a></li>
@@ -3576,11 +3584,66 @@ Used in the Finnish national banking system.</em></p></td>
 <h2 id="_puf_016_invoicestatuscode"><a class="anchor" href="#_puf_016_invoicestatuscode"></a><a class="link" href="#_puf_016_invoicestatuscode">16. PUF-016-INVOICESTATUSCODE</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Supported values can be found in <a href="https://peppol.org" target="_blank" rel="noopener">OpenPeppol&#8217;s</a> code list <a href="https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/" target="_blank" rel="noopener">Invoice status code (UNCL4343 Subset)</a>.</p>
+<p>Code list for <code>cbc:ResponseCode</code> in <code>cac:DocumentResponse/cac:Response</code>.</p>
 </div>
 <div class="paragraph">
-<p>For additional identification scheme identifier added in PUF see below recommendations.</p>
+<p>Codes marked with * are part of the <a href="https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/" target="_blank" rel="noopener">Peppol UNCL4343-T111 subset</a>.</p>
 </div>
+<div class="sect2">
+<h3 id="_recipient_processing_codes"><a class="anchor" href="#_recipient_processing_codes"></a><a class="link" href="#_recipient_processing_codes">16.1. Recipient processing codes</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AB</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message acknowledgement. Status is used when the Buyer has received a readable invoice message that can be understood and submitted for processing by the Buyer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>IP</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In process. Status is used when the processing of the Invoice has started in Buyers system. Usually contains more specific information in Status Reason.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UQ</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Under query. Status is used when Buyer will not proceed to accept the Invoice without receiving additional information from the Seller.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CA</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditionally accepted. Status is used when Buyer is accepting the Invoice under conditions stated in Status Reason and proceed to pay accordingly unless disputed by Seller.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AP</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accepted. Status is used only when the Buyer has given a final approval of the invoice and the next step is payment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RE</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rejected. Status is used only when the Buyer will not process the referenced Invoice any further.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PARTIALLY_ACCEPTED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Part of the document (e.g., only some lines) has been accepted by the recipient.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ON_HOLD</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processing is paused due to an outstanding dependency (e.g., missing data, internal review, dispute, or external blocker).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>INFORMATION_PROVIDED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information has previously been requested (e.g., via <code>UQ</code>) and has now been provided, fulfilling the request.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_validation_codes"><a class="anchor" href="#_validation_codes"></a><a class="link" href="#_validation_codes">16.2. Validation codes</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3595,10 +3658,105 @@ Used in the Finnish national banking system.</em></p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>VF</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validation Failure.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validation failure. The document failed technical or business rule validation before reaching the recipient. Distinct from <code>RE</code> which is a recipient decision.</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect2">
+<h3 id="_payment_lifecycle_codes"><a class="anchor" href="#_payment_lifecycle_codes"></a><a class="link" href="#_payment_lifecycle_codes">16.3. Payment lifecycle codes</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PD</code> *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paid. Status is used only when the Buyer has initiated the payment of the invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PAYMENT_RECEIVED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full or partial payment relating to the document has been received.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PAYMENT_APPROVED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The document has passed financial approval and is cleared for payment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PAYMENT_INITIATED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payment execution has started (e.g., payment file created, transfer scheduled, remittance in progress).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>PAYMENT_REJECTED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A payment attempt failed or was declined (e.g., bank rejection, validation error).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_platform_lifecycle_codes_france"><a class="anchor" href="#_platform_lifecycle_codes_france"></a><a class="link" href="#_platform_lifecycle_codes_france">16.4. Platform lifecycle codes (France)</a></h3>
+<div class="paragraph">
+<p>Codes used by the French e-invoicing platform (Chorus Pro / PPF) to indicate document routing progress.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SUBMITTED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The document has been validated and submitted to the platform, yet prior to the actual distribution of the document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ISSUED_BY_PLATFORM</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The document has been issued and sent by the sender&#8217;s service provider to the recipient&#8217;s service provider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RECEIVED_BY_PLATFORM</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The document has been acknowledged and received by the recipient&#8217;s service provider but not yet delivered to the end recipient.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MADE_AVAILABLE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The document has been delivered to the end recipient by their service provider.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_general_codes"><a class="anchor" href="#_general_codes"></a><a class="link" href="#_general_codes">16.5. General codes</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NOTIFICATION</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A general-purpose status used when no more specific code applies. Used as a fallback when the processing stage or outcome is not covered by any other code in this list.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
