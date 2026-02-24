@@ -1,13 +1,102 @@
 == PUF-016-INVOICESTATUSCODE
 
-Supported values can be found in https://peppol.org[OpenPeppol's^] code list https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/[Invoice status code (UNCL4343 Subset)^].
+Code list for `cbc:ResponseCode` in `cac:DocumentResponse/cac:Response`.
 
-For additional identification scheme identifier added in PUF see below recommendations.
+Codes marked with * are part of the https://docs.peppol.eu/poacc/upgrade-3/codelist/UNCL4343-T111/[Peppol UNCL4343-T111 subset^].
+
+=== Recipient processing codes
+
+|===
+|Value |Description
+
+|`AB` *
+|Message acknowledgement. Status is used when the Buyer has received a readable invoice message that can be understood and submitted for processing by the Buyer.
+
+|`IP` *
+|In process. Status is used when the processing of the Invoice has started in Buyers system. Usually contains more specific information in Status Reason.
+
+|`UQ` *
+|Under query. Status is used when Buyer will not proceed to accept the Invoice without receiving additional information from the Seller.
+
+|`CA` *
+|Conditionally accepted. Status is used when Buyer is accepting the Invoice under conditions stated in Status Reason and proceed to pay accordingly unless disputed by Seller.
+
+|`AP` *
+|Accepted. Status is used only when the Buyer has given a final approval of the invoice and the next step is payment.
+
+|`RE` *
+|Rejected. Status is used only when the Buyer will not process the referenced Invoice any further.
+
+|`PARTIALLY_ACCEPTED`
+|Part of the document (e.g., only some lines) has been accepted by the recipient.
+
+|`ON_HOLD`
+|Processing is paused due to an outstanding dependency (e.g., missing data, internal review, dispute, or external blocker).
+
+|`INFORMATION_PROVIDED`
+|Information has previously been requested (e.g., via `UQ`) and has now been provided, fulfilling the request.
+
+|===
+
+=== Validation codes
 
 |===
 |Value |Description
 
 |`VF`
-|Validation Failure.
+|Validation failure. The document failed technical or business rule validation before reaching the recipient. Distinct from `RE` which is a recipient decision.
+
+|===
+
+=== Payment lifecycle codes
+
+|===
+|Value |Description
+
+|`PD` *
+|Paid. Status is used only when the Buyer has initiated the payment of the invoice.
+
+|`PAYMENT_RECEIVED`
+|Full or partial payment relating to the document has been received.
+
+|`PAYMENT_APPROVED`
+|The document has passed financial approval and is cleared for payment.
+
+|`PAYMENT_INITIATED`
+|Payment execution has started (e.g., payment file created, transfer scheduled, remittance in progress).
+
+|`PAYMENT_REJECTED`
+|A payment attempt failed or was declined (e.g., bank rejection, validation error).
+
+|===
+
+=== Platform lifecycle codes (France)
+
+Codes used by the French e-invoicing platform (Chorus Pro / PPF) to indicate document routing progress.
+
+|===
+|Value |Description
+
+|`SUBMITTED`
+|The document has been validated and submitted to the platform, yet prior to the actual distribution of the document.
+
+|`ISSUED_BY_PLATFORM`
+|The document has been issued and sent by the sender's service provider to the recipient's service provider.
+
+|`RECEIVED_BY_PLATFORM`
+|The document has been acknowledged and received by the recipient's service provider but not yet delivered to the end recipient.
+
+|`MADE_AVAILABLE`
+|The document has been delivered to the end recipient by their service provider.
+
+|===
+
+=== General codes
+
+|===
+|Value |Description
+
+|`NOTIFICATION`
+|A general-purpose status used when no more specific code applies. Used as a fallback when the processing stage or outcome is not covered by any other code in this list.
 
 |===
