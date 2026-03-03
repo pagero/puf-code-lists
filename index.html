@@ -511,7 +511,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_validation_codes">16.2. Validation codes</a></li>
 <li><a href="#_payment_lifecycle_codes">16.3. Payment lifecycle codes</a></li>
 <li><a href="#_platform_lifecycle_codes_france">16.4. Platform lifecycle codes (France)</a></li>
-<li><a href="#_general_codes">16.5. General codes</a></li>
+<li><a href="#_france_factoring_codes">16.5. France factoring codes</a></li>
+<li><a href="#_general_codes">16.6. General codes</a></li>
 </ul>
 </li>
 <li><a href="#_puf_017_clearancestatuscode">17. PUF-017-CLEARANCESTATUSCODE</a></li>
@@ -3639,6 +3640,10 @@ Used in the Finnish national banking system.</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>INFORMATION_PROVIDED</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Information has previously been requested (e.g., via <code>UQ</code>) and has now been provided, fulfilling the request.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CANCELLED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The invoice has been cancelled by the issuer following the creation of a corrective invoice. Message transmitted from the Issuer to the Recipient via the respective service providers.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -3697,6 +3702,10 @@ Used in the Finnish national banking system.</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>PAYMENT_REJECTED</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A payment attempt failed or was declined (e.g., bank rejection, validation error).</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>REQUEST_PAYMENT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Direct payment request from a seller (e.g. a sub-contractor) to the buyer, requesting payment of an invoice directly.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -3737,7 +3746,43 @@ Used in the Finnish national banking system.</em></p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_general_codes"><a class="anchor" href="#_general_codes"></a><a class="link" href="#_general_codes">16.5. General codes</a></h3>
+<h3 id="_france_factoring_codes"><a class="anchor" href="#_france_factoring_codes"></a><a class="link" href="#_france_factoring_codes">16.5. France factoring codes</a></h3>
+<div class="paragraph">
+<p>Codes used in France for invoice cancellation, direct payment requests, and factoring lifecycle events.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>FACTORED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The invoice has been factored. Message created by the Seller and addressed to the Factor and the Buyer, transmitted via the respective service providers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>FACTORED_CONFIDENTIAL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The invoice has been factored under a confidential factoring arrangement. Message created by the Seller and addressed to the Factor only.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ACCOUNT_CHANGED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Seller notifies the Buyer and the Factor of a change in the payment account. Transmitted via the respective service providers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>FACTORING_CANCELLED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invoice factoring has been cancelled. Message created by the Seller and addressed to the Factor and the Buyer (unless confidential factoring), transmitted via the respective service providers.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_general_codes"><a class="anchor" href="#_general_codes"></a><a class="link" href="#_general_codes">16.6. General codes</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
