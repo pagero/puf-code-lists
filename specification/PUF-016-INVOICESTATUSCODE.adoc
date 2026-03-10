@@ -39,6 +39,9 @@ Codes marked with * are part of the https://docs.peppol.eu/poacc/upgrade-3/codel
 |`CANCELLED`
 |The invoice has been cancelled by the issuer following the creation of a corrective invoice. Message transmitted from the Issuer to the Recipient via the respective service providers.
 
+|`ENDORSED`
+|France specific. The invoice has been endorsed. Message created by the Seller Agent or Buyer Agent, addressed to the Recipient (C4) and the Issuer (C1), transmitted via PA-R and PA-E which make it available to both parties.
+
 |===
 
 === Validation codes
@@ -72,7 +75,7 @@ Codes marked with * are part of the https://docs.peppol.eu/poacc/upgrade-3/codel
 |A payment attempt failed or was declined (e.g., bank rejection, validation error).
 
 |`REQUEST_PAYMENT`
-|Direct payment request from a seller (e.g. a sub-contractor) to the buyer, requesting payment of an invoice directly.
+|France specific. Direct payment request from a seller (e.g. a sub-contractor) to the buyer, requesting payment of an invoice directly.
 
 |===
 
