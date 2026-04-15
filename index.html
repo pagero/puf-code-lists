@@ -870,7 +870,7 @@ LN = Not in liquidation.</p></td>
 <p>This should be placed in <code>cbc:InvoiceTypeCode/@name</code> and must follow a certain syntax.</p>
 </div>
 <div class="paragraph">
-<p>Structure of the value must be <strong>NNPNESB</strong> (e.g. <code>0100000</code>) where:</p>
+<p>Structure of the value must be <strong>NNPNESBCG</strong> (e.g. <code>010000000</code>) where:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -909,6 +909,14 @@ LN = Not in liquidation.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>B (Position 7)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Self-billed invoice transaction, 0 for false, 1 for true.<br>
 Note that only 0 is currently supported.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>C (Position 8)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continuous Supply invoice transaction, 0 for false, 1 for true.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>G (Position 9)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B2G invoice transaction, 0 for false, 1 for true.</p></td>
 </tr>
 </tbody>
 </table>

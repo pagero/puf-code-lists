@@ -49,7 +49,7 @@ In addition to the invoice type code it is required to provide invoice subtypes.
 
 This should be placed in `cbc:InvoiceTypeCode/@name` and must follow a certain syntax.
 
-Structure of the value must be *NNPNESB* (e.g. `0100000`) where:
+Structure of the value must be *NNPNESBCG* (e.g. `010000000`) where:
 
 |===
 |Value |Supported values
@@ -74,6 +74,12 @@ Structure of the value must be *NNPNESB* (e.g. `0100000`) where:
 |`B (Position 7)`
 |Self-billed invoice transaction, 0 for false, 1 for true. +
 Note that only 0 is currently supported.
+
+|`C (Position 8)`
+|Continuous Supply invoice transaction, 0 for false, 1 for true.
+
+|`G (Position 9)`
+|B2G invoice transaction, 0 for false, 1 for true.
 
 |===
 === Invoice type codes for Philippines
