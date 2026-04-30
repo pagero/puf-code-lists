@@ -82,6 +82,81 @@ Note that only 0 is currently supported.
 |B2G invoice transaction, 0 for false, 1 for true.
 
 |===
+
+=== Invoice type codes United Arab Emirates
+
+The below listed invoice type codes are available for use in the United Arab Emirates.
+
+|===
+|Value |Description
+
+|`380`
+|Tax invoice, only applicable within UBL message/document type Invoice.
+
+|`381`
+|Credit note, only applicable within UBL message/document type CreditNote.
+
+|`383`
+|Debit note, only applicable within UBL message/document type Invoice.
+
+|`386`
+|Prepayment invoice, only applicable within UBL message/document type Invoice.
+
+|`480`
+|Out of scope of VAT, only applicable within UBL message/document type Invoice.
+
+|`81`
+|Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used together with credit note reason code (BTAE-03) `VD` to void a previously issued non-VAT-relevant document.
+
+|===
+
+NOTE: For *self-billed* documents the UAE PUF convention is to keep the original document type code (`380` for a self-billed tax invoice, `381` for a self-billed credit note) and flag the document as self-billed via the `puf:SelfBilled` extension. The UN/CEFACT self-billing-specific type codes (e.g. `389`, `261`) are not used.
+
+=== Invoice transaction type code United Arab Emirates
+
+In addition to the invoice type code, every UAE invoice MUST carry an *invoice transaction type code* (BTAE-02). It is provided as the `name` attribute on `cbc:InvoiceTypeCode` (or `cbc:CreditNoteTypeCode` for credit notes).
+
+The value is a fixed 8-character string of `0` and `1` flags identifying which UAE special transaction contexts apply. Each position represents one transaction type, in the order listed below. Use `1` if the type is applicable, `0` if not.
+
+|===
+|Position |Transaction type |String when only this type applies
+
+|1
+|Free Trade Zone
+|`10000000`
+
+|2
+|Deemed Supply
+|`01000000`
+
+|3
+|Profit Margin Scheme
+|`00100000`
+
+|4
+|Summary Invoice
+|`00010000`
+
+|5
+|Continuous Supply
+|`00001000`
+
+|6
+|Disclosed Agent Billing
+|`00000100`
+
+|7
+|Supply through e-commerce
+|`00000010`
+
+|8
+|Exports
+|`00000001`
+
+|===
+
+A standard tax invoice without any of the special transaction contexts uses the value `00000000`. Multiple flags may be combined when several contexts apply to the same document.
+
 === Invoice type codes for Philippines
 
 The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.
