@@ -210,6 +210,45 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |===
 
+=== Identification scheme United Arab Emirates
+
+The UAE jurisdiction uses several ID schemes carried through the standard `@schemeID` attribute. PUF does not follow the PINT-AE `@schemeAgencyID` / `@schemeAgencyName` syntax — instead each UAE identifier is expressed with its own scheme code from the table below.
+
+The Tax Registration Number (TRN) for VAT-registered parties is provided on `cac:PartyTaxScheme/cbc:CompanyID` (under `cac:TaxScheme/cbc:ID = 'VAT'`) and does not use a scheme identifier; all other UAE identifiers use `@schemeID`.
+
+|===
+|Value |Description |Carried on
+
+|`AE:TIN`
+|Tax Identification Number for parties not registered for VAT. 10 numeric digits starting with `1` (e.g. `1000000000`).
+|`cac:PartyIdentification/cbc:ID/@schemeID`
+
+|`AE:TL`
+|Commercial / Trade license number. The primary legal-registration identifier for most UAE businesses (BTAE-15 / BTAE-16 = Trade license).
+|`cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
+
+|`AE:EID`
+|Emirates ID — the primary legal-registration identifier when the seller or buyer is a UAE resident individual (BTAE-15 / BTAE-16 = Emirates ID).
+|`cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
+
+|`AE:PASSPORT`
+|Passport number — used when the seller or buyer is a natural person who is not a UAE resident (BTAE-15 / BTAE-16 = Passport). Pair with `AE:PASSPORT_COUNTRY` below to carry the issuing country.
+|`cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
+
+|`AE:CD`
+|Cabinet Decision identifier (BTAE-15 / BTAE-16 = Cabinet Decision).
+|`cac:PartyLegalEntity/cbc:CompanyID/@schemeID`
+
+|`AE:LRA`
+|Legal Registration Authority — the name of the body that issued the primary legal-registration identifier (BTAE-12 / BTAE-11). Use when the primary `@schemeID` is `AE:TL`, `AE:EID` or `AE:CD`.
+|`cac:PartyIdentification/cbc:ID/@schemeID`
+
+|`AE:PASSPORT_COUNTRY`
+|ISO 3166-1 alpha-2 passport-issuing country code (BTAE-18 / BTAE-19). Use when the primary `@schemeID` is `AE:PASSPORT`.
+|`cac:PartyIdentification/cbc:ID/@schemeID`
+
+|===
+
 === Identification scheme Türkiye
 
 |===

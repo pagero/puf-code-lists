@@ -447,10 +447,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_invoice_type_codes_saudi_arabia">3.1. Invoice type codes Saudi Arabia</a></li>
 <li><a href="#_invoice_subtype_codes_saudi_arabia">3.2. Invoice subtype codes Saudi Arabia</a></li>
-<li><a href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></li>
-<li><a href="#_invoice_type_codes_for_croatia">3.4. Invoice type codes for Croatia</a></li>
-<li><a href="#_invoice_type_codes_for_spain_verifactu">3.5. Invoice type codes for Spain (VeriFactu)</a></li>
-<li><a href="#_business_process_codes_for_france">3.6. Business process codes for France</a></li>
+<li><a href="#_invoice_type_codes_united_arab_emirates">3.3. Invoice type codes United Arab Emirates</a></li>
+<li><a href="#_invoice_transaction_type_code_united_arab_emirates">3.4. Invoice transaction type code United Arab Emirates</a></li>
+<li><a href="#_invoice_type_codes_for_philippines">3.5. Invoice type codes for Philippines</a></li>
+<li><a href="#_invoice_type_codes_for_croatia">3.6. Invoice type codes for Croatia</a></li>
+<li><a href="#_invoice_type_codes_for_spain_verifactu">3.7. Invoice type codes for Spain (VeriFactu)</a></li>
+<li><a href="#_business_process_codes_for_france">3.8. Business process codes for France</a></li>
 </ul>
 </li>
 <li><a href="#_puf_004_currencycode">4. PUF-004-CURRENCYCODE</a></li>
@@ -470,7 +472,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_identification_scheme_saudi_arabia">8.9. Identification scheme Saudi Arabia</a></li>
 <li><a href="#_identification_scheme_serbia">8.10. Identification scheme Serbia</a></li>
 <li><a href="#_identification_scheme_spain">8.11. Identification scheme Spain</a></li>
-<li><a href="#_identification_scheme_türkiye">8.12. Identification scheme Türkiye</a></li>
+<li><a href="#_identification_scheme_united_arab_emirates">8.12. Identification scheme United Arab Emirates</a></li>
+<li><a href="#_identification_scheme_türkiye">8.13. Identification scheme Türkiye</a></li>
 </ul>
 </li>
 <li><a href="#_puf_009_taxtypescheme">9. PUF-009-TAXTYPESCHEME</a>
@@ -922,7 +925,131 @@ Note that only 0 is currently supported.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_invoice_type_codes_for_philippines"><a class="anchor" href="#_invoice_type_codes_for_philippines"></a><a class="link" href="#_invoice_type_codes_for_philippines">3.3. Invoice type codes for Philippines</a></h3>
+<h3 id="_invoice_type_codes_united_arab_emirates"><a class="anchor" href="#_invoice_type_codes_united_arab_emirates"></a><a class="link" href="#_invoice_type_codes_united_arab_emirates">3.3. Invoice type codes United Arab Emirates</a></h3>
+<div class="paragraph">
+<p>The below listed invoice type codes are available for use in the United Arab Emirates.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>380</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax invoice, only applicable within UBL message/document type Invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>381</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note, only applicable within UBL message/document type CreditNote.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>383</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Debit note, only applicable within UBL message/document type Invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>386</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prepayment invoice, only applicable within UBL message/document type Invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>480</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Out of scope of VAT, only applicable within UBL message/document type Invoice.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>81</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used together with credit note reason code (BTAE-03) <code>VD</code> to void a previously issued non-VAT-relevant document.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For <strong>self-billed</strong> documents the UAE PUF convention is to keep the original document type code (<code>380</code> for a self-billed tax invoice, <code>381</code> for a self-billed credit note) and flag the document as self-billed via the <code>puf:SelfBilled</code> extension. The UN/CEFACT self-billing-specific type codes (e.g. <code>389</code>, <code>261</code>) are not used.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_invoice_transaction_type_code_united_arab_emirates"><a class="anchor" href="#_invoice_transaction_type_code_united_arab_emirates"></a><a class="link" href="#_invoice_transaction_type_code_united_arab_emirates">3.4. Invoice transaction type code United Arab Emirates</a></h3>
+<div class="paragraph">
+<p>In addition to the invoice type code, every UAE invoice MUST carry an <strong>invoice transaction type code</strong> (BTAE-02). It is provided as the <code>name</code> attribute on <code>cbc:InvoiceTypeCode</code> (or <code>cbc:CreditNoteTypeCode</code> for credit notes).</p>
+</div>
+<div class="paragraph">
+<p>The value is a fixed 8-character string of <code>0</code> and <code>1</code> flags identifying which UAE special transaction contexts apply. Each position represents one transaction type, in the order listed below. Use <code>1</code> if the type is applicable, <code>0</code> if not.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Position</th>
+<th class="tableblock halign-left valign-top">Transaction type</th>
+<th class="tableblock halign-left valign-top">String when only this type applies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Free Trade Zone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>10000000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deemed Supply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01000000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Profit Margin Scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>00100000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Summary Invoice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>00010000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continuous Supply</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>00001000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disclosed Agent Billing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>00000100</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supply through e-commerce</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>00000010</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exports</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>00000001</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>A standard tax invoice without any of the special transaction contexts uses the value <code>00000000</code>. Multiple flags may be combined when several contexts apply to the same document.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_invoice_type_codes_for_philippines"><a class="anchor" href="#_invoice_type_codes_for_philippines"></a><a class="link" href="#_invoice_type_codes_for_philippines">3.5. Invoice type codes for Philippines</a></h3>
 <div class="paragraph">
 <p>The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.</p>
 </div>
@@ -974,7 +1101,7 @@ Note that only 0 is currently supported.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_invoice_type_codes_for_croatia"><a class="anchor" href="#_invoice_type_codes_for_croatia"></a><a class="link" href="#_invoice_type_codes_for_croatia">3.4. Invoice type codes for Croatia</a></h3>
+<h3 id="_invoice_type_codes_for_croatia"><a class="anchor" href="#_invoice_type_codes_for_croatia"></a><a class="link" href="#_invoice_type_codes_for_croatia">3.6. Invoice type codes for Croatia</a></h3>
 <div class="paragraph">
 <p>The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute for Croatian implementation in PUF.</p>
 </div>
@@ -1079,7 +1206,7 @@ Note that only 0 is currently supported.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_invoice_type_codes_for_spain_verifactu"><a class="anchor" href="#_invoice_type_codes_for_spain_verifactu"></a><a class="link" href="#_invoice_type_codes_for_spain_verifactu">3.5. Invoice type codes for Spain (VeriFactu)</a></h3>
+<h3 id="_invoice_type_codes_for_spain_verifactu"><a class="anchor" href="#_invoice_type_codes_for_spain_verifactu"></a><a class="link" href="#_invoice_type_codes_for_spain_verifactu">3.7. Invoice type codes for Spain (VeriFactu)</a></h3>
 <div class="paragraph">
 <p>The following table outlines the different invoice types (Lista L2) used in the Spanish VeriFactu system.</p>
 </div>
@@ -1167,12 +1294,12 @@ Note that only 0 is currently supported.</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_business_process_codes_for_france"><a class="anchor" href="#_business_process_codes_for_france"></a><a class="link" href="#_business_process_codes_for_france">3.6. Business process codes for France</a></h3>
+<h3 id="_business_process_codes_for_france"><a class="anchor" href="#_business_process_codes_for_france"></a><a class="link" href="#_business_process_codes_for_france">3.8. Business process codes for France</a></h3>
 <div class="paragraph">
 <p>The business process type (Cadre de facturation) is specified using the <code>@name</code> attribute on the Invoice Type Code and indicates the nature of the transaction, affecting VAT treatment. The following tables list the currently supported codes.</p>
 </div>
 <div class="sect3">
-<h4 id="_standard_invoice_types_invoice_type_code_380"><a class="anchor" href="#_standard_invoice_types_invoice_type_code_380"></a><a class="link" href="#_standard_invoice_types_invoice_type_code_380">3.6.1. Standard invoice types (Invoice Type Code <code>380</code>)</a></h4>
+<h4 id="_standard_invoice_types_invoice_type_code_380"><a class="anchor" href="#_standard_invoice_types_invoice_type_code_380"></a><a class="link" href="#_standard_invoice_types_invoice_type_code_380">3.8.1. Standard invoice types (Invoice Type Code <code>380</code>)</a></h4>
 <div class="paragraph">
 <p>The series indicates the transaction category: B (goods), S (services), M (mixed goods and services).</p>
 </div>
@@ -1271,7 +1398,7 @@ Note that only 0 is currently supported.</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_derived_document_types"><a class="anchor" href="#_derived_document_types"></a><a class="link" href="#_derived_document_types">3.6.2. Derived document types</a></h4>
+<h4 id="_derived_document_types"><a class="anchor" href="#_derived_document_types"></a><a class="link" href="#_derived_document_types">3.8.2. Derived document types</a></h4>
 <div class="paragraph">
 <p>The following document types do not define their own business process codes — the <code>@name</code> value is derived from the underlying transaction.</p>
 </div>
@@ -1795,7 +1922,67 @@ The French specification also defines factored invoice types (<code>393</code>, 
 </table>
 </div>
 <div class="sect2">
-<h3 id="_identification_scheme_türkiye"><a class="anchor" href="#_identification_scheme_türkiye"></a><a class="link" href="#_identification_scheme_türkiye">8.12. Identification scheme Türkiye</a></h3>
+<h3 id="_identification_scheme_united_arab_emirates"><a class="anchor" href="#_identification_scheme_united_arab_emirates"></a><a class="link" href="#_identification_scheme_united_arab_emirates">8.12. Identification scheme United Arab Emirates</a></h3>
+<div class="paragraph">
+<p>The UAE jurisdiction uses several ID schemes carried through the standard <code>@schemeID</code> attribute. PUF does not follow the PINT-AE <code>@schemeAgencyID</code> / <code>@schemeAgencyName</code> syntax — instead each UAE identifier is expressed with its own scheme code from the table below.</p>
+</div>
+<div class="paragraph">
+<p>The Tax Registration Number (TRN) for VAT-registered parties is provided on <code>cac:PartyTaxScheme/cbc:CompanyID</code> (under <code>cac:TaxScheme/cbc:ID = 'VAT'</code>) and does not use a scheme identifier; all other UAE identifiers use <code>@schemeID</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Carried on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:TIN</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax Identification Number for parties not registered for VAT. 10 numeric digits starting with <code>1</code> (e.g. <code>1000000000</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyIdentification/cbc:ID/@schemeID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:TL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Commercial / Trade license number. The primary legal-registration identifier for most UAE businesses (BTAE-15 / BTAE-16 = Trade license).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyLegalEntity/cbc:CompanyID/@schemeID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:EID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Emirates ID — the primary legal-registration identifier when the seller or buyer is a UAE resident individual (BTAE-15 / BTAE-16 = Emirates ID).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyLegalEntity/cbc:CompanyID/@schemeID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:PASSPORT</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Passport number — used when the seller or buyer is a natural person who is not a UAE resident (BTAE-15 / BTAE-16 = Passport). Pair with <code>AE:PASSPORT_COUNTRY</code> below to carry the issuing country.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyLegalEntity/cbc:CompanyID/@schemeID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:CD</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cabinet Decision identifier (BTAE-15 / BTAE-16 = Cabinet Decision).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyLegalEntity/cbc:CompanyID/@schemeID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:LRA</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Legal Registration Authority — the name of the body that issued the primary legal-registration identifier (BTAE-12 / BTAE-11). Use when the primary <code>@schemeID</code> is <code>AE:TL</code>, <code>AE:EID</code> or <code>AE:CD</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyIdentification/cbc:ID/@schemeID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:PASSPORT_COUNTRY</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 3166-1 alpha-2 passport-issuing country code (BTAE-18 / BTAE-19). Use when the primary <code>@schemeID</code> is <code>AE:PASSPORT</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyIdentification/cbc:ID/@schemeID</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_identification_scheme_türkiye"><a class="anchor" href="#_identification_scheme_türkiye"></a><a class="link" href="#_identification_scheme_türkiye">8.13. Identification scheme Türkiye</a></h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
