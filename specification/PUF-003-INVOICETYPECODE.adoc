@@ -426,6 +426,11 @@ The following document types do not define their own business process codes — 
 |CreditNote
 |Same code as the self-billed invoice being credited
 
+|`262`
+|Credit note for global discount (Avoir pour Remise Globale)
+|CreditNote
+|Same code as the original invoice(s) being discounted
+
 |`471`
 |Self-billed corrected invoice
 |Invoice
