@@ -446,8 +446,38 @@ The following document types do not define their own business process codes — 
 |CreditNote
 |Same code as the prepayment invoice being credited
 
+|`393`
+|Factored invoice (Facture affacturée)
+|Invoice
+|Same code as would apply to a standard invoice (type `380`)
+
+|`396`
+|Factored credit note (Avoir affacturé)
+|CreditNote
+|Same code as the original invoice being credited
+
+|`472`
+|Corrected factored invoice (Facture rectificative affacturée)
+|Invoice
+|Same code as the invoice being corrected
+
+|`473`
+|Self-billed corrected factored invoice (Facture rectificative auto-facturée affacturée)
+|Invoice
+|Same code as the self-billed invoice being corrected
+
+|`501`
+|Self-billed factored invoice (Facture auto-facturée affacturée)
+|Invoice
+|Same code as would apply to a self-billed invoice (type `389`)
+
+|`502`
+|Self-billed factored credit note (Avoir auto-facturé affacturé)
+|CreditNote
+|Same code as the self-billed invoice being credited
+
 |===
 
 For example, a credit note (`381`) crediting a subcontractor services invoice would use `@name="S5"`, while a corrected invoice (`384`) correcting an already-paid mixed invoice would use `@name="M2"`.
 
-NOTE: The French specification also defines factored invoice types (`393`, `396`, `472`) and self-billed factored types (`501`, `502`). These are not currently supported.
+NOTE: For *factoring* scenarios, the factored document type codes (`393`, `396`, `472`, `473`, `501`, `502`) are placed in `cbc:InvoiceTypeCode` or `cbc:CreditNoteTypeCode` and trigger the Factor party flow: the Factor is identified in `cac:PayeeParty` with role code `DL`, the subrogation clause is conveyed via BT-21=`ACC` / BT-22, and payment is redirected to the Factor's IBAN.
