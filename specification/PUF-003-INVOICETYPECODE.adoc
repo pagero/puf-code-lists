@@ -96,12 +96,6 @@ The below listed invoice type codes are available for use in the United Arab Emi
 |`381`
 |Credit note, only applicable within UBL message/document type CreditNote.
 
-|`383`
-|Debit note, only applicable within UBL message/document type Invoice.
-
-|`386`
-|Prepayment invoice, only applicable within UBL message/document type Invoice.
-
 |`480`
 |Out of scope of VAT, only applicable within UBL message/document type Invoice.
 
