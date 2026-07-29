@@ -355,6 +355,10 @@ The series indicates the transaction category: B (goods), S (services), M (mixed
 |Mixed invoice (already paid)
 |Mixed invoice where payment was made before invoicing
 
+|`S3`
+|Subcontractor direct payment request (B2G only)
+|Direct payment request filed by a subcontractor on Chorus Pro under a public-sector contract, using modified Buyer and Seller agent blocks
+
 |`B4`
 |Final invoice for goods (after down payment)
 |Final goods invoice issued after one or more prepayment invoices (type `386`)
@@ -383,7 +387,33 @@ The series indicates the transaction category: B (goods), S (services), M (mixed
 |Services invoice (e-reporting VAT collected)
 |Invoice for services where VAT was already collected and reported via e-reporting
 
+|`B8`
+|Multi-seller goods invoice
+|Invoice containing individual goods invoices from multiple sellers
+
+|`S8`
+|Multi-seller services invoice
+|Invoice containing individual services invoices from multiple sellers
+
+|`M8`
+|Mixed multi-seller invoice
+|Invoice containing individual invoices from multiple sellers that are not all goods or all services
+
+|`B9`
+|Bidirectional goods invoice
+|Bidirectional self-billed invoice containing a cross-sale of goods
+
+|`S9`
+|Bidirectional services invoice
+|Bidirectional self-billed invoice containing a cross-sale of services
+
+|`M9`
+|Mixed bidirectional invoice
+|Bidirectional self-billed invoice containing cross-sales that are not all goods or all services
+
 |===
+
+NOTE: Multi-seller invoices (`B8`, `S8`, `M8`) are permitted *only* with the EXTENDED-CTC-FR profile (or Factur-X EXTENDED), and may not be issued as self-billed invoices. Bidirectional invoices (`B9`, `S9`, `M9`) reuse the multi-seller sub-line structure and are likewise restricted to EXTENDED-CTC-FR. Both identify structures that require additional platform processing, including unit-invoice extraction and lifecycle handling. Listing a code here means that PUF can carry the value; it does not guarantee that every delivery platform emits or validates the corresponding process.
 
 TIP: *Prepayment flow:* A prepayment invoice (type `386`) uses `B1`, `S1`, or `M1` as business process code. The corresponding final invoice (type `380`) then uses `B4`, `S4`, or `M4` and must reference the prepayment invoice via `cac:BillingReference`.
 
