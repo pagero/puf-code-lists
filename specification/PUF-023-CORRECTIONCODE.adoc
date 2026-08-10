@@ -1,0 +1,211 @@
+== PUF-023-CORRECTIONCODE
+
+This code list provides the values available for `puf:BillingReferenceExtension/puf:Code`, the code that qualifies a correction made to a previously issued document.
+
+The meaning of the code is country dependent. In some regimes it identifies the correction *method*, that is how the corrected amounts are expressed. In others it identifies the correction *reason*, that is why the document is being corrected. Use the section that applies to the receiving regime.
+
+.Overview
+|===
+|Regime |What the code expresses |Values
+
+|Spain (Facturae)
+|Correction method
+|`01`, `02`, `03`, `04`
+
+|Spain (VeriFactu)
+|Correction method
+|`I`, `S`
+
+|Basque Country (TicketBAI)
+|Correction reason
+|`R1`-`R5`
+
+|Philippines
+|Correction reason
+|`01`-`05`, `09`
+
+|United Arab Emirates
+|Correction reason
+|`DL8.61.1.A`-`DL8.61.1.E`, `VD`
+
+|===
+
+[IMPORTANT]
+====
+A document carries only one `puf:Code`. When the same document is sent to more than one Spanish flow, send the value that applies to the correction method and it will be resolved correctly for both, because the two Spanish method code sets are treated as equivalent. See <<_correction_method_codes_for_spain_facturae>>.
+====
+
+=== Correction method codes for Spain (Facturae)
+
+The code identifies the criterion applied when correcting an invoice, and is reported in the Facturae `CorrectionMethod` element. Facturae derives the accompanying `CorrectionMethodDescription` from the code, so only the code needs to be provided.
+
+Values and descriptions are the `CorrectionMethodType` and `CorrectionMethodDescriptionType` enumerations of the Facturae 3.2.2 schema. The Spanish descriptions are enumerated values in that schema, so they must be sent exactly as written below.
+
+|===
+|Value |Description
+
+|`01`
+|Rectificación íntegra +
+All items to be corrected in the original invoice are reflected.
+
+|`02`
+|Rectificación por diferencias +
+Only the items already corrected are noted.
+
+|`03`
+|Rectificación por descuento por volumen de operaciones durante un periodo +
+"Bulk deal" in a given period.
+
+|`04`
+|Autorizadas por la Agencia Tributaria +
+Authorised by the Tax Agency.
+
+|===
+
+The VeriFactu values `S` and `I` are also accepted here and are treated as equivalent to `01` and `02` respectively, so a sender who issues to both Spanish flows can use a single value.
+
+|===
+|Value sent |Facturae `CorrectionMethod`
+
+|`01` or `S`
+|`01`
+
+|`02` or `I`
+|`02`
+
+|===
+
+NOTE: When `CorrectionMethod` is `01` or `02`, Facturae also requires the number and the issue date of the invoice being corrected. Provide these as `cac:InvoiceDocumentReference/cbc:ID` and `cac:InvoiceDocumentReference/cbc:IssueDate`.
+
+=== Correction method codes for Spain (VeriFactu)
+
+The code identifies the type of rectification being performed, and is reported to AEAT as `TipoRectificativa`. Values follow the AEAT `TipoRectificativa` code list (L3).
+
+|===
+|Value |Description
+
+|`I`
+|Correction by differences +
+(Rectificación por diferencias)
+
+|`S`
+|Substitutive method +
+(Rectificación por sustitución)
+
+|===
+
+The Facturae values `01` and `02` are also accepted here and are treated as equivalent to `S` and `I` respectively.
+
+|===
+|Value sent |VeriFactu `TipoRectificativa`
+
+|`S` or `01`
+|`S`
+
+|`I` or `02`
+|`I`
+
+|===
+
+NOTE: When the substitutive method is used, the tax base and tax amount of the document being corrected are also required. See the Spain VeriFactu section of the PUF Billing specification.
+
+=== Correction reason codes for the Basque Country (TicketBAI)
+
+The code identifies why the correction is being made, and is reported to the Basque tax authorities as the corrective invoice reason.
+
+Values and descriptions are taken from `ClaveTipoFacturaType` in the TicketBAI schema (version 1.2).
+
+[NOTE]
+====
+These codes cite the *Norma Foral del IVA*, the VAT regulation of the Basque foral territories. They are not the same as the equally named `R1`-`R5` invoice type codes used by VeriFactu, which cite the state VAT law (Ley 37/1992, LIVA).
+====
+
+|===
+|Value |Description
+
+|`R1`
+|Corrective invoice: error founded in law, and Art. 80 One, Two and Six of the Norma Foral del IVA +
+(Factura rectificativa: error fundado en derecho y Art. 80 Uno, Dos y Seis de la Norma Foral del IVA)
+
+|`R2`
+|Corrective invoice: Article 80 Three of the Norma Foral del IVA +
+(Factura rectificativa: artículo 80 Tres de la Norma Foral del IVA)
+
+|`R3`
+|Corrective invoice: Article 80 Four of the Norma Foral del IVA +
+(Factura rectificativa: artículo 80 Cuatro de la Norma Foral del IVA)
+
+|`R4`
+|Corrective invoice: remainder, that is any other case +
+(Factura rectificativa: Resto)
+
+|`R5`
+|Corrective invoice on simplified invoices +
+(Factura rectificativa en facturas simplificadas)
+
+|===
+
+=== Correction reason codes for Philippines
+
+The code identifies why the correction is being made, and is reported to the Bureau of Internal Revenue (BIR) as the correction code. It is mandatory when the document is flagged as a correction.
+
+Values and descriptions are taken from the `CorrectionCd` field of the BIR EIS e-invoice JSON file format specification v2.01. The description of `01` is abbreviated below; the specification enumerates the mandatory fields it covers.
+
+|===
+|Value |Description
+
+|`01`
+|**Error** - In any mandatory field.
+
+|`02`
+|**Duplication** - Sales data transmitted more than once regardless of transaction period.
+
+|`03`
+|**Addition/reduction** - Addition/reduction of contracted volume or amount.
+
+|`04`
+|**Cancellation** - For sales data previously transmitted but transaction was subsequently cancelled or rescinded by buyer/seller for failure to consumate. Full return of goods without replacement is considered cancellation.
+
+|`05`
+|**Return** - For original goods supplied and returned for replacement. Ex: Damaged, defective, wrong specifications, change item, or for any other reason.
+
+|`09`
+|**Others** - In one of the following cases: +
+
+- If not covered by the aforementioned errors. +
+- If multiple documents are issued a single adjustment document and correction code cannot be specified. +
+- If the code of the adjustment document is not distinguished in the CAS.
+
+|===
+
+=== Correction reason codes for United Arab Emirates
+
+The code identifies why a credit note is being issued and is required when the document is a credit note.
+
+The `DL8.61.1.` codes name their own source: they are the instances listed in Federal Decree-Law No. **8** of 2017 on Value Added Tax, Article **61** ("Instances and Conditions for Output Tax Adjustments"), Clause **1**, items a to e. The descriptions below are that clause verbatim.
+
+|===
+|Value |Description
+
+|`DL8.61.1.A`
+|If the supply was cancelled.
+
+|`DL8.61.1.B`
+|If the Tax treatment of the supply has changed due to a change in the nature of the supply.
+
+|`DL8.61.1.C`
+|If the previously agreed Consideration for the supply was altered for any reason.
+
+|`DL8.61.1.D`
+|If the Recipient of Goods or Recipient of Services returned them to the Registrant in full or in part and the Consideration was returned in full or in part.
+
+|`DL8.61.1.E`
+|If the Tax was charged or Tax treatment was applied in error.
+
+|`VD`
+|Volume Discount. +
+This value is not one of the Article 61 instances. It is defined by the Peppol PINT AE billing specification, which accepts it alongside the five `DL8.61.1.` codes.
+
+|===
+
+NOTE: When the reason code is `VD`, the reference to the preceding document is not required.

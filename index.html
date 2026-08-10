@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.4</title>
+<title>PUF Code lists 1.5</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.4</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.5</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -544,6 +544,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_spanish_regime_keys_ipsi_specific">22.3. Spanish Regime Keys – IPSI Specific</a></li>
 </ul>
 </li>
+<li><a href="#_puf_023_correctioncode">23. PUF-023-CORRECTIONCODE</a>
+<ul class="sectlevel2">
+<li><a href="#_correction_method_codes_for_spain_facturae">23.1. Correction method codes for Spain (Facturae)</a></li>
+<li><a href="#_correction_method_codes_for_spain_verifactu">23.2. Correction method codes for Spain (VeriFactu)</a></li>
+<li><a href="#_correction_reason_codes_for_the_basque_country_ticketbai">23.3. Correction reason codes for the Basque Country (TicketBAI)</a></li>
+<li><a href="#_correction_reason_codes_for_philippines">23.4. Correction reason codes for Philippines</a></li>
+<li><a href="#_correction_reason_codes_for_united_arab_emirates">23.5. Correction reason codes for United Arab Emirates</a></li>
+</ul>
+</li>
 <li><a href="#_support">Support</a></li>
 </ul>
 </div>
@@ -624,6 +633,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.4</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-31</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Added Türkiye specific codes. Updated <a href="https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme" target="_blank" rel="noopener">PUF-008-IDENTIFICATIONSCHEME</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-08-10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added <a href="https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode" target="_blank" rel="noopener">PUF-023-CORRECTIONCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5244,6 +5258,392 @@ Used in the Finnish national banking system.</em></p></td>
 </td>
 <td class="content">
 Using other regime keys for IPSI will generate a warning (accepted with errors) until 31/12/2026, and will be rejected from 01/01/2027.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_puf_023_correctioncode"><a class="anchor" href="#_puf_023_correctioncode"></a><a class="link" href="#_puf_023_correctioncode">23. PUF-023-CORRECTIONCODE</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This code list provides the values available for <code>puf:BillingReferenceExtension/puf:Code</code>, the code that qualifies a correction made to a previously issued document.</p>
+</div>
+<div class="paragraph">
+<p>The meaning of the code is country dependent. In some regimes it identifies the correction <strong>method</strong>, that is how the corrected amounts are expressed. In others it identifies the correction <strong>reason</strong>, that is why the document is being corrected. Use the section that applies to the receiving regime.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Overview</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Regime</th>
+<th class="tableblock halign-left valign-top">What the code expresses</th>
+<th class="tableblock halign-left valign-top">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spain (Facturae)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correction method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code>, <code>02</code>, <code>03</code>, <code>04</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spain (VeriFactu)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correction method</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>I</code>, <code>S</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basque Country (TicketBAI)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correction reason</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R1</code>-<code>R5</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Philippines</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correction reason</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code>-<code>05</code>, <code>09</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">United Arab Emirates</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correction reason</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.61.1.A</code>-<code>DL8.61.1.E</code>, <code>VD</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A document carries only one <code>puf:Code</code>. When the same document is sent to more than one Spanish flow, send the value that applies to the correction method and it will be resolved correctly for both, because the two Spanish method code sets are treated as equivalent. See <a href="#_correction_method_codes_for_spain_facturae">Correction method codes for Spain (Facturae)</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_correction_method_codes_for_spain_facturae"><a class="anchor" href="#_correction_method_codes_for_spain_facturae"></a><a class="link" href="#_correction_method_codes_for_spain_facturae">23.1. Correction method codes for Spain (Facturae)</a></h3>
+<div class="paragraph">
+<p>The code identifies the criterion applied when correcting an invoice, and is reported in the Facturae <code>CorrectionMethod</code> element. Facturae derives the accompanying <code>CorrectionMethodDescription</code> from the code, so only the code needs to be provided.</p>
+</div>
+<div class="paragraph">
+<p>Values and descriptions are the <code>CorrectionMethodType</code> and <code>CorrectionMethodDescriptionType</code> enumerations of the Facturae 3.2.2 schema. The Spanish descriptions are enumerated values in that schema, so they must be sent exactly as written below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificación íntegra<br>
+All items to be corrected in the original invoice are reflected.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificación por diferencias<br>
+Only the items already corrected are noted.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>03</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectificación por descuento por volumen de operaciones durante un periodo<br>
+"Bulk deal" in a given period.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>04</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorizadas por la Agencia Tributaria<br>
+Authorised by the Tax Agency.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The VeriFactu values <code>S</code> and <code>I</code> are also accepted here and are treated as equivalent to <code>01</code> and <code>02</code> respectively, so a sender who issues to both Spanish flows can use a single value.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value sent</th>
+<th class="tableblock halign-left valign-top">Facturae <code>CorrectionMethod</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code> or <code>S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>02</code> or <code>I</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>02</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When <code>CorrectionMethod</code> is <code>01</code> or <code>02</code>, Facturae also requires the number and the issue date of the invoice being corrected. Provide these as <code>cac:InvoiceDocumentReference/cbc:ID</code> and <code>cac:InvoiceDocumentReference/cbc:IssueDate</code>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_correction_method_codes_for_spain_verifactu"><a class="anchor" href="#_correction_method_codes_for_spain_verifactu"></a><a class="link" href="#_correction_method_codes_for_spain_verifactu">23.2. Correction method codes for Spain (VeriFactu)</a></h3>
+<div class="paragraph">
+<p>The code identifies the type of rectification being performed, and is reported to AEAT as <code>TipoRectificativa</code>. Values follow the AEAT <code>TipoRectificativa</code> code list (L3).</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>I</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correction by differences<br>
+(Rectificación por diferencias)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Substitutive method<br>
+(Rectificación por sustitución)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The Facturae values <code>01</code> and <code>02</code> are also accepted here and are treated as equivalent to <code>S</code> and <code>I</code> respectively.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value sent</th>
+<th class="tableblock halign-left valign-top">VeriFactu <code>TipoRectificativa</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code> or <code>01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>S</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>I</code> or <code>02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>I</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When the substitutive method is used, the tax base and tax amount of the document being corrected are also required. See the Spain VeriFactu section of the PUF Billing specification.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_correction_reason_codes_for_the_basque_country_ticketbai"><a class="anchor" href="#_correction_reason_codes_for_the_basque_country_ticketbai"></a><a class="link" href="#_correction_reason_codes_for_the_basque_country_ticketbai">23.3. Correction reason codes for the Basque Country (TicketBAI)</a></h3>
+<div class="paragraph">
+<p>The code identifies why the correction is being made, and is reported to the Basque tax authorities as the corrective invoice reason.</p>
+</div>
+<div class="paragraph">
+<p>Values and descriptions are taken from <code>ClaveTipoFacturaType</code> in the TicketBAI schema (version 1.2).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>These codes cite the <strong>Norma Foral del IVA</strong>, the VAT regulation of the Basque foral territories. They are not the same as the equally named <code>R1</code>-<code>R5</code> invoice type codes used by VeriFactu, which cite the state VAT law (Ley 37/1992, LIVA).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective invoice: error founded in law, and Art. 80 One, Two and Six of the Norma Foral del IVA<br>
+(Factura rectificativa: error fundado en derecho y Art. 80 Uno, Dos y Seis de la Norma Foral del IVA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective invoice: Article 80 Three of the Norma Foral del IVA<br>
+(Factura rectificativa: artículo 80 Tres de la Norma Foral del IVA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective invoice: Article 80 Four of the Norma Foral del IVA<br>
+(Factura rectificativa: artículo 80 Cuatro de la Norma Foral del IVA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective invoice: remainder, that is any other case<br>
+(Factura rectificativa: Resto)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>R5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrective invoice on simplified invoices<br>
+(Factura rectificativa en facturas simplificadas)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_correction_reason_codes_for_philippines"><a class="anchor" href="#_correction_reason_codes_for_philippines"></a><a class="link" href="#_correction_reason_codes_for_philippines">23.4. Correction reason codes for Philippines</a></h3>
+<div class="paragraph">
+<p>The code identifies why the correction is being made, and is reported to the Bureau of Internal Revenue (BIR) as the correction code. It is mandatory when the document is flagged as a correction.</p>
+</div>
+<div class="paragraph">
+<p>Values and descriptions are taken from the <code>CorrectionCd</code> field of the BIR EIS e-invoice JSON file format specification v2.01. The description of <code>01</code> is abbreviated below; the specification enumerates the mandatory fields it covers.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Error</strong> - In any mandatory field.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Duplication</strong> - Sales data transmitted more than once regardless of transaction period.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>03</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Addition/reduction</strong> - Addition/reduction of contracted volume or amount.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>04</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cancellation</strong> - For sales data previously transmitted but transaction was subsequently cancelled or rescinded by buyer/seller for failure to consumate. Full return of goods without replacement is considered cancellation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>05</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Return</strong> - For original goods supplied and returned for replacement. Ex: Damaged, defective, wrong specifications, change item, or for any other reason.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>09</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Others</strong> - In one of the following cases:<br></p>
+<p class="tableblock">- If not covered by the aforementioned errors.<br>
+- If multiple documents are issued a single adjustment document and correction code cannot be specified.<br>
+- If the code of the adjustment document is not distinguished in the CAS.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_correction_reason_codes_for_united_arab_emirates"><a class="anchor" href="#_correction_reason_codes_for_united_arab_emirates"></a><a class="link" href="#_correction_reason_codes_for_united_arab_emirates">23.5. Correction reason codes for United Arab Emirates</a></h3>
+<div class="paragraph">
+<p>The code identifies why a credit note is being issued and is required when the document is a credit note.</p>
+</div>
+<div class="paragraph">
+<p>The <code>DL8.61.1.</code> codes name their own source: they are the instances listed in Federal Decree-Law No. <strong>8</strong> of 2017 on Value Added Tax, Article <strong>61</strong> ("Instances and Conditions for Output Tax Adjustments"), Clause <strong>1</strong>, items a to e. The descriptions below are that clause verbatim.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.61.1.A</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the supply was cancelled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.61.1.B</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the Tax treatment of the supply has changed due to a change in the nature of the supply.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.61.1.C</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the previously agreed Consideration for the supply was altered for any reason.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.61.1.D</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the Recipient of Goods or Recipient of Services returned them to the Registrant in full or in part and the Consideration was returned in full or in part.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.61.1.E</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the Tax was charged or Tax treatment was applied in error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VD</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Volume Discount.<br>
+This value is not one of the Article 61 instances. It is defined by the Peppol PINT AE billing specification, which accepts it alongside the five <code>DL8.61.1.</code> codes.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When the reason code is <code>VD</code>, the reference to the preceding document is not required.
 </td>
 </tr>
 </table>

@@ -1,9 +1,9 @@
-:doctitle: image:images/puf-logo.png[float="center", width=100%] PUF Code lists 1.4
+:doctitle: image:images/puf-logo.png[float="center", width=100%] PUF Code lists 1.5
 :author: Copyright &copy; 2026, Pagero, Part of Thomson Reuters
 :email: https://pagero.com
 :copyright: Pagero, Part of Thomson Reuters
-:minor: 1.4
-:revision: 1.4
+:minor: 1.5
+:revision: 1.5
 :toc: left
 :toclevels: 2
 :source-highlighter: coderay
@@ -63,6 +63,8 @@ include::specification/PUF-020-ERRORCLASSIFICATIONCODE.adoc[]
 include::specification/PUF-021-ROLECODE.adoc[]
 
 include::specification/PUF-022-SPECIALREGIMEKEY.adoc[]
+
+include::specification/PUF-023-CORRECTIONCODE.adoc[]
 
 :!sectnums:
 
