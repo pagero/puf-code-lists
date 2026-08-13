@@ -214,10 +214,19 @@ For additional identification scheme identifier added in PUF see below recommend
 
 The UAE jurisdiction uses several ID schemes carried through the standard `@schemeID` attribute. PUF does not follow the PINT-AE `@schemeAgencyID` / `@schemeAgencyName` syntax — instead each UAE identifier is expressed with its own scheme code from the table below.
 
-The Tax Registration Number (TRN) for VAT-registered parties is provided on `cac:PartyTaxScheme/cbc:CompanyID` (under `cac:TaxScheme/cbc:ID = 'VAT'`) and does not use a scheme identifier; all other UAE identifiers use `@schemeID`.
+The Tax Registration Number (TRN) of a VAT-registered party may be carried in two ways:
+
+* on `cac:PartyTaxScheme/cbc:CompanyID` under `cac:TaxScheme/cbc:ID = 'VAT'`, without a scheme identifier. This is the primary form and the one to use for the Seller and the Buyer, where the TRN is the VAT identifier of the party;
+* on `cac:PartyIdentification/cbc:ID` with `@schemeID = 'AE:TRN'`. Use this form for a party that has no VAT accounting role in the document and therefore no `cac:PartyTaxScheme`, in particular the free-trade-zone Beneficiary and the disclosed-agent Principle carried in `puf:RestrictedInformationParty`.
+
+Both forms resolve to the same TRN. When both are present on one party, `cac:PartyTaxScheme/cbc:CompanyID` takes precedence. A UAE identifier provided on `cac:PartyIdentification/cbc:ID` without a scheme identifier is not processed.
 
 |===
 |Value |Description |Carried on
+
+|`AE:TRN`
+|Tax Registration Number for parties registered for VAT. 15 alphanumeric characters, starting with `1` and ending with `03` (e.g. `100000000000003`). Alternative to `cac:PartyTaxScheme/cbc:CompanyID`.
+|`cac:PartyIdentification/cbc:ID/@schemeID`
 
 |`AE:TIN`
 |Tax Identification Number for parties not registered for VAT. 10 numeric digits starting with `1` (e.g. `1000000000`).

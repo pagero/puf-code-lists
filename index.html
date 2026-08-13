@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.5</title>
+<title>PUF Code lists 1.6</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.5</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.6</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -638,6 +638,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-08-10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Added <a href="https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode" target="_blank" rel="noopener">PUF-023-CORRECTIONCODE</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-08-13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added United Arab Emirates <code>AE:TRN</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme" target="_blank" rel="noopener">PUF-008-IDENTIFICATIONSCHEME</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2022,7 +2027,20 @@ For <strong>factoring</strong> scenarios, the factored document type codes (<cod
 <p>The UAE jurisdiction uses several ID schemes carried through the standard <code>@schemeID</code> attribute. PUF does not follow the PINT-AE <code>@schemeAgencyID</code> / <code>@schemeAgencyName</code> syntax — instead each UAE identifier is expressed with its own scheme code from the table below.</p>
 </div>
 <div class="paragraph">
-<p>The Tax Registration Number (TRN) for VAT-registered parties is provided on <code>cac:PartyTaxScheme/cbc:CompanyID</code> (under <code>cac:TaxScheme/cbc:ID = 'VAT'</code>) and does not use a scheme identifier; all other UAE identifiers use <code>@schemeID</code>.</p>
+<p>The Tax Registration Number (TRN) of a VAT-registered party may be carried in two ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>on <code>cac:PartyTaxScheme/cbc:CompanyID</code> under <code>cac:TaxScheme/cbc:ID = 'VAT'</code>, without a scheme identifier. This is the primary form and the one to use for the Seller and the Buyer, where the TRN is the VAT identifier of the party;</p>
+</li>
+<li>
+<p>on <code>cac:PartyIdentification/cbc:ID</code> with <code>@schemeID = 'AE:TRN'</code>. Use this form for a party that has no VAT accounting role in the document and therefore no <code>cac:PartyTaxScheme</code>, in particular the free-trade-zone Beneficiary and the disclosed-agent Principle carried in <code>puf:RestrictedInformationParty</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Both forms resolve to the same TRN. When both are present on one party, <code>cac:PartyTaxScheme/cbc:CompanyID</code> takes precedence. A UAE identifier provided on <code>cac:PartyIdentification/cbc:ID</code> without a scheme identifier is not processed.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2038,6 +2056,11 @@ For <strong>factoring</strong> scenarios, the factored document type codes (<cod
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:TRN</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax Registration Number for parties registered for VAT. 15 alphanumeric characters, starting with <code>1</code> and ending with <code>03</code> (e.g. <code>100000000000003</code>). Alternative to <code>cac:PartyTaxScheme/cbc:CompanyID</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:PartyIdentification/cbc:ID/@schemeID</code></p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>AE:TIN</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tax Identification Number for parties not registered for VAT. 10 numeric digits starting with <code>1</code> (e.g. <code>1000000000</code>).</p></td>
