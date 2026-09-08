@@ -296,3 +296,107 @@ Use these codes when `cac:TaxScheme/cbc:ID = 'IPSI'` and `cac:TaxCategory/cbc:ID
 |===
 
 
+
+=== Tax Exemption Codes in Oman
+
+Oman requires a VAT exemption reason code whenever the VAT category code is `E` (Exempt from tax) or `Z` (Zero rated). Provide the reason code at the same level as the category code it explains, that is on the VAT breakdown, on the invoice line, or on a document level allowance or charge.
+
+The two sets are separate and MUST NOT be mixed. `VATEX-OM-*` applies to category `E` only, and `VATZR-OM-*` to category `Z` only.
+
+==== Exemption reason codes for VAT category `E`
+
+|===
+|Value |Description
+
+|`VATEX-OM-01`
+|Qualifying Financial Services.
+
+|`VATEX-OM-02`
+|Educational Services and Related Goods and Services.
+
+|`VATEX-OM-03`
+|Healthcare Services and related Goods and Services.
+
+|`VATEX-OM-04`
+|Rental of properties for residential purposes.
+
+|`VATEX-OM-05`
+|Local Passenger Transport.
+
+|`VATEX-OM-06`
+|Undeveloped land (bare land).
+
+|`VATEX-OM-07`
+|Resale of residential properties.
+
+|`VATEX-OM-08`
+|Imported goods supplied to diplomatic and consular bodies, international organizations, and the heads and members of diplomatic and consular bodies.
+
+|`VATEX-OM-09`
+|Imports for the Armed Forces and Internal Security Forces.
+
+|`VATEX-OM-10`
+|Imported supplies for non-profit charities.
+
+|`VATEX-OM-11`
+|Import of returned goods.
+
+|`VATEX-OM-12`
+|Imported Goods in cases where the supply of such Goods is exempted from Tax or subject to Tax at a rate of zero percent in the Final Destination Point of Entry.
+
+|===
+
+==== Zero rating reason codes for VAT category `Z`
+
+|===
+|Value |Description
+
+|`VATZR-OM-01`
+|Qualifying Supply of Food items specified by a decision from the Chairman.
+
+|`VATZR-OM-02`
+|Qualifying Supply of Medicines and medical equipment.
+
+|`VATZR-OM-03`
+|Supply of investment gold, silver, and platinum.
+
+|`VATZR-OM-04`
+|Supplies of international and intra GCC transport of Goods or passengers.
+
+|`VATZR-OM-05`
+|Supply of Services related to International and Intra GCC transportation of Goods or passengers.
+
+|`VATZR-OM-06`
+|Supply of qualifying air, sea and land means of transport.
+
+|`VATZR-OM-07`
+|Supply of rescue planes, and rescue and assistance boats.
+
+|`VATZR-OM-08`
+|Supply of oil, oil derivatives and natural gas.
+
+|`VATZR-OM-09`
+|Export of service.
+
+|`VATZR-OM-10`
+|Direct export of goods.
+
+|`VATZR-OM-11`
+|Indirect export of goods.
+
+|`VATZR-OM-12`
+|Re-export of goods.
+
+|`VATZR-OM-13`
+|Supply from a Special Zone to a Special Zone, or within a Special Zone.
+
+|`VATZR-OM-14`
+|Supply from Mainland to Special Zone.
+
+|`VATZR-OM-15`
+|Customs Duty Suspension Statuses to a Special Zone.
+
+|`VATZR-OM-16`
+|Special Zone to Customs Duty Suspension Statuses.
+
+|===

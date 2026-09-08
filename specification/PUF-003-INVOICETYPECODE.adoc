@@ -151,6 +151,111 @@ The value is a fixed 8-character string of `0` and `1` flags identifying which U
 
 A standard tax invoice without any of the special transaction contexts uses the value `00000000`. Multiple flags may be combined when several contexts apply to the same document.
 
+=== Invoice type codes Oman
+
+The below listed invoice type codes are available for use in Oman.
+
+|===
+|Value |Description
+
+|`380`
+|Tax invoice, only applicable within UBL message/document type Invoice.
+
+|`381`
+|Credit note, only applicable within UBL message/document type CreditNote.
+
+|`383`
+|Debit note, only applicable within UBL message/document type Invoice.
+
+|`386`
+|Prepayment invoice, only applicable within UBL message/document type Invoice.
+
+|===
+
+[IMPORTANT]
+====
+In PUF a self-billed Oman document keeps its ordinary type code (`380` or `381`) and is flagged with the `puf:SelfBilled` extension. The self-billed codes `389` (invoice) and `261` (credit note) are derived for the Oman target from that flag, so do not send them as the PUF invoice type code.
+====
+
+=== Invoice transaction type code Oman
+
+In addition to the invoice type code, every Oman invoice MUST carry an *invoice transaction type code* (BTOM-001). It is provided as the `name` attribute on `cbc:InvoiceTypeCode` (or `cbc:CreditNoteTypeCode` for credit notes).
+
+The value is a fixed 20-character string of `0` and `1` flags identifying which Oman business contexts apply. Each position represents one transaction type, in the order listed below. Use `1` if the type is applicable, `0` if not.
+
+|===
+|Position |Transaction type |String when only this type applies
+
+|1
+|Full Tax Invoice
+|`10000000000000000000`
+
+|2
+|Simplified Tax Invoice
+|`01000000000000000000`
+
+|3
+|Self-billed Invoice
+|`00100000000000000000`
+
+|4
+|Third-party Invoice
+|`00010000000000000000`
+
+|5
+|Summary Invoice
+|`00001000000000000000`
+
+|6
+|Continuous Supply
+|`00000100000000000000`
+
+|7
+|Export Invoice
+|`00000010000000000000`
+
+|8
+|Deemed Supply Invoice
+|`00000001000000000000`
+
+|9
+|Import of Services (RCM)
+|`00000000100000000000`
+
+|10
+|Profit Margin Invoice
+|`00000000010000000000`
+
+|11
+|Profit Margin Self-Invoice
+|`00000000001000000000`
+
+|12
+|E-commerce Transaction
+|`00000000000100000000`
+
+|13
+|Import of Goods
+|`00000000000010000000`
+
+|14
+|Special Zone Supplies
+|`00000000000001000000`
+
+|15
+|Prepayment Invoice
+|`00000000000000100000`
+
+|16-20
+|Reserved for future use. Always `0`
+|
+
+|===
+
+Exactly one of position 1 (Full Tax Invoice) and position 2 (Simplified Tax Invoice) MUST be set: a document must be one or the other, and cannot be both.
+
+Beyond that pair, several flags may be combined when more than one context applies to the same document. A full tax invoice for an export, for example, sets positions 1 and 7 and so uses `10000010000000000000`.
+
 === Invoice type codes for Philippines
 
 The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.

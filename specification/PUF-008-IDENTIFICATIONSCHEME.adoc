@@ -119,6 +119,42 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |===
 
+=== Identification scheme Oman
+
+The Oman jurisdiction qualifies a party identifier with a scheme code from the PINT OM Buyer/Seller Identifier code list (`CL-06-OM`). In PUF each Oman identifier is carried on `cac:PartyIdentification/cbc:ID` with `@schemeID` set to one of the codes below. The target format carries the same qualifier on `@schemeName`, without the `OM:` prefix, and leaves `@schemeID` unused.
+
+Use `OM:TIN` for the seller's or buyer's *Tax Identification Number (TIN)* when supplied as a party identifier (IBT-029 or IBT-046). The https://www.oecd.org/content/dam/oecd/en/topics/policy-issue-focus/aeoi/oman-tin.pdf[Oman TIN information sheet^] lists the Tax Card as a place to find the TIN. Providing a TIN as party identification does not establish VAT registration.
+
+Supply the party's VAT registration identifier (TRN/VATIN) on `cac:PartyTaxScheme/cbc:CompanyID` with `cac:TaxScheme/cbc:ID = 'VAT'`. This is the VAT-registration input, not an `OM:TIN` party identifier.
+
+An Oman identifier provided on `cac:PartyIdentification/cbc:ID` without a scheme identifier is not processed.
+
+|===
+|Value |Description
+
+|`OM:CR`
+|Commercial Registration. Identifier assigned to a legal entity through commercial registration with the relevant authority.
+
+|`OM:TIN`
+|Tax Identification Number. Identifier assigned to a taxable person for VAT or tax purposes.
+
+|`OM:CID`
+|Civil ID. National identification number issued to individuals.
+
+|`OM:PASNUM`
+|Passport Number. Passport number used to identify an individual.
+
+|`OM:OTHID`
+|Other Identifier. Any other identifier not covered by the specified codes.
+
+|`OM:ICID`
+|Importer Customs ID. Identifier assigned to an importer by customs authorities.
+
+|`OM:SZLN`
+|Special Zone License Number. License number issued to entities operating within a Special Zone.
+
+|===
+
 === Identification scheme Poland
 
 |===
