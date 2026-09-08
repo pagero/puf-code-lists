@@ -24,6 +24,10 @@ The meaning of the code is country dependent. In some regimes it identifies the 
 |Correction reason
 |`01`-`05`, `09`
 
+|Oman
+|Correction reason
+|`CAN`, `VAT`, `VAL`, `QTY`, `OTH`
+
 |United Arab Emirates
 |Correction reason
 |`DL8.61.1.A`-`DL8.61.1.E`, `VD`
@@ -209,3 +213,31 @@ This value is not one of the Article 61 instances. It is defined by the Peppol P
 |===
 
 NOTE: When the reason code is `VD`, the reference to the preceding document is not required.
+
+=== Correction reason codes for Oman
+
+The code identifies why a credit note or a debit note is being issued, and is required whenever the document type is a credit note, a debit note, or a self-billed credit note.
+
+Values and descriptions are the *Reasons for issuance of credit note or debit note* code list published with the Peppol PINT OM billing and self-billing specifications, enforced by rule `CL-02-OM`.
+
+|===
+|Value |Description
+
+|`CAN`
+|Cancellation or return.
+
+|`VAT`
+|Change in VAT treatment.
+
+|`VAL`
+|Change in value.
+
+|`QTY`
+|Change in quantity.
+
+|`OTH`
+|Other.
+
+|===
+
+NOTE: These are Oman's own values. Do not send the United Arab Emirates `DL8.61.1.*` codes or any other regime's correction codes on an Oman document.

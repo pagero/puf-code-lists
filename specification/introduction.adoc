@@ -27,4 +27,5 @@ Lastly, in some cases, *all* the values are defined solely for PUF.
 |1.4|2024-07-31|Added Türkiye specific codes. Updated https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme[PUF-008-IDENTIFICATIONSCHEME^]
 |1.5|2026-08-10|Added https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode[PUF-023-CORRECTIONCODE^]
 |1.6|2026-08-13|Added United Arab Emirates `AE:TRN` to https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme[PUF-008-IDENTIFICATIONSCHEME^]
+|1.7|2026-09-07|Added Oman specific codes to https://pagero.github.io/puf-code-lists/#_puf_003_invoicetypecode[PUF-003-INVOICETYPECODE^], https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme[PUF-008-IDENTIFICATIONSCHEME^], https://pagero.github.io/puf-code-lists/#_puf_013_taxexemptioncode[PUF-013-TAXEXEMPTIONCODE^] and https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode[PUF-023-CORRECTIONCODE^]
 |===
