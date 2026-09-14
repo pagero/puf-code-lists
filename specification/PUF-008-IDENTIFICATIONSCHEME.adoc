@@ -55,6 +55,27 @@ For additional identification scheme identifier added in PUF see below recommend
 
 |===
 
+=== Identification scheme Egypt
+
+An Egyptian document carries an explicit party type of business, natural person or foreigner. PUF has no field for that type, so it is resolved when the document is converted for the Egyptian Tax Authority (ETA). The scheme identifier on the party identifier is the input to that resolution, which makes it the value that separates an Egyptian business from a natural person.
+
+In PUF each Egyptian identifier is carried on `cac:PartyIdentification/cbc:ID` with `@schemeID` set to one of the codes below. Use `EG:TIN` for an Egyptian business and `EG:NIN` for a natural person. Both codes identify Egyptian identifiers only. A party registered in another country uses that country's own scheme identifier, or none at all.
+
+`EG:TIN` is a tax registration identifier, so an Egyptian business normally also supplies it on `cac:PartyTaxScheme/cbc:CompanyID` with `cac:TaxScheme/cbc:ID = 'VAT'` as the VAT-registration input. `EG:NIN` is a personal identity number and is never a VAT-registration value: do not place it on `cac:PartyTaxScheme`.
+
+An Egyptian identifier provided on `cac:PartyIdentification/cbc:ID` without a scheme identifier is not processed.
+
+|===
+|Value |Description
+
+|`EG:TIN`
+|Tax Identification Number. Identifier assigned to an Egyptian business for tax purposes.
+
+|`EG:NIN`
+|National Identification Number. National identification number issued to an Egyptian individual.
+
+|===
+
 === Identification scheme Hungary
 
 |===

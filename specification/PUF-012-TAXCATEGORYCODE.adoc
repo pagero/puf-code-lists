@@ -85,6 +85,254 @@ For additional codes added in PUF see below code recommendations.
 
 |===
 
+=== Tax category codes Egypt
+
+The Egyptian Tax Authority (ETA) identifies a tax with a tax type, and qualifies it with a subtype that carries the exemption or the special rate. In PUF the tax type is carried on `cac:TaxCategory/cbc:ID` and the subtype on `cac:TaxCategory/cbc:Name`. Both are supplied per tax entry, so a line carrying several taxes repeats `cac:TaxSubtotal` once per tax type. A tax type must not occur twice within the same line.
+
+A tax subtype must be supplied for every tax entry. The tax type and subtype identify an Egyptian tax completely, so `cac:TaxScheme/cbc:ID` carries no Egyptian meaning and is set to `VAT` on every entry, including the table taxes and the fees. Withholding tax is one of the tax types below, but in PUF it is carried on `cac:WithholdingTaxTotal` rather than as an ordinary `cac:TaxTotal` entry, because the authority subtracts it when calculating the line total instead of adding it.
+
+*The most common combination is tax type T1 with subtype V009, which indicates regular VAT on a general sale.*
+
+|===
+|Tax Type (cbc:ID) |Tax Subtype (cbc:Name) |Description
+
+|`T1`
+|`V009`
+|General Item sales
+|===
+
+.*Click here for a complete list of all tax types and subtypes in Egypt.*
+[%collapsible]
+====
+|===
+|Tax Type (cbc:ID) |Tax Subtype (cbc:Name) |Description
+
+|`T1`
+|`V001`
+|Export
+
+|`T1`
+|`V002`
+|Export to free areas and other areas
+
+|`T1`
+|`V003`
+|Exempted good or service
+
+|`T1`
+|`V004`
+|A non-taxable good or service
+
+|`T1`
+|`V005`
+|Exemptions for diplomats, consulates and embassies
+
+|`T1`
+|`V006`
+|Defence and National security Exemptions
+
+|`T1`
+|`V007`
+|Agreements exemptions
+
+|`T1`
+|`V008`
+|Special Exemptions and other reasons
+
+|`T1`
+|`V009`
+|General Item sales
+
+|`T1`
+|`V010`
+|Other Rates
+
+|`T2`
+|`Tbl01`
+|Table tax (percentage)
+
+|`T3`
+|`Tbl02`
+|Table tax (Fixed Amount)
+
+|`T4`
+|`W001`
+|Contracting
+
+|`T4`
+|`W002`
+|Supplies
+
+|`T4`
+|`W003`
+|Purchases
+
+|`T4`
+|`W004`
+|Services
+
+|`T4`
+|`W005`
+|Sums paid by cooperative societies for car transportation
+
+|`T4`
+|`W006`
+|Commission agency & brokerage
+
+|`T4`
+|`W007`
+|Discounts & grants by smoke & cement companies
+
+|`T4`
+|`W008`
+|Discounts & grants by petroleum & telecom companies
+
+|`T4`
+|`W009`
+|Supporting export subsidies
+
+|`T4`
+|`W010`
+|Professional fees
+
+|`T4`
+|`W011`
+|Commission & brokerage_A_57
+
+|`T4`
+|`W012`
+|Hospitals collecting from doctors
+
+|`T4`
+|`W013`
+|Royalties
+
+|`T4`
+|`W014`
+|Customs clearance
+
+|`T4`
+|`W015`
+|Exemption
+
+|`T4`
+|`W016`
+|Advance payment
+
+|`T5`
+|`ST01`
+|Stamping tax (percentage)
+
+|`T6`
+|`ST02`
+|Stamping Tax (amount)
+
+|`T7`
+|`Ent01`
+|Entertainment tax (rate)
+
+|`T7`
+|`Ent02`
+|Entertainment tax (amount)
+
+|`T8`
+|`RD01`
+|Resource development fee (rate)
+
+|`T8`
+|`RD02`
+|Resource development fee (amount)
+
+|`T9`
+|`SC01`
+|Service charges (rate)
+
+|`T9`
+|`SC02`
+|Service charges (amount)
+
+|`T10`
+|`Mn01`
+|Municipality Fees (rate)
+
+|`T10`
+|`Mn02`
+|Municipality Fees (amount)
+
+|`T11`
+|`MI01`
+|Medical insurance fee (rate)
+
+|`T11`
+|`MI02`
+|Medical insurance fee (amount)
+
+|`T12`
+|`OF01`
+|Other fees (rate)
+
+|`T12`
+|`OF02`
+|Other fees (amount)
+
+|`T13`
+|`ST03`
+|Stamping tax (percentage)
+
+|`T14`
+|`ST04`
+|Stamping Tax (amount)
+
+|`T15`
+|`Ent03`
+|Entertainment tax (rate)
+
+|`T15`
+|`Ent04`
+|Entertainment tax (amount)
+
+|`T16`
+|`RD03`
+|Resource development fee (rate)
+
+|`T16`
+|`RD04`
+|Resource development fee (amount)
+
+|`T17`
+|`SC03`
+|Service charges (rate)
+
+|`T17`
+|`SC04`
+|Service charges (amount)
+
+|`T18`
+|`Mn03`
+|Municipality Fees (rate)
+
+|`T18`
+|`Mn04`
+|Municipality Fees (amount)
+
+|`T19`
+|`MI03`
+|Medical insurance fee (rate)
+
+|`T19`
+|`MI04`
+|Medical insurance fee (amount)
+
+|`T20`
+|`OF03`
+|Other fees (rate)
+
+|`T20`
+|`OF04`
+|Other fees (amount)
+|===
+====
+
 === Tax category codes Poland
 
 |===
