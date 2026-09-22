@@ -1,9 +1,9 @@
-:doctitle: image:images/puf-logo.png[float="center", width=100%] PUF Code lists 1.8
+:doctitle: image:images/puf-logo.png[float="center", width=100%] PUF Code lists 1.9
 :author: Copyright &copy; 2026, Pagero, Part of Thomson Reuters
 :email: https://pagero.com
 :copyright: Pagero, Part of Thomson Reuters
-:minor: 1.8
-:revision: 1.8
+:minor: 1.9
+:revision: 1.9
 :toc: left
 :toclevels: 2
 :source-highlighter: coderay
