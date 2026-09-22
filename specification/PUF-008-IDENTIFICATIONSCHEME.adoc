@@ -320,6 +320,12 @@ Both forms resolve to the same TRN. When both are present on one party, `cac:Par
 |===
 |Value |Description
 
+|`TR:VKN`
+|Vergi Kimlik Numarası, the tax identification number of a legal person.
+
+|`TR:TCKN`
+|TC Kimlik Numarası, the national identification number of a natural person.
+
 |`TR:HIZMETNO`
 |Service number.
 
