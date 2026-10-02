@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.9</title>
+<title>PUF Code lists 1.10</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.9</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.10</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -665,6 +665,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-09-21</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Added Türkiye <code>TR:VKN</code> and <code>TR:TCKN</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme" target="_blank" rel="noopener">PUF-008-IDENTIFICATIONSCHEME</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corrected the United Arab Emirates description of type code <code>81</code> in <a href="https://pagero.github.io/puf-code-lists/#_puf_003_invoicetypecode" target="_blank" rel="noopener">PUF-003-INVOICETYPECODE</a> and the <code>VD</code> note in <a href="https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode" target="_blank" rel="noopener">PUF-023-CORRECTIONCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -996,7 +1001,7 @@ Note that only 0 is currently supported.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>81</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used together with credit note reason code (BTAE-03) <code>VD</code> to void a previously issued non-VAT-relevant document.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used for a credit note relating to a transaction that is out of scope of VAT, the credit note counterpart of <code>480</code>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -6445,7 +6450,7 @@ This value is not one of the Article 61 instances. It is defined by the Peppol P
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-When the reason code is <code>VD</code>, the reference to the preceding document is not required.
+When the reason code is <code>VD</code>, the credit note must not reference a preceding document. Peppol PINT AE rule ibr-055-ae rejects a <code>VD</code> credit note that has one, and requires the reference for every other reason code, although the PINT AE text describes it as optional for <code>VD</code>.
 </td>
 </tr>
 </table>

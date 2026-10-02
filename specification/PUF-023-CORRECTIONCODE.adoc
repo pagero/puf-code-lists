@@ -212,7 +212,7 @@ This value is not one of the Article 61 instances. It is defined by the Peppol P
 
 |===
 
-NOTE: When the reason code is `VD`, the reference to the preceding document is not required.
+NOTE: When the reason code is `VD`, the credit note must not reference a preceding document. Peppol PINT AE rule ibr-055-ae rejects a `VD` credit note that has one, and requires the reference for every other reason code, although the PINT AE text describes it as optional for `VD`.
 
 === Correction reason codes for Oman
 

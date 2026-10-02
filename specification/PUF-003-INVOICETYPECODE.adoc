@@ -100,7 +100,7 @@ The below listed invoice type codes are available for use in the United Arab Emi
 |Out of scope of VAT, only applicable within UBL message/document type Invoice.
 
 |`81`
-|Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used together with credit note reason code (BTAE-03) `VD` to void a previously issued non-VAT-relevant document.
+|Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used for a credit note relating to a transaction that is out of scope of VAT, the credit note counterpart of `480`.
 
 |===
 
