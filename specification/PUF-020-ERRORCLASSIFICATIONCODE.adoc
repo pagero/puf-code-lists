@@ -213,3 +213,12 @@ The 'Format Name' column helps identify the format responsible for triggering th
 | `40105` | Invalid receiver reference value2 (Resolvable).
 | `40106` | Invalid department (Resolvable).
 |===
+
+[[document-validation-engine-errors]]
+=== Document Validation Engine errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `41000` | Document validation failure.
+|===
