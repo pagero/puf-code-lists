@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.10</title>
+<title>PUF Code lists 1.11</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.10</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.11</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -540,6 +540,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#routing-errors">20.9. Routing errors</a></li>
 <li><a href="#manual-errors">20.10. Manual errors</a></li>
 <li><a href="#delivery-result-errors">20.11. Delivery result errors</a></li>
+<li><a href="#document-validation-engine-errors">20.12. Document Validation Engine errors</a></li>
 </ul>
 </li>
 <li><a href="#_puf_021_rolecode">21. PUF-021-ROLECODE</a></li>
@@ -670,6 +671,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-02</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Corrected the United Arab Emirates description of type code <code>81</code> in <a href="https://pagero.github.io/puf-code-lists/#_puf_003_invoicetypecode" target="_blank" rel="noopener">PUF-003-INVOICETYPECODE</a> and the <code>VD</code> note in <a href="https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode" target="_blank" rel="noopener">PUF-023-CORRECTIONCODE</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-08</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added error code <code>41000</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode" target="_blank" rel="noopener">PUF-020-ERRORCLASSIFICATIONCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5734,6 +5740,27 @@ Used in the Finnish national banking system.</em></p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>40106</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Invalid department (Resolvable).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="document-validation-engine-errors"><a class="anchor" href="#document-validation-engine-errors"></a><a class="link" href="#document-validation-engine-errors">20.12. Document Validation Engine errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>41000</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document validation failure.</p></td>
 </tr>
 </tbody>
 </table>
