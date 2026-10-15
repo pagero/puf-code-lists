@@ -262,7 +262,7 @@ The following table outlines the different invoice types, their corresponding In
 |===
 |Invoice Type |Invoice Type Code |Invoice Type Code @name
 
-|Sales Invoice (SI)
+|Invoice
 |380
 |01
 
@@ -274,18 +274,12 @@ The following table outlines the different invoice types, their corresponding In
 |381
 |03
 
-|Service Billing (SB)
-|380
-|04
-
-|Official Receipt (OR)
-|380
-|05
-
 |Corrective Invoice
 |384
-|01-05
+|01-03
 |===
+
+The Invoice Type Code @name of a corrective invoice carries the type of the corrected document.
 
 === Invoice type codes for Croatia
 

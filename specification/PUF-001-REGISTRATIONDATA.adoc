@@ -74,9 +74,10 @@ LN = Not in liquidation.
 |`PH:SellerType`
 |Supplier VAT Registration +
 
-Allowed values: 0 or 1. +
+Allowed values: 0, 1 or 2. +
 
 0 = VAT Registered. +
-1 = Non VAT registered.
+1 = Non VAT registered. +
+2 = Registered Business Enterprise.
 
 |===
