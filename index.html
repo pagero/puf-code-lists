@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.13</title>
+<title>PUF Code lists 1.14</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.13</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.14</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -686,6 +686,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.13</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-16</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Philippines: removed Debit Note from <a href="https://pagero.github.io/puf-code-lists/#_puf_003_invoicetypecode" target="_blank" rel="noopener">PUF-003-INVOICETYPECODE</a>, which the BIR EIS e-invoice JSON File Format v2.1 no longer lists, and stated in <a href="https://pagero.github.io/puf-code-lists/#_puf_023_correctioncode" target="_blank" rel="noopener">PUF-023-CORRECTIONCODE</a> that every credit note carries a correction reason code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Philippines: <a href="https://pagero.github.io/puf-code-lists/#_puf_003_invoicetypecode" target="_blank" rel="noopener">PUF-003-INVOICETYPECODE</a> no longer uses the Type Code attribute (<code>@name</code>), shows how each invoice type code is reported to the BIR, and states that an increase to an issued invoice is sent as a corrective invoice</p></td>
 </tr>
 </tbody>
 </table>
@@ -1267,44 +1272,49 @@ For <strong>self-billed</strong> documents the UAE PUF convention is to keep the
 <div class="sect2">
 <h3 id="_invoice_type_codes_for_philippines"><a class="anchor" href="#_invoice_type_codes_for_philippines"></a><a class="link" href="#_invoice_type_codes_for_philippines">3.7. Invoice type codes for Philippines</a></h3>
 <div class="paragraph">
-<p>The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.</p>
+<p>The following table outlines the different invoice types, their corresponding Invoice Type Codes, and how each is reported to the Bureau of Internal Revenue (BIR). The Invoice Type Code alone decides this, and the Type Code attribute (@name) is not used.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Invoice Type</th>
 <th class="tableblock halign-left valign-top">Invoice Type Code</th>
-<th class="tableblock halign-left valign-top">Invoice Type Code @name</th>
+<th class="tableblock halign-left valign-top">BIR document type</th>
+<th class="tableblock halign-left valign-top">Reported as a correction</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Invoice</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">380</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">01 (Invoice)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Credit Note (CN)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">381</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">03 (Credit Memo / Credit Note)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Corrective Invoice</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">01, 03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">01 (Invoice)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>The Invoice Type Code @name of a corrective invoice carries the type of the corrected document.</p>
+<p>A corrective invoice is a new invoice that corrects or adds to an issued invoice and refers to it, for example an increase in the invoiced amount (RMC No. 098-2026, section IV.8). A decrease is made with a credit note. A document reported as a correction carries a correction reason code, see <a href="https://pagero.github.io/puf-code-lists/#_correction_reason_codes_for_philippines" target="_blank" rel="noopener">Correction reason codes for Philippines</a>.</p>
 </div>
 <div class="paragraph">
-<p>The Debit Note is no longer a BIR document type: the BIR EIS e-invoice JSON File Format v2.1 removes it (Revision History, version 2.1, and the CAS document type list of 2026-09-26). An increase to an issued invoice is made with a new invoice (RMC No. 098-2026, section IV.8).</p>
+<p>The Debit Note is no longer a BIR document type: the BIR EIS e-invoice JSON File Format v2.1 removes it (Revision History, version 2.1, and the CAS document type list of 2026-09-26). An increase to an issued invoice is made with a corrective invoice instead.</p>
 </div>
 </div>
 <div class="sect2">
