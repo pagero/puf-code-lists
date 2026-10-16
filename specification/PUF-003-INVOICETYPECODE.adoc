@@ -258,24 +258,27 @@ Beyond that pair, several flags may be combined when more than one context appli
 
 === Invoice type codes for Philippines
 
-The following table outlines the different invoice types, their corresponding Invoice Type Codes, and Type Code attribute.
+The following table outlines the different invoice types, their corresponding Invoice Type Codes, and how each is reported to the Bureau of Internal Revenue (BIR). The Invoice Type Code alone decides this, and the Type Code attribute (@name) is not used.
 |===
-|Invoice Type |Invoice Type Code |Invoice Type Code @name
+|Invoice Type |Invoice Type Code |BIR document type |Reported as a correction
 
 |Invoice
 |380
-|01
+|01 (Invoice)
+|No
 
 |Credit Note (CN)
 |381
-|03
+|03 (Credit Memo / Credit Note)
+|Yes
 
 |Corrective Invoice
 |384
-|01
+|01 (Invoice)
+|Yes
 |===
 
-A corrective invoice is a new invoice that corrects or adds to an issued invoice and refers to it, for example an increase in the invoiced amount (RMC No. 098-2026, section IV.8). Its Invoice Type Code @name is `01`. A decrease is made with a credit note.
+A corrective invoice is a new invoice that corrects or adds to an issued invoice and refers to it, for example an increase in the invoiced amount (RMC No. 098-2026, section IV.8). A decrease is made with a credit note. A document reported as a correction carries a correction reason code, see https://pagero.github.io/puf-code-lists/#_correction_reason_codes_for_philippines[Correction reason codes for Philippines^].
 
 The Debit Note is no longer a BIR document type: the BIR EIS e-invoice JSON File Format v2.1 removes it (Revision History, version 2.1, and the CAS document type list of 2026-09-26). An increase to an issued invoice is made with a corrective invoice instead.
 
