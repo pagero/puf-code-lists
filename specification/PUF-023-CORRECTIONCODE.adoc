@@ -151,9 +151,9 @@ These codes cite the *Norma Foral del IVA*, the VAT regulation of the Basque for
 
 === Correction reason codes for Philippines
 
-The code identifies why the correction is being made, and is reported to the Bureau of Internal Revenue (BIR) as the correction code. It is mandatory when the document is flagged as a correction.
+The code identifies why the correction is being made, and is reported to the Bureau of Internal Revenue (BIR) as the correction code. It is mandatory when the document is flagged as a correction, which includes every credit note and corrective invoice: a credit note reduces or cancels an issued invoice, and a correction must reference the original invoice (RMC No. 098-2026, sections II.2 and IV.8).
 
-Values and descriptions are taken from the `CorrectionCd` field of the BIR EIS e-invoice JSON file format specification v2.01. The description of `01` is abbreviated below; the specification enumerates the mandatory fields it covers.
+Values and descriptions are taken from the `CorrectionCd` field of the BIR EIS e-invoice JSON File Format v2.1, unchanged since v2.01. The description of `01` is abbreviated below; the specification enumerates the mandatory fields it covers.
 
 |===
 |Value |Description

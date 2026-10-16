@@ -266,20 +266,18 @@ The following table outlines the different invoice types, their corresponding In
 |380
 |01
 
-|Debit Note (DN)
-|383
-|02
-
 |Credit Note (CN)
 |381
 |03
 
 |Corrective Invoice
 |384
-|01-03
+|01, 03
 |===
 
 The Invoice Type Code @name of a corrective invoice carries the type of the corrected document.
+
+The Debit Note is no longer a BIR document type: the BIR EIS e-invoice JSON File Format v2.1 removes it (Revision History, version 2.1, and the CAS document type list of 2026-09-26). An increase to an issued invoice is made with a new invoice (RMC No. 098-2026, section IV.8).
 
 === Invoice type codes for Croatia
 
