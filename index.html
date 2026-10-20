@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.14</title>
+<title>PUF Code lists 1.15</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.14</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.15</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -691,6 +691,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.14</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-16</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Philippines: <a href="https://pagero.github.io/puf-code-lists/#_puf_003_invoicetypecode" target="_blank" rel="noopener">PUF-003-INVOICETYPECODE</a> no longer uses the Type Code attribute (<code>@name</code>), shows how each invoice type code is reported to the BIR, and states that an increase to an issued invoice is sent as a corrective invoice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Added <code>WITHDRAWN_SUCCESS</code> and <code>WITHDRAWN_FAILURE</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_017_clearancestatuscode" target="_blank" rel="noopener">PUF-017-CLEARANCESTATUSCODE</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4947,6 +4952,14 @@ Used in the Finnish national banking system.</em></p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>REJECTED</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rejected by clearance/tax authority.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WITHDRAWN_SUCCESS</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Withdrawal of a previously reported document accepted by clearance/tax authority.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>WITHDRAWN_FAILURE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Withdrawal of a previously reported document not accepted by clearance/tax authority.</p></td>
 </tr>
 </tbody>
 </table>
