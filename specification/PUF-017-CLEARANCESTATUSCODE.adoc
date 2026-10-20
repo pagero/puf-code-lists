@@ -14,4 +14,10 @@ List of available clearance/reporting status codes.
 |`REJECTED`
 |Rejected by clearance/tax authority.
 
+|`WITHDRAWN_SUCCESS`
+|Withdrawal of a previously reported document accepted by clearance/tax authority.
+
+|`WITHDRAWN_FAILURE`
+|Withdrawal of a previously reported document not accepted by clearance/tax authority.
+
 |===
