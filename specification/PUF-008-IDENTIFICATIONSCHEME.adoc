@@ -176,6 +176,33 @@ An Oman identifier provided on `cac:PartyIdentification/cbc:ID` without a scheme
 
 |===
 
+=== Identification scheme Philippines
+
+When a sale gives a senior citizen, person with disability (PWD), national athlete or coach, solo parent or Medal of Valor (MOV) discount, the invoice must show the buyer's ID number (RR No. 7-2024, Section 6(B)(18)). In PUF each ID number is carried on the buyer's `cac:PartyIdentification/cbc:ID` with `@schemeID` set to one of the codes below. These are not tax registration identifiers: give the buyer's TIN on `cac:PartyTaxScheme/cbc:CompanyID` as usual.
+
+|===
+|Value |Description
+
+|`PH:SC_ID`
+|Senior citizen ID number, or the number of another government-issued ID that shows the name, picture, date of birth and nationality.
+
+|`PH:PWD_ID`
+|Person with disability (PWD) ID number.
+
+|`PH:PNSTM_ID`
+|Philippine National Sports Team (PNSTM) ID number of a national athlete or coach.
+
+|`PH:SOLO_PARENT_ID`
+|Solo parent ID number.
+
+|`PH:MOV_ID`
+|Medal of Valor (MOV) ID number of the awardee.
+
+|`PH:MOV_DEPENDENT_ID`
+|MOV dependent ID number of a dependent of a Medal of Valor awardee.
+
+|===
+
 === Identification scheme Poland
 
 |===
