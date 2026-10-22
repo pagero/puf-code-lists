@@ -16,9 +16,14 @@ Below you will find links to recommended lists.
 For additional codes added in PUF see below code recommendations.
 
 === Allowance reason codes Philippines
+The invoice must show the discount granted to a senior citizen, person with disability, national athlete or coach, solo parent or Medal of Valor awardee or dependent, together with the buyer's ID number (RR No. 7-2024, Section 6(B)(18)). For the ID number see https://pagero.github.io/puf-code-lists/#_identification_scheme_philippines[Identification scheme Philippines^].
+
 |===
 |Value |Description
 
 |SC | Senior Citizen Discount.
 |PWD | Person With Disability Discount
+|NAAC | National Athletes and Coaches Discount.
+|SOLO_PARENT | Solo Parent Discount.
+|MOV | Medal of Valor Discount, for the awardee or a dependent.
 |===
