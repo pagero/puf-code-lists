@@ -309,7 +309,7 @@ Both forms resolve to the same TRN. When both are present on one party, `cac:Par
 |Value |Description |Carried on
 
 |`AE:TRN`
-|Tax Registration Number for parties registered for VAT. 15 alphanumeric characters, starting with `1` and ending with `03` (e.g. `100000000000003`). Alternative to `cac:PartyTaxScheme/cbc:CompanyID`.
+|Tax Registration Number for parties registered for VAT. 15 numeric digits, starting with `1` and ending with `03` (e.g. `100000000000003`), as required by https://docs.peppol.eu/poac/ae/pint-ae/trn-invoice/rule/ibr-132-ae/[PINT AE 1.0.4 rule IBR-132-AE^]. Alternative to `cac:PartyTaxScheme/cbc:CompanyID`.
 |`cac:PartyIdentification/cbc:ID/@schemeID`
 
 |`AE:TIN`
