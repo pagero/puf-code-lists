@@ -400,3 +400,24 @@ The two sets are separate and MUST NOT be mixed. `VATEX-OM-*` applies to categor
 |Special Zone to Customs Duty Suspension Statuses.
 
 |===
+
+=== Tax Exemption Codes in United Arab Emirates
+
+PINT AE requires a VAT exemption reason code on every invoice line, document level allowance and document level charge with VAT category code `E` (Exempt from VAT), see rules IBR-167-AE, IBR-168-AE and IBR-169-AE. Use the following codelist, which is the PINT AE code list `AE-Exempt` (Reasons for exemption from tax).
+
+|===
+|Value |Description
+
+|`DL8.46.1`
+|Certain financial services
+
+|`DL8.46.2`
+|Supply of residential units (lease or sale)
+
+|`DL8.46.3`
+|Bare land
+
+|`DL8.46.4`
+|Local passenger transport
+
+|===
