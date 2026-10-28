@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.17</title>
+<title>PUF Code lists 1.18</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.17</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.18</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -511,6 +511,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_tax_exemption_codes_in_hungary">13.2. Tax Exemption Codes in Hungary</a></li>
 <li><a href="#_tax_exemption_codes_in_spain_verifactu">13.3. Tax Exemption Codes in Spain (VeriFactu)</a></li>
 <li><a href="#_tax_exemption_codes_in_oman">13.4. Tax Exemption Codes in Oman</a></li>
+<li><a href="#_tax_exemption_codes_in_united_arab_emirates">13.5. Tax Exemption Codes in United Arab Emirates</a></li>
 </ul>
 </li>
 <li><a href="#_puf_014_uomcode">14. PUF-014-UOMCODE</a></li>
@@ -707,6 +708,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.17</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-27</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">United Arab Emirates: corrected <code>AE:TRN</code> in <a href="https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme" target="_blank" rel="noopener">PUF-008-IDENTIFICATIONSCHEME</a> to require 15 numeric digits, in line with PINT AE 1.0.4 rule IBR-132-AE.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">United Arab Emirates: added the tax exemption codes <code>DL8.46.1</code> to <code>DL8.46.4</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_013_taxexemptioncode" target="_blank" rel="noopener">PUF-013-TAXEXEMPTIONCODE</a>, from the PINT AE 1.0.4 code list <code>AE-Exempt</code>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -4744,6 +4750,42 @@ Used in the Finnish national banking system.</em></p></td>
 </tbody>
 </table>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_tax_exemption_codes_in_united_arab_emirates"><a class="anchor" href="#_tax_exemption_codes_in_united_arab_emirates"></a><a class="link" href="#_tax_exemption_codes_in_united_arab_emirates">13.5. Tax Exemption Codes in United Arab Emirates</a></h3>
+<div class="paragraph">
+<p>PINT AE requires a VAT exemption reason code on every invoice line, document level allowance and document level charge with VAT category code <code>E</code> (Exempt from VAT), see rules IBR-167-AE, IBR-168-AE and IBR-169-AE. Use the following codelist, which is the PINT AE code list <code>AE-Exempt</code> (Reasons for exemption from tax).</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.46.1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Certain financial services</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.46.2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supply of residential units (lease or sale)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.46.3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bare land</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DL8.46.4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Local passenger transport</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
