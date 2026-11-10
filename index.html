@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.18</title>
+<title>PUF Code lists 1.19</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.18</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.19</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -543,6 +543,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#manual-errors">20.10. Manual errors</a></li>
 <li><a href="#delivery-result-errors">20.11. Delivery result errors</a></li>
 <li><a href="#document-validation-engine-errors">20.12. Document Validation Engine errors</a></li>
+<li><a href="#tax-data-reporting-errors">20.13. Tax data reporting errors</a></li>
 </ul>
 </li>
 <li><a href="#_puf_021_rolecode">21. PUF-021-ROLECODE</a></li>
@@ -713,6 +714,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.18</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-10-28</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">United Arab Emirates: added the tax exemption codes <code>DL8.46.1</code> to <code>DL8.46.4</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_013_taxexemptioncode" target="_blank" rel="noopener">PUF-013-TAXEXEMPTIONCODE</a>, from the PINT AE 1.0.4 code list <code>AE-Exempt</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-11-10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax data reporting: added the PUF specific document type code <code>TDR</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_019_documentreferencedoctypecode" target="_blank" rel="noopener">PUF-019-DOCUMENTREFERENCEDOCTYPECODE</a> and error codes <code>50000</code> to <code>51900</code> to <a href="https://pagero.github.io/puf-code-lists/#_puf_020_errorclassificationcode" target="_blank" rel="noopener">PUF-020-ERRORCLASSIFICATIONCODE</a>, for Technical Acknowledgements on tax data reports.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5135,6 +5141,10 @@ Used in the Finnish national banking system.</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>388</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tax invoice</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TDR</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax data report. A PUF specific code, not part of UNTDID 1001.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -5898,6 +5908,103 @@ Used in the Finnish national banking system.</em></p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>41000</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Document validation failure.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="tax-data-reporting-errors"><a class="anchor" href="#tax-data-reporting-errors"></a><a class="link" href="#tax-data-reporting-errors">20.13. Tax data reporting errors</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pagero error code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50000</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generic tax data reporting error. Used when no more specific code applies. Details are given in the response description.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schematron validation failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory data missing for the document type.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SIREN identifier validation failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sender details do not match the expected sender.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Report period or its date missing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid report period.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document dates differ within a report that requires one shared date.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50800</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document date in the future.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>50900</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Report type not valid for the period calculation or operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51000</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referenced report missing or invalid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51100</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aggregated report cannot be modified in its current state.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51200</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Report does not match the aggregation criteria of the referenced report.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51300</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Customer configuration not found.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51400</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No tax regime configured.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51500</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Static mapping failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51600</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No distributed document found for the report.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51700</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Authority tax report processing failure.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51800</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delivery to the tax authority failed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>51900</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processing failed and the report was investigated by Pagero support. The reason is specific to the case and is given in the response description (<code>cac:DocumentResponse/cac:Response/cbc:Description</code>).</p></td>
 </tr>
 </tbody>
 </table>

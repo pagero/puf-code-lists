@@ -29,6 +29,9 @@ List of available document type codes.
 |`388`
 |Tax invoice
 
+|`TDR`
+|Tax data report. A PUF specific code, not part of UNTDID 1001.
+
 |===
 
 
