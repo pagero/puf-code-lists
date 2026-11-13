@@ -222,3 +222,31 @@ The 'Format Name' column helps identify the format responsible for triggering th
 | Pagero error code | Description
 | `41000` | Document validation failure.
 |===
+
+[[tax-data-reporting-errors]]
+=== Tax data reporting errors
+
+[cols="1,2",options="header"]
+|===
+| Pagero error code | Description
+| `50000` | Generic tax data reporting error. Used when no more specific code applies. Details are given in the response description.
+| `50100` | Schematron validation failure.
+| `50200` | Mandatory data missing for the document type.
+| `50300` | SIREN identifier validation failure.
+| `50400` | Sender details do not match the expected sender.
+| `50500` | Report period or its date missing.
+| `50600` | Invalid report period.
+| `50700` | Document dates differ within a report that requires one shared date.
+| `50800` | Document date in the future.
+| `50900` | Report type not valid for the period calculation or operation.
+| `51000` | Referenced report missing or invalid.
+| `51100` | Aggregated report cannot be modified in its current state.
+| `51200` | Report does not match the aggregation criteria of the referenced report.
+| `51300` | Customer configuration not found.
+| `51400` | No tax regime configured.
+| `51500` | Static mapping failure.
+| `51600` | No distributed document found for the report.
+| `51700` | Authority tax report processing failure.
+| `51800` | Delivery to the tax authority failed.
+| `51900` | Processing failed and the report was investigated by Pagero support. The reason is specific to the case and is given in the response description (`cac:DocumentResponse/cac:Response/cbc:Description`).
+|===
