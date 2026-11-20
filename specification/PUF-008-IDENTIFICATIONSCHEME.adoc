@@ -301,7 +301,7 @@ The UAE jurisdiction uses several ID schemes carried through the standard `@sche
 The Tax Registration Number (TRN) of a VAT-registered party may be carried in two ways:
 
 * on `cac:PartyTaxScheme/cbc:CompanyID` under `cac:TaxScheme/cbc:ID = 'VAT'`, without a scheme identifier. This is the primary form and the one to use for the Seller and the Buyer, where the TRN is the VAT identifier of the party;
-* on `cac:PartyIdentification/cbc:ID` with `@schemeID = 'AE:TRN'`. Use this form for a party that has no VAT accounting role in the document and therefore no `cac:PartyTaxScheme`, in particular the free-trade-zone Beneficiary and the disclosed-agent Principle carried in `puf:RestrictedInformationParty`.
+* on `cac:PartyIdentification/cbc:ID` with `@schemeID = 'AE:TRN'`. Use this form for a party that has no VAT accounting role in the document and therefore no `cac:PartyTaxScheme`, in particular the free-trade-zone Beneficiary and the disclosed-agent Principal carried in `puf:RestrictedInformationParty`.
 
 Both forms resolve to the same TRN. When both are present on one party, `cac:PartyTaxScheme/cbc:CompanyID` takes precedence. A UAE identifier provided on `cac:PartyIdentification/cbc:ID` without a scheme identifier is not processed.
 
@@ -309,7 +309,7 @@ Both forms resolve to the same TRN. When both are present on one party, `cac:Par
 |Value |Description |Carried on
 
 |`AE:TRN`
-|Tax Registration Number for parties registered for VAT. 15 numeric digits, starting with `1` and ending with `03` (e.g. `100000000000003`), as required by https://docs.peppol.eu/poac/ae/pint-ae/trn-invoice/rule/ibr-132-ae/[PINT AE 1.0.4 rule IBR-132-AE^]. Alternative to `cac:PartyTaxScheme/cbc:CompanyID`.
+|Tax Registration Number for parties registered for VAT. 15 numeric digits, starting with `1` and ending with `03` (e.g. `100000000000003`), as required by https://docs.peppol.eu/poac/ae/v1.0.5/pint-ae/trn-invoice/rule/ibr-132-ae/[PINT AE 1.0.5 rule ibr-132-ae^], which also checks the Principal ID (BTAE-14). Alternative to `cac:PartyTaxScheme/cbc:CompanyID`.
 |`cac:PartyIdentification/cbc:ID/@schemeID`
 
 |`AE:TIN`
