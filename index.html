@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="author" content="Copyright &copy; 2026, Pagero, Part of Thomson Reuters">
 <meta name="copyright" content="Pagero, Part of Thomson Reuters">
-<title>PUF Code lists 1.20</title>
+<title>PUF Code lists 1.21</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
@@ -431,7 +431,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.20</h1>
+<h1><span class="image center"><img src="images/puf-logo.png" alt="puf logo" width="100%"></span> PUF Code lists 1.21</h1>
 <div class="details">
 <span id="author" class="author">Copyright &copy; 2026, Pagero, Part of Thomson Reuters</span><br>
 <span id="email" class="email"><a href="https://pagero.com" class="bare">https://pagero.com</a></span><br>
@@ -724,6 +724,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.20</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2026-11-19</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">United Arab Emirates: <a href="https://pagero.github.io/puf-code-lists/#_puf_008_identificationscheme" target="_blank" rel="noopener">PUF-008-IDENTIFICATIONSCHEME</a> cites PINT AE 1.0.5 rule ibr-132-ae for <code>AE:TRN</code>, which also checks the Principal ID (BTAE-14), and uses the PINT AE 1.0.5 spelling "Principal" (PINT AE Billing 1.0.5 release notes, Changes 15 and 32).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2026-11-27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">United Arab Emirates: <a href="https://pagero.github.io/puf-code-lists/#_invoice_type_codes_united_arab_emirates" target="_blank" rel="noopener">PUF-003 Invoice type codes United Arab Emirates</a> uses <code>480</code> and <code>81</code> for a document whose supplies are all exempt from VAT or outside the scope of VAT, and <code>380</code> and <code>381</code> for one with a taxable supply (UAE Electronic Invoicing Guidelines V2.1 of 25 November 2026, 18.3.1).</p></td>
 </tr>
 </tbody>
 </table>
@@ -1028,7 +1033,7 @@ Note that only 0 is currently supported.</p></td>
 <div class="sect2">
 <h3 id="_invoice_type_codes_united_arab_emirates"><a class="anchor" href="#_invoice_type_codes_united_arab_emirates"></a><a class="link" href="#_invoice_type_codes_united_arab_emirates">3.3. Invoice type codes United Arab Emirates</a></h3>
 <div class="paragraph">
-<p>The below listed invoice type codes are available for use in the United Arab Emirates.</p>
+<p>The below listed invoice type codes are available for use in the United Arab Emirates. The type follows the VAT treatment of the supplies on the document (UAE Electronic Invoicing Guidelines V2.1 of 25 November 2026, 18.3.1).</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1044,19 +1049,19 @@ Note that only 0 is currently supported.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>380</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tax invoice, only applicable within UBL message/document type Invoice.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tax invoice, only applicable within UBL message/document type Invoice. Used for an invoice with a taxable supply, including a zero-rated one.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>381</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note, only applicable within UBL message/document type CreditNote.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note, only applicable within UBL message/document type CreditNote. The credit note counterpart of <code>380</code>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>480</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Out of scope of VAT, only applicable within UBL message/document type Invoice.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Out of scope of VAT, only applicable within UBL message/document type Invoice. Used for an invoice whose supplies are all exempt from VAT or outside the scope of VAT, which the Guidelines call a Commercial Invoice.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>81</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used for a credit note relating to a transaction that is out of scope of VAT, the credit note counterpart of <code>480</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used for a credit note whose supplies are all exempt from VAT or outside the scope of VAT, the credit note counterpart of <code>480</code>.</p></td>
 </tr>
 </tbody>
 </table>

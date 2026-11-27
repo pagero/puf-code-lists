@@ -85,22 +85,22 @@ Note that only 0 is currently supported.
 
 === Invoice type codes United Arab Emirates
 
-The below listed invoice type codes are available for use in the United Arab Emirates.
+The below listed invoice type codes are available for use in the United Arab Emirates. The type follows the VAT treatment of the supplies on the document (UAE Electronic Invoicing Guidelines V2.1 of 25 November 2026, 18.3.1).
 
 |===
 |Value |Description
 
 |`380`
-|Tax invoice, only applicable within UBL message/document type Invoice.
+|Tax invoice, only applicable within UBL message/document type Invoice. Used for an invoice with a taxable supply, including a zero-rated one.
 
 |`381`
-|Credit note, only applicable within UBL message/document type CreditNote.
+|Credit note, only applicable within UBL message/document type CreditNote. The credit note counterpart of `380`.
 
 |`480`
-|Out of scope of VAT, only applicable within UBL message/document type Invoice.
+|Out of scope of VAT, only applicable within UBL message/document type Invoice. Used for an invoice whose supplies are all exempt from VAT or outside the scope of VAT, which the Guidelines call a Commercial Invoice.
 
 |`81`
-|Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used for a credit note relating to a transaction that is out of scope of VAT, the credit note counterpart of `480`.
+|Credit note related to goods or services, only applicable within UBL message/document type CreditNote. Used for a credit note whose supplies are all exempt from VAT or outside the scope of VAT, the credit note counterpart of `480`.
 
 |===
 
